@@ -37,6 +37,19 @@ define( 'DB_CHARSET', 'utf8mb4' );
 /** The Database Collate type. Don't change this if in doubt. */
 define( 'DB_COLLATE', '' );
 
+if ($_SERVER[ 'HTTP_HOST' ] !== 'brofist') {
+    if (!empty($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] === 'https') {
+        $_SERVER['HTTPS'] = 'on';
+    }
+
+    define( 'WP_HOME', 'http://'.$_SERVER[ 'HTTP_HOST' ] );
+    define( 'WP_SITEURL', 'http://'.$_SERVER[ 'HTTP_HOST' ] );
+
+} else {
+    define( 'WP_HOME', 'http://brofist/' );
+    define( 'WP_SITEURL', 'http://brofist/');
+}
+
 /**#@+
  * Authentication Unique Keys and Salts.
  *
