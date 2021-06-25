@@ -35,15 +35,33 @@ function getACFLayout()
                 'button_label' => 'Add',
                 'sub_fields' => [
                     [
+                        'label' => 'Image',
+                        'name' => 'imagetTab',
+                        'type' => 'tab',
+                        'placement' => 'left',
+                        'endpoint' => 0
+                    ],
+                    [
                         'label' => __('Image', 'flynt'),
                         'name' => 'image',
                         'type' => 'image',
                         'preview_size' => 'medium',
                         'instructions' => __('Image-Format: JPG, PNG.', 'flynt'),
                         'mime_types' => 'jpg,jpeg,png',
-                        'wrapper' => [
-                            'width' => 40
-                        ],
+                    ],
+                    [
+                        'label' => 'Content',
+                        'name' => 'contentTab',
+                        'type' => 'tab',
+                        'placement' => 'left',
+                        'endpoint' => 0
+                    ],
+                    [
+                        'label' => 'Title',
+                        'name' => 'titleHtml',
+                        'type' => 'text',
+                        'media_upload' => 0,
+                        'delay' => 1,
                     ],
                     [
                         'label' => __('Content', 'flynt'),
@@ -52,9 +70,6 @@ function getACFLayout()
                         'tabs' => 'visual,text',
                         'media_upload' => 0,
                         'delay' => 1,
-                        'wrapper' => [
-                            'width' => 60
-                        ],
                     ]
                 ]
             ],
