@@ -11,13 +11,6 @@ function getACFLayout()
         'label' => 'Grid: Services',
         'sub_fields' => [
             [
-                'label' => __('General', 'flynt'),
-                'name' => 'generalTab',
-                'type' => 'tab',
-                'placement' => 'top',
-                'endpoint' => 0
-            ],
-            [
                 'label' => __('Title', 'flynt'),
                 'name' => 'preContentHtml',
                 'type' => 'wysiwyg',
@@ -73,38 +66,6 @@ function getACFLayout()
                     ]
                 ]
             ],
-            [
-                'label' => __('Options', 'flynt'),
-                'name' => 'optionsTab',
-                'type' => 'tab',
-                'placement' => 'top',
-                'endpoint' => 0
-            ],
-            [
-                'label' => '',
-                'name' => 'options',
-                'type' => 'group',
-                'layout' => 'row',
-                'sub_fields' => [
-                    FieldVariables\getTheme(),
-                    [
-                        'label' => __('Columns', 'flynt'),
-                        'name' => 'columns',
-                        'type' => 'number',
-                        'default_value' => 3,
-                        'min' => 1,
-                        'max' => 4,
-                        'step' => 1
-                    ],
-                    [
-                        'label' => __('Show as Card', 'flynt'),
-                        'name' => 'card',
-                        'type' => 'true_false',
-                        'default_value' => 0,
-                        'ui' => 1
-                    ]
-                ]
-            ]
         ]
     ];
 }
