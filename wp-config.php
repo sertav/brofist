@@ -29,7 +29,7 @@ define( 'DB_USER', 'admin_brofist' );
 define( 'DB_PASSWORD', 'XOJCcTGNLB' );
 
 /** MySQL hostname */
-define( 'DB_HOST', 'localhost' );
+define( 'DB_HOST', '178.62.28.49' );
 
 /** Database Charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8mb4' );
@@ -42,8 +42,8 @@ if ($_SERVER[ 'HTTP_HOST' ] !== 'brofist') {
         $_SERVER['HTTPS'] = 'on';
     }
 
-    define( 'WP_HOME', 'http://'.$_SERVER[ 'HTTP_HOST' ] );
-    define( 'WP_SITEURL', 'http://'.$_SERVER[ 'HTTP_HOST' ] );
+    define( 'WP_HOME', 'https://'.$_SERVER[ 'HTTP_HOST' ] );
+    define( 'WP_SITEURL', 'https://'.$_SERVER[ 'HTTP_HOST' ] );
 
 } else {
     define( 'WP_HOME', 'http://brofist/' );
