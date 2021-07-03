@@ -11,59 +11,73 @@ function getACFLayout()
         'label' => 'Grid: Services',
         'sub_fields' => [
             [
-                'label' => __('Title', 'flynt'),
+                'label' => __('Заголовок', 'flynt'),
                 'name' => 'preContentHtml',
                 'type' => 'wysiwyg',
                 'tabs' => 'visual,text',
                 'media_upload' => 0,
-                'instructions' => __('Want to add a headline? And a paragraph? Go ahead! Or just leave it empty and nothing will be shown.', 'flynt'),
                 'delay' => 1,
             ],
             [
-                'label' => __('Items', 'flynt'),
+                'label' => __('Материалы', 'flynt'),
                 'name' => 'items',
                 'type' => 'repeater',
                 'collapsed' => '',
                 'layout' => 'block',
-                'button_label' => 'Add',
+                'button_label' => 'Добавить',
                 'sub_fields' => [
                     [
-                        'label' => 'Image',
+                        'label' => 'Изображение',
                         'name' => 'imagetTab',
                         'type' => 'tab',
                         'placement' => 'left',
                         'endpoint' => 0
                     ],
                     [
-                        'label' => __('Image', 'flynt'),
+                        'label' => __('Изображение', 'flynt'),
                         'name' => 'image',
                         'type' => 'image',
                         'preview_size' => 'medium',
-                        'instructions' => __('Image-Format: JPG, PNG.', 'flynt'),
+                        'instructions' => __('Разрешённый тип изображений: JPG, PNG.', 'flynt'),
                         'mime_types' => 'jpg,jpeg,png',
                     ],
                     [
-                        'label' => 'Content',
+                        'label' => 'Контент',
                         'name' => 'contentTab',
                         'type' => 'tab',
                         'placement' => 'left',
                         'endpoint' => 0
                     ],
                     [
-                        'label' => 'Title',
+                        'label' => 'Заголовок',
                         'name' => 'titleHtml',
                         'type' => 'text',
                         'media_upload' => 0,
                         'delay' => 1,
                     ],
                     [
-                        'label' => __('Content', 'flynt'),
+                        'label' => __('Описание', 'flynt'),
                         'name' => 'contentHtml',
                         'type' => 'wysiwyg',
                         'tabs' => 'visual,text',
                         'media_upload' => 0,
                         'delay' => 1,
-                    ]
+                    ],
+                    [
+                        'label' => 'Кнопка',
+                        'name' => 'buttonTab',
+                        'type' => 'tab',
+                        'placement' => 'left',
+                        'endpoint' => 0
+                    ],
+                    [
+                        'label' => 'Текст кнопки',
+                        'name' => 'buttonHtml',
+                        'type' => 'text',
+                        'instructions' => __('Заполните, чтобы кнопка отобразилась.', 'flynt'),
+                        'media_upload' => 0,
+                        'delay' => 1,
+                    ],
                 ]
             ],
         ]

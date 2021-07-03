@@ -1,20 +1,20 @@
-<div class="flyntComponent componentSpacing {{ options.theme }} {{ options.card ? 'layoutCard' }}" is="flynt-grid-image-text">
-  <div class="container centerMaxWidthContainer">
+<section class="offer-wrap" is="flynt-grid-services">
+  <div class="innerWrap">
     {% if preContentHtml %}
-      <div class="preContent">
+      <div class="main-title">
         {{ preContentHtml|e('wp_kses_post') }}
       </div>
     {% endif %}
-    <ul class="grid grid--columns{{ options.columns }}">
+    <div class="item-wrap owl-carousel">
       {% for item in items %}
         {% if item.image or item.contentHtml %}
-          <li class="grid-item">
-            <div class="content {{ options.card == 'layoutCard' ? 'boxShadow themeReset' }}">
+          <div class="item wow bounceInUp">
+            <div class="img">
               {% if item.image %}
                 <img class="content-image lazyload"
-                  src="{{ item.image.src|resizeDynamic(424, 283) }}"
-                  srcset="{{ placeholderImage(3, 2) }}"
-                  data-srcset="
+                     src="{{ item.image.src|resizeDynamic(424, 283) }}"
+                     srcset="{{ placeholderImage(3, 2) }}"
+                     data-srcset="
                     {{ item.image.src|resizeDynamic(1920, 1280) }} 1920w,
                     {{ item.image.src|resizeDynamic(1320, 880) }} 1320w,
                     {{ item.image.src|resizeDynamic(1280, 853) }} 1280w,
@@ -23,18 +23,20 @@
                     {{ item.image.src|resizeDynamic(600, 400) }} 600w,
                     {{ item.image.src|resizeDynamic(424, 283) }} 424w,
                     {{ item.image.src|resizeDynamic(312, 208) }} 312w"
-                  data-sizes="auto"
-                  alt="{{ item.image.alt|e }}">
-              {% endif %}
-              {% if item.contentHtml %}
-                <div class="content-inner {{ options.card == 'layoutCard' ? 'boxPadding' }}">
-                  {{ item.contentHtml|e('wp_kses_post') }}
-                </div>
+                     data-sizes="auto"
+                     alt="{{ item.image.alt|e }}">
               {% endif %}
             </div>
-          </li>
+            {% if item.contentHtml %}
+              <div class="title">{{ item.titleHtml }}</div>
+              <div class="description">
+                {{ item.contentHtml|e('wp_kses_post') }}
+              </div>
+            {% endif %}
+            <button class="btn">Become a Bro</button>
+          </div>
         {% endif %}
       {% endfor %}
-    </ul>
+    </div>
   </div>
-</div>
+</section>
