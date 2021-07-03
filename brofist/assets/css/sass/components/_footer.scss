@@ -61,21 +61,21 @@ footer{
                                 color: #EA5B0C;
                             }
                         }
+                    }
+                }
 
-                        .social{ 
-                            display: flex;
-                            li{
-                                width: 32px;
-                                margin-right: 18px;
-                                a{
-                                    img{
-                                        width: 100%;
-                                        transition: all 0.3s ease;
- 
-                                        &:hover{
-                                            filter: invert(64%) sepia(100%) saturate(260%) hue-rotate(7deg) brightness(109%) contrast(90%);
-                                        }
-                                    }
+                .social{ 
+                    display: flex;
+                    li{
+                        width: 32px;
+                        margin-right: 18px;
+                        a{
+                            img{
+                                width: 100%;
+                                transition: all 0.3s ease;
+
+                                &:hover{
+                                    filter: invert(64%) sepia(100%) saturate(260%) hue-rotate(7deg) brightness(109%) contrast(90%);
                                 }
                             }
                         }
