@@ -11,13 +11,13 @@
 					
 					<li>
 						<ul class="social">
-							<li><a href=""><img src="<?php bloginfo('template_url '); ?>/assets/images/icon1.svg" alt=""></a></li>
-							<li><a href=""><img src="<?php bloginfo('template_url '); ?>/assets/images/icon2.svg" alt=""></a></li>
-							<li><a href=""><img src="<?php bloginfo('template_url '); ?>/assets/images/icon3.svg" alt=""></a></li>
-							<li><a href=""><img src="<?php bloginfo('template_url '); ?>/assets/images/icon4.svg" alt=""></a></li>
-							<li><a href=""><img src="<?php bloginfo('template_url '); ?>/assets/images/icon5.svg" alt=""></a></li>
-							<li><a href=""><img src="<?php bloginfo('template_url '); ?>/assets/images/icon6.svg" alt=""></a></li>
-							<li><a href=""><img src="<?php bloginfo('template_url '); ?>/assets/images/icon7.svg" alt=""></a></li>
+							<li><a href=""><img src="<?php bloginfo('template_url'); ?>/assets/images/icon1.svg" alt=""></a></li>
+							<li><a href=""><img src="<?php bloginfo('template_url'); ?>/assets/images/icon2.svg" alt=""></a></li>
+							<li><a href=""><img src="<?php bloginfo('template_url'); ?>/assets/images/icon3.svg" alt=""></a></li>
+							<li><a href=""><img src="<?php bloginfo('template_url'); ?>/assets/images/icon4.svg" alt=""></a></li>
+							<li><a href=""><img src="<?php bloginfo('template_url'); ?>/assets/images/icon5.svg" alt=""></a></li>
+							<li><a href=""><img src="<?php bloginfo('template_url'); ?>/assets/images/icon6.svg" alt=""></a></li>
+							<li><a href=""><img src="<?php bloginfo('template_url'); ?>/assets/images/icon7.svg" alt=""></a></li>
 						</ul>
 					</li>
 				</ul>
@@ -46,29 +46,29 @@
 				
 				<div class="item-menu mobile">
 					<ul class="social">
-						<li><a href=""><img src="<?php bloginfo('template_url '); ?>/assets/images/icon1.svg" alt=""></a></li>
-						<li><a href=""><img src="<?php bloginfo('template_url '); ?>/assets/images/icon2.svg" alt=""></a></li>
-						<li><a href=""><img src="<?php bloginfo('template_url '); ?>/assets/images/icon3.svg" alt=""></a></li>
-						<li><a href=""><img src="<?php bloginfo('template_url '); ?>/assets/images/icon4.svg" alt=""></a></li>
-						<li><a href=""><img src="<?php bloginfo('template_url '); ?>/assets/images/icon5.svg" alt=""></a></li>
-						<li><a href=""><img src="<?php bloginfo('template_url '); ?>/assets/images/icon6.svg" alt=""></a></li>
-						<li><a href=""><img src="<?php bloginfo('template_url '); ?>/assets/images/icon7.svg" alt=""></a></li>
+						<li><a href=""><img src="<?php bloginfo('template_url'); ?>/assets/images/icon1.svg" alt=""></a></li>
+						<li><a href=""><img src="<?php bloginfo('template_url'); ?>/assets/images/icon2.svg" alt=""></a></li>
+						<li><a href=""><img src="<?php bloginfo('template_url'); ?>/assets/images/icon3.svg" alt=""></a></li>
+						<li><a href=""><img src="<?php bloginfo('template_url'); ?>/assets/images/icon4.svg" alt=""></a></li>
+						<li><a href=""><img src="<?php bloginfo('template_url'); ?>/assets/images/icon5.svg" alt=""></a></li>
+						<li><a href=""><img src="<?php bloginfo('template_url'); ?>/assets/images/icon6.svg" alt=""></a></li>
+						<li><a href=""><img src="<?php bloginfo('template_url'); ?>/assets/images/icon7.svg" alt=""></a></li>
 					</ul>
 				</div>
 			</div>
 			
 			
 			<div class="item-menu logo-item">
-				<div class="logo"><a href=""><img src="<?php bloginfo('template_url '); ?>/assets/images/logo.png" alt=""></a></div>
+				<div class="logo"><a href=""><img src="<?php bloginfo('template_url'); ?>/assets/images/logo.png" alt=""></a></div>
 			</div>
 		</div>
 		
 		<div class="footer-bottom">
 			<span>© 2021 BROFIST LTD.</span>
 			<div class="icons">
-				<div class="icon"><img src="<?php bloginfo('template_url '); ?>/assets/images/icon8.png" alt=""></div>
-				<div class="icon"><img src="<?php bloginfo('template_url '); ?>/assets/images/icon9.png" alt=""></div>
-				<div class="icon"><img src="<?php bloginfo('template_url '); ?>/assets/images/icon10.png" alt=""></div>
+				<div class="icon"><img src="<?php bloginfo('template_url'); ?>/assets/images/icon8.png" alt=""></div>
+				<div class="icon"><img src="<?php bloginfo('template_url'); ?>/assets/images/icon9.png" alt=""></div>
+				<div class="icon"><img src="<?php bloginfo('template_url'); ?>/assets/images/icon10.png" alt=""></div>
 			</div>
 		</div>
 	</div>
@@ -185,7 +185,7 @@
 			<div class="form-box">
 				<div class="close-popup"><i class="eff03 fas fa-times"></i></div>
 				<div class="form-box-wrap">
-					<img src="<?php bloginfo('template_url '); ?>/assets/images/img1.png" alt="">
+					<img src="<?php bloginfo('template_url'); ?>/assets/images/img1.png" alt="">
 					<h3><span>Thanks for signing up, bro!</span> We'll get back to you soon</h3>
 					<button class="btn">GOT IT</button>
 				</div>
