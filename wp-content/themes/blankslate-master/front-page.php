@@ -8,34 +8,34 @@
 			brands:</div>
 			<div class="slider owl-carousel">
 				<div class="item">
-					<div class="back"></div><img src="assets/images/img7.png" alt="">
+					<div class="back"></div><img src="<?php bloginfo('template_url '); ?>/assets/images/img7.png" alt="">
 				</div>
 				<div class="item">
-					<div class="back"></div><img src="assets/images/img8.png" alt="">
+					<div class="back"></div><img src="<?php bloginfo('template_url '); ?>/assets/images/img8.png" alt="">
 				</div>
 				<div class="item">
-					<div class="back"></div><img src="assets/images/img9.png" alt="">
+					<div class="back"></div><img src="<?php bloginfo('template_url '); ?>/assets/images/img9.png" alt="">
 				</div>
 				<div class="item">
-					<div class="back"></div><img src="assets/images/img10.png" alt="">
+					<div class="back"></div><img src="<?php bloginfo('template_url '); ?>/assets/images/img10.png" alt="">
 				</div>
 				<div class="item">
-					<div class="back"></div><img src="assets/images/img7.png" alt="">
+					<div class="back"></div><img src="<?php bloginfo('template_url '); ?>/assets/images/img7.png" alt="">
 				</div>
 				<div class="item">
-					<div class="back"></div><img src="assets/images/img8.png" alt="">
+					<div class="back"></div><img src="<?php bloginfo('template_url '); ?>/assets/images/img8.png" alt="">
 				</div>
 				<div class="item">
-					<div class="back"></div><img src="assets/images/img9.png" alt="">
+					<div class="back"></div><img src="<?php bloginfo('template_url '); ?>/assets/images/img9.png" alt="">
 				</div>
 				<div class="item">
-					<div class="back"></div><img src="assets/images/img10.png" alt="">
+					<div class="back"></div><img src="<?php bloginfo('template_url '); ?>/assets/images/img10.png" alt="">
 				</div>
 				<div class="item">
-					<div class="back"></div><img src="assets/images/img7.png" alt="">
+					<div class="back"></div><img src="<?php bloginfo('template_url '); ?>/assets/images/img7.png" alt="">
 				</div>
 				<div class="item">
-					<div class="back"></div><img src="assets/images/img8.png" alt="">
+					<div class="back"></div><img src="<?php bloginfo('template_url '); ?>/assets/images/img8.png" alt="">
 				</div>
 			</div>
 			
@@ -48,14 +48,14 @@
 				<div class="item markets">
 					<span>Markets</span>
 					<div class="img-wrap">
-						<img src="assets/images/image864.png" alt="">
-						<img src="assets/images/image865.png" alt="">
-						<img src="assets/images/image866.png" alt="">
-						<img src="assets/images/image864.png" alt="">
-						<img src="assets/images/image865.png" alt="">
-						<img src="assets/images/image866.png" alt="">
-						<img src="assets/images/image869.png" alt="">
-						<img src="assets/images/image865.png" alt="">
+						<img src="<?php bloginfo('template_url '); ?>/assets/images/image864.png" alt="">
+						<img src="<?php bloginfo('template_url '); ?>/assets/images/image865.png" alt="">
+						<img src="<?php bloginfo('template_url '); ?>/assets/images/image866.png" alt="">
+						<img src="<?php bloginfo('template_url '); ?>/assets/images/image864.png" alt="">
+						<img src="<?php bloginfo('template_url '); ?>/assets/images/image865.png" alt="">
+						<img src="<?php bloginfo('template_url '); ?>/assets/images/image866.png" alt="">
+						<img src="<?php bloginfo('template_url '); ?>/assets/images/image869.png" alt="">
+						<img src="<?php bloginfo('template_url '); ?>/assets/images/image865.png" alt="">
 					</div>
 				</div>
 				
@@ -75,14 +75,14 @@
 				<div class="item markets">
 					<span>Markets</span>
 					<div class="img-wrap">
-						<img src="assets/images/image864.png" alt="">
-						<img src="assets/images/image865.png" alt="">
-						<img src="assets/images/image866.png" alt="">
-						<img src="assets/images/image864.png" alt="">
-						<img src="assets/images/image865.png" alt="">
-						<img src="assets/images/image866.png" alt="">
-						<img src="assets/images/image869.png" alt="">
-						<img src="assets/images/image865.png" alt="">
+						<img src="<?php bloginfo('template_url '); ?>/assets/images/image864.png" alt="">
+						<img src="<?php bloginfo('template_url '); ?>/assets/images/image865.png" alt="">
+						<img src="<?php bloginfo('template_url '); ?>/assets/images/image866.png" alt="">
+						<img src="<?php bloginfo('template_url '); ?>/assets/images/image864.png" alt="">
+						<img src="<?php bloginfo('template_url '); ?>/assets/images/image865.png" alt="">
+						<img src="<?php bloginfo('template_url '); ?>/assets/images/image866.png" alt="">
+						<img src="<?php bloginfo('template_url '); ?>/assets/images/image869.png" alt="">
+						<img src="<?php bloginfo('template_url '); ?>/assets/images/image865.png" alt="">
 					</div>
 				</div>
 			</div>
@@ -93,16 +93,16 @@
 					<div class="mac_iphone-wrap">
 						
 						<div class="mac">
-							<img class="main-img" src="assets/images/mac.png" alt="">
+							<img class="main-img" src="<?php bloginfo('template_url '); ?>/assets/images/mac.png" alt="">
 							<div class="mac-background" style="background: #ffffff;">
-								<div class="logo"><img src="assets/images/img7.png" alt=""></div>
+								<div class="logo"><img src="<?php bloginfo('template_url '); ?>/assets/images/img7.png" alt=""></div>
 							</div>
 						</div>
 						
 						<div class="iphone">
-							<img class="main-img" src="assets/images/iphone.png" alt="">
+							<img class="main-img" src="<?php bloginfo('template_url '); ?>/assets/images/iphone.png" alt="">
 							<div class="iphone-background" style="background: #ffffff;">
-								<div class="logo"><img src="assets/images/img7.png" alt=""></div>
+								<div class="logo"><img src="<?php bloginfo('template_url '); ?>/assets/images/img7.png" alt=""></div>
 							</div>
 						</div>
 					</div>
@@ -158,7 +158,7 @@
 			
 			<div class="item-wrap owl-carousel">
 				<div class="item wow bounceInUp">
-					<div class="img"><img src="assets/images/img11.png" alt=""></div>
+					<div class="img"><img src="<?php bloginfo('template_url '); ?>/assets/images/img11.png" alt=""></div>
 					<div class="title">In-demand brands</div>
 					<div class="description">
 						<p>Our quality software and modern, user-friendly interfaces create the kind of gaming
@@ -167,7 +167,7 @@
 					</div>
 				</div>
 				<div class="item wow bounceInUp">
-					<div class="img"><img src="assets/images/img12.png" alt=""></div>
+					<div class="img"><img src="<?php bloginfo('template_url '); ?>/assets/images/img12.png" alt=""></div>
 					<div class="title">Bonuses that work</div>
 					<div class="description">
 						<p>We have great sign-up bonuses: free spins, deposits, and more. This is exactly the kind
@@ -176,7 +176,7 @@
 					</div>
 				</div>
 				<div class="item wow bounceInUp">
-					<div class="img"><img src="assets/images/img13.png" alt=""></div>
+					<div class="img"><img src="<?php bloginfo('template_url '); ?>/assets/images/img13.png" alt=""></div>
 					<div class="title">High commissions</div>
 					<div class="description">
 						<p>We divide our profits equally. RevShare commission reaches up to 50% depending on the
@@ -187,7 +187,7 @@
 				</div>
 				
 				<div class="item wow bounceInUp">
-					<div class="img"><img src="assets/images/img14.png" alt=""></div>
+					<div class="img"><img src="<?php bloginfo('template_url '); ?>/assets/images/img14.png" alt=""></div>
 					<div class="title">Automated monthly payments</div>
 					<div class="description">
 						<p>We never let a bro down. We pay everything by the 10th of each month via Skrill,
@@ -197,7 +197,7 @@
 					</div>
 				</div>
 				<div class="item wow bounceInUp">
-					<div class="img"><img src="assets/images/img15.png" alt=""></div>
+					<div class="img"><img src="<?php bloginfo('template_url '); ?>/assets/images/img15.png" alt=""></div>
 					<div class="title">Widespread availability</div>
 					<div class="description">
 						<p>We work in Australia, Slovakia, Slovenia, the Czech Republic, Estonia, Japan, the
@@ -208,7 +208,7 @@
 					</div>
 				</div>
 				<div class="item wow bounceInUp">
-					<div class="img"><img src="assets/images/img16.png" alt=""></div>
+					<div class="img"><img src="<?php bloginfo('template_url '); ?>/assets/images/img16.png" alt=""></div>
 					<div class="title">Trendy promo materials</div>
 					<div class="description">
 						<p>We take your activities and the latest trends into account to create and share with you
@@ -218,7 +218,7 @@
 					</div>
 				</div>
 				<div class="item wow bounceInUp">
-					<div class="img"><img src="assets/images/img17.png" alt=""></div>
+					<div class="img"><img src="<?php bloginfo('template_url '); ?>/assets/images/img17.png" alt=""></div>
 					<div class="title">No negative carryover</div>
 					<div class="description">
 						<p>We don't carry negative profits over to the next month, because we want to keep your
@@ -228,7 +228,7 @@
 					<button class="btn">Become a Bro</button>
 				</div>
 				<div class="item wow bounceInUp">
-					<div class="img"><img src="assets/images/img18.png" alt=""></div>
+					<div class="img"><img src="<?php bloginfo('template_url '); ?>/assets/images/img18.png" alt=""></div>
 					<div class="title">5% sub-affiliate commission</div>
 					<div class="description">
 						<p>Refer your bros to us at BROFIST and get 5% of their NGR. The more referrals there are,
@@ -236,7 +236,7 @@
 					</div>
 				</div>
 				<div class="item wow bounceInUp">
-					<div class="img"><img src="assets/images/img19.png" alt=""></div>
+					<div class="img"><img src="<?php bloginfo('template_url '); ?>/assets/images/img19.png" alt=""></div>
 					<div class="title">Always in touch</div>
 					<div class="description">
 						<p>We’re there for our Bros whenever needed thanks to our 24/7 professional support. Get in
@@ -326,7 +326,7 @@
 			<div class="item">
 				<div class="option">
 					<div class="img">
-						<img src="assets/images/img22.png" alt="">
+						<img src="<?php bloginfo('template_url '); ?>/assets/images/img22.png" alt="">
 					</div>
 					
 					<div class="text">
@@ -339,7 +339,7 @@
 				
 				<div class="option">
 					<div class="img">
-						<img src="assets/images/img21.png" alt="">
+						<img src="<?php bloginfo('template_url '); ?>/assets/images/img21.png" alt="">
 					</div>
 					
 					<div class="text">
@@ -352,7 +352,7 @@
 				
 				<div class="option">
 					<div class="img">
-						<img src="assets/images/img20.png" alt="">
+						<img src="<?php bloginfo('template_url '); ?>/assets/images/img20.png" alt="">
 					</div>
 					
 					<div class="text">
@@ -366,7 +366,7 @@
 			<div class="item">
 				<div class="option">
 					<div class="img">
-						<img src="assets/images/img22.png" alt="">
+						<img src="<?php bloginfo('template_url '); ?>/assets/images/img22.png" alt="">
 					</div>
 					
 					<div class="text">
@@ -379,7 +379,7 @@
 				
 				<div class="option">
 					<div class="img">
-						<img src="assets/images/img21.png" alt="">
+						<img src="<?php bloginfo('template_url '); ?>/assets/images/img21.png" alt="">
 					</div>
 					
 					<div class="text">
@@ -392,7 +392,7 @@
 				
 				<div class="option">
 					<div class="img">
-						<img src="assets/images/img20.png" alt="">
+						<img src="<?php bloginfo('template_url '); ?>/assets/images/img20.png" alt="">
 					</div>
 					
 					<div class="text">
@@ -406,7 +406,7 @@
 			<div class="item">
 				<div class="option">
 					<div class="img">
-						<img src="assets/images/img22.png" alt="">
+						<img src="<?php bloginfo('template_url '); ?>/assets/images/img22.png" alt="">
 					</div>
 					
 					<div class="text">
@@ -419,7 +419,7 @@
 				
 				<div class="option">
 					<div class="img">
-						<img src="assets/images/img21.png" alt="">
+						<img src="<?php bloginfo('template_url '); ?>/assets/images/img21.png" alt="">
 					</div>
 					
 					<div class="text">
@@ -432,7 +432,7 @@
 				
 				<div class="option">
 					<div class="img">
-						<img src="assets/images/img20.png" alt="">
+						<img src="<?php bloginfo('template_url '); ?>/assets/images/img20.png" alt="">
 					</div>
 					
 					<div class="text">
@@ -450,7 +450,7 @@
 			<div class="item">
 				<div class="option">
 					<div class="img">
-						<img src="assets/images/img22.png" alt="">
+						<img src="<?php bloginfo('template_url '); ?>/assets/images/img22.png" alt="">
 					</div>
 					
 					<div class="text">
@@ -465,7 +465,7 @@
 			<div class="item">
 				<div class="option">
 					<div class="img">
-						<img src="assets/images/img22.png" alt="">
+						<img src="<?php bloginfo('template_url '); ?>/assets/images/img22.png" alt="">
 					</div>
 					
 					<div class="text">
@@ -480,7 +480,7 @@
 			<div class="item">
 				<div class="option">
 					<div class="img">
-						<img src="assets/images/img22.png" alt="">
+						<img src="<?php bloginfo('template_url '); ?>/assets/images/img22.png" alt="">
 					</div>
 					
 					<div class="text">
@@ -504,7 +504,7 @@
 			<div class="slider owl-carousel">
 				<div class="item">
 					<div class="top">
-						<div class="img"><img src="assets/images/img7.png" alt=""></div>
+						<div class="img"><img src="<?php bloginfo('template_url '); ?>/assets/images/img7.png" alt=""></div>
 						<div class="description">
 							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id dolore laborum illo non nesciunt voluptas itaque, doloribus eligendi sapiente saepe.
 						</div>
@@ -522,7 +522,7 @@
 				</div>
 				<div class="item">
 					<div class="top">
-						<div class="img"><img src="assets/images/img8.png" alt=""></div>
+						<div class="img"><img src="<?php bloginfo('template_url '); ?>/assets/images/img8.png" alt=""></div>
 						<div class="description">
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 							eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -544,7 +544,7 @@
 				</div>
 				<div class="item">
 					<div class="top">
-						<div class="img"><img src="assets/images/img9.png" alt=""></div>
+						<div class="img"><img src="<?php bloginfo('template_url '); ?>/assets/images/img9.png" alt=""></div>
 						<div class="description">
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 							eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -566,7 +566,7 @@
 				</div>
 				<div class="item">
 					<div class="top">
-						<div class="img"><img src="assets/images/img10.png" alt=""></div>
+						<div class="img"><img src="<?php bloginfo('template_url '); ?>/assets/images/img10.png" alt=""></div>
 						<div class="description">
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 							eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -587,7 +587,7 @@
 				</div>
 				<div class="item">
 					<div class="top">
-						<div class="img"><img src="assets/images/img8.png" alt=""></div>
+						<div class="img"><img src="<?php bloginfo('template_url '); ?>/assets/images/img8.png" alt=""></div>
 						<div class="description">
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 							eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -629,7 +629,7 @@
 					</div>
 					
 					<div class="img">
-						<img src="assets/images/img23.png" alt="">
+						<img src="<?php bloginfo('template_url '); ?>/assets/images/img23.png" alt="">
 					</div>
 					<div class="background"></div>
 				</div>
@@ -645,7 +645,7 @@
 					</div>
 					
 					<div class="img">
-						<img src="assets/images/img23.png" alt="">
+						<img src="<?php bloginfo('template_url '); ?>/assets/images/img23.png" alt="">
 					</div>
 					<div class="background"></div>
 				</div>
@@ -661,7 +661,7 @@
 					</div>
 					
 					<div class="img">
-						<img src="assets/images/img23.png" alt="">
+						<img src="<?php bloginfo('template_url '); ?>/assets/images/img23.png" alt="">
 					</div>
 					<div class="background"></div>
 				</div>
@@ -677,7 +677,7 @@
 					</div>
 					
 					<div class="img">
-						<img src="assets/images/img23.png" alt="">
+						<img src="<?php bloginfo('template_url '); ?>/assets/images/img23.png" alt="">
 					</div>
 					<div class="background"></div>
 				</div>
@@ -693,7 +693,7 @@
 					</div>
 					
 					<div class="img">
-						<img src="assets/images/img23.png" alt="">
+						<img src="<?php bloginfo('template_url '); ?>/assets/images/img23.png" alt="">
 					</div>
 					<div class="background"></div>
 				</div>
@@ -710,7 +710,7 @@
 					</div>
 					
 					<div class="img">
-						<img src="assets/images/img23.png" alt="">
+						<img src="<?php bloginfo('template_url '); ?>/assets/images/img23.png" alt="">
 					</div>
 					<div class="background"></div>
 				</div>
@@ -726,7 +726,7 @@
 					</div>
 					
 					<div class="img">
-						<img src="assets/images/img23.png" alt="">
+						<img src="<?php bloginfo('template_url '); ?>/assets/images/img23.png" alt="">
 					</div>
 					<div class="background"></div>
 				</div>
@@ -742,7 +742,7 @@
 					</div>
 					
 					<div class="img">
-						<img src="assets/images/img23.png" alt="">
+						<img src="<?php bloginfo('template_url '); ?>/assets/images/img23.png" alt="">
 					</div>
 					<div class="background"></div>
 				</div>
@@ -758,7 +758,7 @@
 					</div>
 					
 					<div class="img">
-						<img src="assets/images/img23.png" alt="">
+						<img src="<?php bloginfo('template_url '); ?>/assets/images/img23.png" alt="">
 					</div>
 					<div class="background"></div>
 				</div>
@@ -999,7 +999,7 @@
 				
 				<div class="fixImg">
 					<div class="img">
-						<img src="assets/images/img24.png" alt="">
+						<img src="<?php bloginfo('template_url '); ?>/assets/images/img24.png" alt="">
 					</div>
 				</div>
 			</div>
@@ -1012,56 +1012,56 @@
 			
 			<div class="slider owl-carousel">
 				<div class="item">
-					<img src="assets/images/img7.png" alt="">
+					<img src="<?php bloginfo('template_url '); ?>/assets/images/img7.png" alt="">
 				</div>
 				<div class="item">
-					<img src="assets/images/img8.png" alt="">
+					<img src="<?php bloginfo('template_url '); ?>/assets/images/img8.png" alt="">
 				</div>
 				<div class="item">
-					<img src="assets/images/img9.png" alt="">
+					<img src="<?php bloginfo('template_url '); ?>/assets/images/img9.png" alt="">
 				</div>
 				<div class="item">
-					<img src="assets/images/img10.png" alt="">
+					<img src="<?php bloginfo('template_url '); ?>/assets/images/img10.png" alt="">
 				</div>
 				<div class="item">
-					<img src="assets/images/img7.png" alt="">
+					<img src="<?php bloginfo('template_url '); ?>/assets/images/img7.png" alt="">
 				</div>
 				<div class="item">
-					<img src="assets/images/img8.png" alt="">
+					<img src="<?php bloginfo('template_url '); ?>/assets/images/img8.png" alt="">
 				</div>
 				<div class="item">
-					<img src="assets/images/img9.png" alt="">
+					<img src="<?php bloginfo('template_url '); ?>/assets/images/img9.png" alt="">
 				</div>
 				<div class="item">
-					<img src="assets/images/img10.png" alt="">
+					<img src="<?php bloginfo('template_url '); ?>/assets/images/img10.png" alt="">
 				</div>
 				<div class="item">
-					<img src="assets/images/img7.png" alt="">
+					<img src="<?php bloginfo('template_url '); ?>/assets/images/img7.png" alt="">
 				</div>
 				<div class="item">
-					<img src="assets/images/img8.png" alt="">
+					<img src="<?php bloginfo('template_url '); ?>/assets/images/img8.png" alt="">
 				</div>
 			</div>
 			
 			<div class="slider mobile owl-carousel">
 				<div class="innerItem">
 					<div class="item">
-						<img src="assets/images/img7.png" alt="">
+						<img src="<?php bloginfo('template_url '); ?>/assets/images/img7.png" alt="">
 					</div>
 					<div class="item">
-						<img src="assets/images/img8.png" alt="">
+						<img src="<?php bloginfo('template_url '); ?>/assets/images/img8.png" alt="">
 					</div>
 					<div class="item">
-						<img src="assets/images/img9.png" alt="">
+						<img src="<?php bloginfo('template_url '); ?>/assets/images/img9.png" alt="">
 					</div>
 					<div class="item">
-						<img src="assets/images/img7.png" alt="">
+						<img src="<?php bloginfo('template_url '); ?>/assets/images/img7.png" alt="">
 					</div>
 					<div class="item">
-						<img src="assets/images/img8.png" alt="">
+						<img src="<?php bloginfo('template_url '); ?>/assets/images/img8.png" alt="">
 					</div>
 					<div class="item">
-						<img src="assets/images/img9.png" alt="">
+						<img src="<?php bloginfo('template_url '); ?>/assets/images/img9.png" alt="">
 					</div>
 				</div>
 			</div>
@@ -1126,9 +1126,9 @@
 					<div class="img1 work__item">
 						<div class="work__item-img-outer"
 						style="transform-origin: center center 0px; transform: matrix3d(0.985715, 0, 0.16842, 0, 0.00918134, 0.998513, -0.0537358, 0, -0.16817, 0.0545145, 0.98425, 0, -50.4509, 16.3544, -4.72514, 1);">
-						<img src="assets/images/img1.png" alt=""></div>
+						<img src="<?php bloginfo('template_url '); ?>/assets/images/img1.png" alt=""></div>
 					</div>
-					<div class="img2"><img src="assets/images/img2.png" alt=""></div>
+					<div class="img2"><img src="<?php bloginfo('template_url '); ?>/assets/images/img2.png" alt=""></div>
 				</div>
 			</div>
 		</div>

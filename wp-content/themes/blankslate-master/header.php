@@ -13,7 +13,7 @@
 			<header class="navigation-wrap">
 				<div class="innerWrap">
 					<div class="logo">
-						<a href=""><img src="assets/images/logo.png" alt=""></a>
+						<a href=""><img src="<?php bloginfo('template_url '); ?>/assets/images/logo.png" alt=""></a>
 					</div>
 					<nav>
 						<div class="menu">
@@ -34,7 +34,7 @@
 								<li class="language">
 									<div class="active-lang-wrap">
 										<div class="active-lang lang">
-											<img src="assets/images/img25.png" alt="">
+											<img src="<?php bloginfo('template_url '); ?>/assets/images/img25.png" alt="">
 											<span>ENG</span>
 										</div>
 										<i class="fas fa-caret-down"></i>
@@ -42,16 +42,16 @@
 									
 									<div class="subNavigation">
 										<div class="lang">
-											<img src="assets/images/img25.png" alt="">
+											<img src="<?php bloginfo('template_url '); ?>/assets/images/img25.png" alt="">
 											<span>ENG</span>
 										</div>
 										<div class="lang">
-											<img src="assets/images/img25.png" alt="">
+											<img src="<?php bloginfo('template_url '); ?>/assets/images/img25.png" alt="">
 											<span>RUS</span>
 										</div>
 									</div>
 								</li>
-								<li class="signUp"><a><img src="assets/images/icon11.png" alt=""> Sign Up</a></li>
+								<li class="signUp"><a><img src="<?php bloginfo('template_url '); ?>/assets/images/icon11.png" alt=""> Sign Up</a></li>
 								<li class="signIn"><a>Sign In</a></li>
 							</ul>
 						</div>
@@ -59,7 +59,7 @@
 						<div class="language mobile">
 							<div class="active-lang-wrap">
 								<div class="active-lang lang">
-									<img src="assets/images/img25.png" alt="">
+									<img src="<?php bloginfo('template_url '); ?>/assets/images/img25.png" alt="">
 									<span>ENG</span>
 								</div>
 								<i class="fas fa-caret-down"></i>
@@ -67,11 +67,11 @@
 							
 							<div class="subNavigation">
 								<div class="lang">
-									<img src="assets/images/img25.png" alt="">
+									<img src="<?php bloginfo('template_url '); ?>/assets/images/img25.png" alt="">
 									<span>ENG</span>
 								</div>
 								<div class="lang">
-									<img src="assets/images/img25.png" alt="">
+									<img src="<?php bloginfo('template_url '); ?>/assets/images/img25.png" alt="">
 									<span>RUS</span>
 								</div>
 							</div>
@@ -105,14 +105,14 @@
 							of players from 30+ countries.
 						</div>
 						<button class="btn">Become a Bro</button>
-						<div class="arrow"><img src="assets/images/img4.png" alt=""></div>
+						<div class="arrow"><img src="<?php bloginfo('template_url '); ?>/assets/images/img4.png" alt=""></div>
 					</div>
 					
 					<div class="right">
 						<div class="img1 work__item">
-							<div class="work__item-img-outer"><img src="assets/images/img1.png" alt=""></div>
+							<div class="work__item-img-outer"><img src="<?php bloginfo('template_url '); ?>/assets/images/img1.png" alt=""></div>
 						</div>
-						<div class="img2"><img src="assets/images/img2.png" alt=""></div>
+						<div class="img2"><img src="<?php bloginfo('template_url '); ?>/assets/images/img2.png" alt=""></div>
 						<div class="description">
 							<span>Only between bros is everything safe, open, honest, and even.</span> That's why we're
 							BROFIST – your
@@ -121,7 +121,7 @@
 						</div>
 					</div>
 					<div class="scroll-img">
-						<img src="assets/images/img6.png" alt="">
+						<img src="<?php bloginfo('template_url '); ?>/assets/images/img6.png" alt="">
 					</div>
 				</div>
 			</section>

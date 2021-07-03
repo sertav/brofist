@@ -6,8 +6,6 @@
 		add_theme_support( 'automatic-feed-links' );
 		add_theme_support( 'post-thumbnails' );
 		add_theme_support( 'html5', array( 'search-form' ) );
-		global $content_width;
-		if ( ! isset( $content_width ) ) { $content_width = 1920; }
 		register_nav_menus( array( 'header-menu' => esc_html__( 'Header Menu', 'brofist' ) ) );
 	}
 	
@@ -20,13 +18,15 @@
 		wp_register_style('animate', get_stylesheet_directory_uri() . '/assets/css/css/animate.css', array(), null);
 		wp_register_style('fonts', get_stylesheet_directory_uri() . '/assets/fonts/fonts.css', array(), null);
 
-		wp_register_script('jquery', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js', array('jquery'), null, true);
+		// wp_deregister_script('jquery');
+		wp_register_script('jquery-js', get_stylesheet_directory_uri() . '/assets/js/jquery.js', array(), null, true);
 		wp_register_script('owl-carousel', get_stylesheet_directory_uri() . '/assets/js/owl.carousel.min.js', array(), null, true);
 		wp_register_script('TweenMax', get_stylesheet_directory_uri() . '/assets/js/TweenMax.min.js', array(), null, true);
 		wp_register_script('wow', get_stylesheet_directory_uri() . '/assets/js/wow.js', array(), null, true);
 		wp_register_script('main', get_stylesheet_directory_uri() . '/assets/js/main.js', array(), null, true);
 		
 		if (is_front_page()) {
+			wp_enqueue_style('owl-carousel');
 			wp_enqueue_style('owl-carousel');
 			wp_enqueue_style('owl-theme');
 			wp_enqueue_style('main');
@@ -43,8 +43,8 @@
 			wp_enqueue_style('fonts');
 		}
 
-		wp_enqueue_script('jquery');
-		wp_enqueue_script('sliowl-carouselck');
+		wp_enqueue_script('jquery-js');
+		wp_enqueue_script('owl-carousel');
 		wp_enqueue_script('TweenMax');
 		wp_enqueue_script('wow');
 		wp_enqueue_script('main');

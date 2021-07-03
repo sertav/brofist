@@ -1,12 +1,3 @@
-// $(window).resize(function(){
-//     $('body').css('padding-bottom', $('footer').height() + 32);
-// });
-
-// $(document).on("click","",function() {
-
-// });
-
-
 $(window).load(function () {
 	
 	$(".faq_list li").first().addClass("open");  
