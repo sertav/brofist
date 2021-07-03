@@ -8,7 +8,7 @@
 			brands:</div>
 			<div class="slider owl-carousel">
 				<div class="item">
-					<div class="back"></div><img src="<?php bloginfo('template_url '); ?>/assets/images/img7.png" alt="">
+					<div class="back"></div><img src="<?php bloginfo('template_directory '); ?>/assets/images/img7.png" alt="">
 				</div>
 				<div class="item">
 					<div class="back"></div><img src="<?php bloginfo('template_url '); ?>/assets/images/img8.png" alt="">
