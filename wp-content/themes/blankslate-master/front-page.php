@@ -1,14 +1,14 @@
 <?php get_header(); ?>
 
 <main>
-	
-	<section class="brands-wrap">
+
+    <section class="brands-wrap">
 		<div class="innerWrap">
 			<div class="main-title"><span>This is what our 5000+ </span> Bros are already profiting from. Meet our
 			brands:</div>
 			<div class="slider owl-carousel">
 				<div class="item">
-					<div class="back"></div><img src="<?php bloginfo('template_directory '); ?>/assets/images/img7.png" alt="">
+					<div class="back"></div><img src="<?= get_bloginfo('template_directory '); ?>/assets/images/img7.png" alt="">
 				</div>
 				<div class="item">
 					<div class="back"></div><img src="<?php bloginfo('template_url '); ?>/assets/images/img8.png" alt="">
@@ -38,13 +38,13 @@
 					<div class="back"></div><img src="<?php bloginfo('template_url '); ?>/assets/images/img8.png" alt="">
 				</div>
 			</div>
-			
+
 			<div class="brand-info">
 				<div class="item">
 					<span>Website link</span>
 					<a class="website-link" href="">www.evospin.com</a>
 				</div>
-				
+
 				<div class="item markets">
 					<span>Markets</span>
 					<div class="img-wrap">
@@ -58,19 +58,19 @@
 						<img src="<?php bloginfo('template_url '); ?>/assets/images/image865.png" alt="">
 					</div>
 				</div>
-				
+
 				<div class="item text-center">
 					<span>Payment Options</span>
 					<p>19</p>
 				</div>
-				
+
 				<div class="item text-center">
 					<span>License</span>
 					<p>Malta</p>
 				</div>
 			</div>
-			
-			
+
+
 			<div class="brand-info mobile">
 				<div class="item markets">
 					<span>Markets</span>
@@ -86,19 +86,19 @@
 					</div>
 				</div>
 			</div>
-			
-			
+
+
 			<div class="mac_iphone-text">
 				<div class="mac_iphone">
 					<div class="mac_iphone-wrap">
-						
+
 						<div class="mac">
 							<img class="main-img" src="<?php bloginfo('template_url '); ?>/assets/images/mac.png" alt="">
 							<div class="mac-background" style="background: #ffffff;">
 								<div class="logo"><img src="<?php bloginfo('template_url '); ?>/assets/images/img7.png" alt=""></div>
 							</div>
 						</div>
-						
+
 						<div class="iphone">
 							<img class="main-img" src="<?php bloginfo('template_url '); ?>/assets/images/iphone.png" alt="">
 							<div class="iphone-background" style="background: #ffffff;">
@@ -108,12 +108,12 @@
 					</div>
 					<button class="btn">Start Promoting Evospin</button>
 				</div>
-				
+
 				<div class="text">
 					<h2>Evospin Casino</h2>
-					
+
 					<div class="title-1">Revenue share</div>
-					
+
 					<div class="description">
 						<p>Your percentage depends on last mont's FTD</p>
 						<p>FTD 0 = 25% from NGR</p>
@@ -127,7 +127,7 @@
 						<p>FTD 11-20 = 40% from NGR</p>
 					</div>
 					<a class="show_more">More</a>
-					
+
 					<div class="text-info">
 						<div class="info">
 							<div class="title-2">Payments</div>
@@ -148,14 +148,14 @@
 			</div>
 		</div>
 	</section>
-	
-	
+
+
 	<section class="offer-wrap">
 		<div class="innerWrap">
 			<div class="main-title">
 				<span>We’re gonna be friends.</span> Here’s why:
 			</div>
-			
+
 			<div class="item-wrap owl-carousel">
 				<div class="item wow bounceInUp">
 					<div class="img"><img src="<?php bloginfo('template_url '); ?>/assets/images/img11.png" alt=""></div>
@@ -185,7 +185,7 @@
 					</div>
 					<button class="btn">Become a Bro</button>
 				</div>
-				
+
 				<div class="item wow bounceInUp">
 					<div class="img"><img src="<?php bloginfo('template_url '); ?>/assets/images/img14.png" alt=""></div>
 					<div class="title">Automated monthly payments</div>
@@ -247,15 +247,15 @@
 			</div>
 		</div>
 	</section>
-	
-	
+
+
 	<section class="chart-wrap">
 		<div class="innerWrap">
 			<div class="main-title"><span>From zero</span> to hero</div>
 			<div class="description">We'll be together from the very beginning, to infinity and beyond. With the
 				RevShare model, you can earn up to 50% of a casino’s revenue as long as players make deposits. The
 			system is simple:</div>
-			
+
 			<div class="chat-innerWrap">
 				<div class="item wow fadeInDown" data-wow-delay="0.1s">
 					<div class="text">
@@ -313,11 +313,11 @@
 					</div>
 				</div>
 			</div>
-			
+
 			<div class="bottom-text">FTD - first-time depositors (players)</div>
 		</div>
 	</section>
-	
+
 	<section class="whats-new-wrap">
 		<div class="innerWrap">
 			<div class="main-title">What’s <span>new</span>?</div>
@@ -328,7 +328,7 @@
 					<div class="img">
 						<img src="<?php bloginfo('template_url '); ?>/assets/images/img22.png" alt="">
 					</div>
-					
+
 					<div class="text">
 						<div class="title">New One</div>
 						<div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -336,12 +336,12 @@
 						<div class="date">25.05.20</div>
 					</div>
 				</div>
-				
+
 				<div class="option">
 					<div class="img">
 						<img src="<?php bloginfo('template_url '); ?>/assets/images/img21.png" alt="">
 					</div>
-					
+
 					<div class="text">
 						<div class="title">New One</div>
 						<div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -349,12 +349,12 @@
 						<div class="date">25.05.20</div>
 					</div>
 				</div>
-				
+
 				<div class="option">
 					<div class="img">
 						<img src="<?php bloginfo('template_url '); ?>/assets/images/img20.png" alt="">
 					</div>
-					
+
 					<div class="text">
 						<div class="title">New One</div>
 						<div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -368,7 +368,7 @@
 					<div class="img">
 						<img src="<?php bloginfo('template_url '); ?>/assets/images/img22.png" alt="">
 					</div>
-					
+
 					<div class="text">
 						<div class="title">New One</div>
 						<div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -376,12 +376,12 @@
 						<div class="date">25.05.20</div>
 					</div>
 				</div>
-				
+
 				<div class="option">
 					<div class="img">
 						<img src="<?php bloginfo('template_url '); ?>/assets/images/img21.png" alt="">
 					</div>
-					
+
 					<div class="text">
 						<div class="title">New One</div>
 						<div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -389,12 +389,12 @@
 						<div class="date">25.05.20</div>
 					</div>
 				</div>
-				
+
 				<div class="option">
 					<div class="img">
 						<img src="<?php bloginfo('template_url '); ?>/assets/images/img20.png" alt="">
 					</div>
-					
+
 					<div class="text">
 						<div class="title">New One</div>
 						<div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -408,7 +408,7 @@
 					<div class="img">
 						<img src="<?php bloginfo('template_url '); ?>/assets/images/img22.png" alt="">
 					</div>
-					
+
 					<div class="text">
 						<div class="title">New One</div>
 						<div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -416,12 +416,12 @@
 						<div class="date">25.05.20</div>
 					</div>
 				</div>
-				
+
 				<div class="option">
 					<div class="img">
 						<img src="<?php bloginfo('template_url '); ?>/assets/images/img21.png" alt="">
 					</div>
-					
+
 					<div class="text">
 						<div class="title">New One</div>
 						<div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -429,12 +429,12 @@
 						<div class="date">25.05.20</div>
 					</div>
 				</div>
-				
+
 				<div class="option">
 					<div class="img">
 						<img src="<?php bloginfo('template_url '); ?>/assets/images/img20.png" alt="">
 					</div>
-					
+
 					<div class="text">
 						<div class="title">New One</div>
 						<div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -444,15 +444,15 @@
 				</div>
 			</div>
 		</div>
-		
-		
+
+
 		<div class="slider mobile owl-carousel">
 			<div class="item">
 				<div class="option">
 					<div class="img">
 						<img src="<?php bloginfo('template_url '); ?>/assets/images/img22.png" alt="">
 					</div>
-					
+
 					<div class="text">
 						<div class="title">New One</div>
 						<div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -461,13 +461,13 @@
 					</div>
 				</div>
 			</div>
-			
+
 			<div class="item">
 				<div class="option">
 					<div class="img">
 						<img src="<?php bloginfo('template_url '); ?>/assets/images/img22.png" alt="">
 					</div>
-					
+
 					<div class="text">
 						<div class="title">New One</div>
 						<div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -476,13 +476,13 @@
 					</div>
 				</div>
 			</div>
-			
+
 			<div class="item">
 				<div class="option">
 					<div class="img">
 						<img src="<?php bloginfo('template_url '); ?>/assets/images/img22.png" alt="">
 					</div>
-					
+
 					<div class="text">
 						<div class="title">New One</div>
 						<div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -493,14 +493,14 @@
 			</div>
 		</div>
 	</section>
-	
-	
+
+
 	<section class="reviews-wrap">
 		<div class="innerWrap">
 			<div class="main-title">
 				<span>Our biggest pride?</span>These reviews.
 			</div>
-			
+
 			<div class="slider owl-carousel">
 				<div class="item">
 					<div class="top">
@@ -610,12 +610,12 @@
 			</div>
 		</div>
 	</section>
-	
+
 	<section class="hangOut-wrap">
 		<div class="innerWrap">
 			<div class="main-title">Wanna <span>hang out?</span></div>
 			<div class="description">These are the events we’d love to see you at.</div>
-			
+
 			<div class="slider owl-carousel">
 				<div class="item white">
 					<div class="text">
@@ -627,7 +627,7 @@
 						<div class="text2">Historical Casino</div>
 						<div class="date">13.22.2022</div>
 					</div>
-					
+
 					<div class="img">
 						<img src="<?php bloginfo('template_url '); ?>/assets/images/img23.png" alt="">
 					</div>
@@ -643,7 +643,7 @@
 						<div class="text2">Historical Casino</div>
 						<div class="date">13.22.2022</div>
 					</div>
-					
+
 					<div class="img">
 						<img src="<?php bloginfo('template_url '); ?>/assets/images/img23.png" alt="">
 					</div>
@@ -659,7 +659,7 @@
 						<div class="text2">Historical Casino</div>
 						<div class="date">13.22.2022</div>
 					</div>
-					
+
 					<div class="img">
 						<img src="<?php bloginfo('template_url '); ?>/assets/images/img23.png" alt="">
 					</div>
@@ -675,7 +675,7 @@
 						<div class="text2">Historical Casino</div>
 						<div class="date">13.22.2022</div>
 					</div>
-					
+
 					<div class="img">
 						<img src="<?php bloginfo('template_url '); ?>/assets/images/img23.png" alt="">
 					</div>
@@ -691,13 +691,13 @@
 						<div class="text2">Historical Casino</div>
 						<div class="date">13.22.2022</div>
 					</div>
-					
+
 					<div class="img">
 						<img src="<?php bloginfo('template_url '); ?>/assets/images/img23.png" alt="">
 					</div>
 					<div class="background"></div>
 				</div>
-				
+
 				<div class="item yellow">
 					<div class="text">
 						<div class="title">VEGAS 2021</div>
@@ -708,7 +708,7 @@
 						<div class="text2">Historical Casino</div>
 						<div class="date">13.22.2022</div>
 					</div>
-					
+
 					<div class="img">
 						<img src="<?php bloginfo('template_url '); ?>/assets/images/img23.png" alt="">
 					</div>
@@ -724,7 +724,7 @@
 						<div class="text2">Historical Casino</div>
 						<div class="date">13.22.2022</div>
 					</div>
-					
+
 					<div class="img">
 						<img src="<?php bloginfo('template_url '); ?>/assets/images/img23.png" alt="">
 					</div>
@@ -740,7 +740,7 @@
 						<div class="text2">Historical Casino</div>
 						<div class="date">13.22.2022</div>
 					</div>
-					
+
 					<div class="img">
 						<img src="<?php bloginfo('template_url '); ?>/assets/images/img23.png" alt="">
 					</div>
@@ -756,7 +756,7 @@
 						<div class="text2">Historical Casino</div>
 						<div class="date">13.22.2022</div>
 					</div>
-					
+
 					<div class="img">
 						<img src="<?php bloginfo('template_url '); ?>/assets/images/img23.png" alt="">
 					</div>
@@ -765,13 +765,13 @@
 			</div>
 		</div>
 	</section>
-	
-	
+
+
 	<section class="help_center-wrap">
 		<div class="innerWrap">
 			<div class="main-title">Got <span>questions?</span></div>
 			<div class="description">We’re here to give a Bro a helping hand.</div>
-			
+
 			<div class="faq-fixImg">
 				<div class="faq">
 					<ul class="faq_list">
@@ -786,7 +786,7 @@
 										the type of partnership: Revenue Share, CPA, or Hybrid.</p>
 									</div>
 								</div>
-								
+
 								<div class="description-faq-item">
 									<div class="title-desc">How do I become an affiliate?</div>
 									<div class="desc-desc">
@@ -795,7 +795,7 @@
 										After your application is confirmed, you can start earning!</p>
 									</div>
 								</div>
-								
+
 								<div class="description-faq-item">
 									<div class="title-desc">What kinds of affiliate programs are there?</div>
 									<div class="desc-desc">
@@ -804,7 +804,7 @@
 										<p class="list">Hybrid (a mix of Revenue Share and CPA)</p>
 									</div>
 								</div>
-								
+
 								<div class="description-faq-item">
 									<div class="title-desc">What kinds of affiliate programs are there?</div>
 									<div class="desc-desc">
@@ -817,7 +817,7 @@
 								</div>
 							</div>
 						</li>
-						
+
 						<li>
 							<div class="title">Personal account</div>
 							<div class="description-faq">
@@ -829,7 +829,7 @@
 										the type of partnership: Revenue Share, CPA, or Hybrid.</p>
 									</div>
 								</div>
-								
+
 								<div class="description-faq-item">
 									<div class="title-desc">How do I become an affiliate?</div>
 									<div class="desc-desc">
@@ -838,7 +838,7 @@
 										After your application is confirmed, you can start earning!</p>
 									</div>
 								</div>
-								
+
 								<div class="description-faq-item">
 									<div class="title-desc">What kinds of affiliate programs are there?</div>
 									<div class="desc-desc">
@@ -847,7 +847,7 @@
 										<p class="list">Hybrid (a mix of Revenue Share and CPA)</p>
 									</div>
 								</div>
-								
+
 								<div class="description-faq-item">
 									<div class="title-desc">What kinds of affiliate programs are there?</div>
 									<div class="desc-desc">
@@ -860,7 +860,7 @@
 								</div>
 							</div>
 						</li>
-						
+
 						<li>
 							<div class="title">Brands and their promotion</div>
 							<div class="description-faq">
@@ -872,7 +872,7 @@
 										the type of partnership: Revenue Share, CPA, or Hybrid.</p>
 									</div>
 								</div>
-								
+
 								<div class="description-faq-item">
 									<div class="title-desc">How do I become an affiliate?</div>
 									<div class="desc-desc">
@@ -881,7 +881,7 @@
 										After your application is confirmed, you can start earning!</p>
 									</div>
 								</div>
-								
+
 								<div class="description-faq-item">
 									<div class="title-desc">What kinds of affiliate programs are there?</div>
 									<div class="desc-desc">
@@ -890,7 +890,7 @@
 										<p class="list">Hybrid (a mix of Revenue Share and CPA)</p>
 									</div>
 								</div>
-								
+
 								<div class="description-faq-item">
 									<div class="title-desc">What kinds of affiliate programs are there?</div>
 									<div class="desc-desc">
@@ -903,7 +903,7 @@
 								</div>
 							</div>
 						</li>
-						
+
 						<li>
 							<div class="title">Payments</div>
 							<div class="description-faq">
@@ -915,7 +915,7 @@
 										the type of partnership: Revenue Share, CPA, or Hybrid.</p>
 									</div>
 								</div>
-								
+
 								<div class="description-faq-item">
 									<div class="title-desc">How do I become an affiliate?</div>
 									<div class="desc-desc">
@@ -924,7 +924,7 @@
 										After your application is confirmed, you can start earning!</p>
 									</div>
 								</div>
-								
+
 								<div class="description-faq-item">
 									<div class="title-desc">What kinds of affiliate programs are there?</div>
 									<div class="desc-desc">
@@ -933,7 +933,7 @@
 										<p class="list">Hybrid (a mix of Revenue Share and CPA)</p>
 									</div>
 								</div>
-								
+
 								<div class="description-faq-item">
 									<div class="title-desc">What kinds of affiliate programs are there?</div>
 									<div class="desc-desc">
@@ -946,7 +946,7 @@
 								</div>
 							</div>
 						</li>
-						
+
 						<li>
 							<div class="title">Working under the CPA model</div>
 							<div class="description-faq">
@@ -960,7 +960,7 @@
 										the type of partnership: Revenue Share, CPA, or Hybrid.</p>
 									</div>
 								</div>
-								
+
 								<div class="description-faq-item">
 									<div class="title-desc">How do I become an affiliate?</div>
 									<div class="desc-desc">
@@ -970,7 +970,7 @@
 										After your application is confirmed, you can start earning!</p>
 									</div>
 								</div>
-								
+
 								<div class="description-faq-item">
 									<div class="title-desc">What kinds of affiliate programs are there?</div>
 									<div class="desc-desc">
@@ -980,7 +980,7 @@
 										<p class="list">Hybrid (a mix of Revenue Share and CPA)</p>
 									</div>
 								</div>
-								
+
 								<div class="description-faq-item">
 									<div class="title-desc">What kinds of affiliate programs are there?</div>
 									<div class="desc-desc">
@@ -996,7 +996,7 @@
 						</li>
 					</ul>
 				</div>
-				
+
 				<div class="fixImg">
 					<div class="img">
 						<img src="<?php bloginfo('template_url '); ?>/assets/images/img24.png" alt="">
@@ -1005,11 +1005,11 @@
 			</div>
 		</div>
 	</section>
-	
+
 	<section class="our-partners">
 		<div class="innerWrap">
 			<div class="main-title">OUR <span>PARTNERS</span></div>
-			
+
 			<div class="slider owl-carousel">
 				<div class="item">
 					<img src="<?php bloginfo('template_url '); ?>/assets/images/img7.png" alt="">
@@ -1042,7 +1042,7 @@
 					<img src="<?php bloginfo('template_url '); ?>/assets/images/img8.png" alt="">
 				</div>
 			</div>
-			
+
 			<div class="slider mobile owl-carousel">
 				<div class="innerItem">
 					<div class="item">
@@ -1067,14 +1067,14 @@
 			</div>
 		</div>
 	</section>
-	
+
 	<section class="form-wrap">
 		<div class="innerWrap">
 			<div class="main-title">
 				<span> Become a Bro</span>
 				and earn up to 50% commission with RevShare
 			</div>
-			
+
 			<div class="form-innerWrap">
 				<div class="left">
 					<div class="form">
@@ -1095,7 +1095,7 @@
 								<label for="">Your website, social media account, or advertising platform</label>
 								<input type="text" placeholder="www...">
 							</div>
-							
+
 							<div class="check-wrap">
 								<div class="check">
 									<label>
@@ -1112,7 +1112,7 @@
 									</label>
 								</div>
 							</div>
-							
+
 							<div class="send-btn">
 								<button class="btn">Send</button>
 								<div class="error-message">
