@@ -74,13 +74,13 @@ $(window).load(function () {
 	$(".slider .center").next().addClass("near");
 	$(".slider .center").prev().addClass("near");
 	
-	$(".slider .center").nextAll().eq(1).addClass("next");
+	$(".hangOut-wrap .slider .center").nextAll().eq(1).addClass("next");
 	$(".slider .center").prevAll().eq(1).addClass("next");
 	
-	$(".slider .center").nextAll().eq(2).addClass("last");
+	$(".hangOut-wrap .slider .center").nextAll().eq(2).addClass("last");
 	$(".slider .center").prevAll().eq(2).addClass("last");
 	
-	$(".slider .center").nextAll().eq(3).addClass("lastest");
+	$(".hangOut-wrap .slider .center").nextAll().eq(3).addClass("lastest");
 	$(".slider .center").prevAll().eq(3).addClass("lastest");
 	
 	
