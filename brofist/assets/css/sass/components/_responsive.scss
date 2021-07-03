@@ -1,0 +1,44 @@
+
+
+
+@media screen and (max-width: 1400px) {
+    .innerWrap{
+        &.preview-innerWrap {
+            max-width: 90%;
+        }
+    }
+}
+
+@media screen and (max-width: 1281px) {
+    .innerWrap {
+        padding: 0 44px;
+        &.preview-innerWrap {
+            max-width: 816px !important;
+            width: 95% ;
+            padding: 0 8px;
+        }
+    }
+}
+@media screen and (max-width: 1024px) {
+    .innerWrap {
+        padding: 0 36px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .innerWrap {
+        padding: 0 24px;
+        &.preview-innerWrap {
+            width: 100%;
+        }
+    }
+
+    .hashtagContainer {
+        .introFollowContainer {
+            .tagIntro{
+                font-size: 24px;
+                line-height: 34px;
+            }
+        }
+    }
+}

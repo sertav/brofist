@@ -1,0 +1,166 @@
+ 
+@import 'components/mixins';
+@import 'components/settings';
+
+
+html{
+    height: 100%;
+}
+
+body,
+html {
+    background: #fff;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    min-height: 100%;
+    z-index: 1;
+    position: relative;
+    font-family: 'Muller';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $defaultTextColor;
+    padding: 0;
+    margin: 0;
+}
+
+p,
+blockquote,
+pre,
+span,
+strong,
+strong,
+sub,
+sup,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+form,
+table,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+    color: $defaultTextColor;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+img{
+    -webkit-user-drag: none;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+button {
+    outline: none;
+    border: 0;
+    cursor: pointer;
+}
+
+a {
+    color: $defaultTextColor;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.hidden-b{
+    overflow: hidden;
+}
+
+.btn{
+    background: #EA5B0C;
+    border-radius: 100px;
+    padding: 16px 48px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+
+.innerWrap {
+    position: relative;
+    max-width: 1450px;
+    padding: 0 8px;
+    margin: 0 auto;
+}
+ 
+.main-title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 110%;
+    text-transform: uppercase;
+    color: #ffffff;
+
+    span {
+        color: #F2CD55;
+    }
+}
+
+.owl-dots {
+    margin-top: 64px;
+    display: flex;
+    justify-content: center;
+
+    .owl-dot {
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        background: #FFFFFF !important;
+        margin: 6px;
+        padding: 0;
+
+        &:hover,
+        &.active {
+            background: #EA5B0C !important;
+        }
+    }
+}
+
+.owl-nav {
+    button {
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+
+        &.owl-prev {
+            left: 0;
+        }
+
+        &.owl-next {
+            right: 0px;
+        }
+
+        i {
+            color: #ffffff;
+            font-size: 16px;
+        }
+    }
+}
+
+@import 'components/header';
+@import 'components/section';
+@import 'components/footer';
+@import 'components/responsive';
+
+
+
+
+
