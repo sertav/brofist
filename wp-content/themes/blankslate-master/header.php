@@ -34,21 +34,27 @@
 								<li class="language">
 									<div class="active-lang-wrap">
 										<div class="active-lang lang">
-											<img src="<?php bloginfo('template_url'); ?>/assets/images/img25.png" alt="">
-											<span>ENG</span>
+                                            <?php
+                                            $currLangs = pll_the_languages(array('raw' => 1, 'flag' => 1, 'current_lang' => 1));
+                                            $current = array_filter($currLangs, function($v) { return (bool) $v["current_lang"]; });
+                                            $current = reset($current);
+                                            echo '<img src="'. $current['flag'] .'" alt="" /><span>' . mb_strimwidth($current['name'], 0, 3, "")  . '</span>';
+                                            ?>
 										</div>
 										<i class="fas fa-caret-down"></i>
 									</div>
 									
 									<div class="subNavigation">
-										<div class="lang">
-											<img src="<?php bloginfo('template_url'); ?>/assets/images/img25.png" alt="">
-											<span>ENG</span>
-										</div>
-										<div class="lang">
-											<img src="<?php bloginfo('template_url'); ?>/assets/images/img25.png" alt="">
-											<span>RUS</span>
-										</div>
+										<?php
+                                        $languages = pll_the_languages(array('raw' => 1, 'show_flags' => 1));
+                                        foreach ($languages as $lang) {
+                                            if ( $lang['slug'] ) {
+                                                echo '<div class="lang">';
+                                                echo '<a href="' . $lang['url'] . '" class="">'. $lang['flag'] .'<span>' . mb_strimwidth($lang['name'], 0, 3, "") . '</span></a>';
+                                                echo '</div>';
+                                            }
+                                        }
+										?>
 									</div>
 								</li>
 								<li class="signUp"><a><img src="<?php bloginfo('template_url'); ?>/assets/images/icon11.png" alt=""> Sign Up</a></li>

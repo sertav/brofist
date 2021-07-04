@@ -67,6 +67,15 @@ From your WordPress dashboard
 
 == Changelog ==
 
+= 5.9.7 =
+*Release Date - 21 June 2021*
+
+* Fix - Fixed PHP warnings logged due to incorrect parameter type for `add_menu_page()`/`add_submenu_page()`
+* Fix - Fixed bug causing WYSIWYG field to not keep line breaks
+* Fix - Fixed bug causing Email field to incorrectly invalidate emails with unicode characters
+* Fix - Fixed bug causing file type validation to fail in some cases
+* Fix - Fixed bug where newly uploaded or selected images do not contain custom preview size data
+
 = 5.9.6 =
 *Release Date - 20 May 2021*
 

@@ -143,3 +143,14 @@
 <?php 
 	} 
 add_action( 'wp_footer', 'mycustom_wp_footer' );
+
+
+
+
+//function pll_custom_flag( $flag, $code ) {
+//    $flag['url']    = "/wp-content/polylang/{$code}.png";
+//    $flag['width']  = 14;
+//    $flag['height'] = 14;
+//    return $flag;
+//}
+//add_filter( 'pll_custom_flag', 'pll_custom_flag', 10, 2 );
