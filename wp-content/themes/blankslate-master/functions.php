@@ -5,8 +5,8 @@
 		add_theme_support( 'title-tag' );
 		add_theme_support( 'automatic-feed-links' );
 		add_theme_support( 'post-thumbnails' );
-		add_theme_support( 'html5', array( 'search-form' ) );
 		register_nav_menus( array( 'header-menu' => esc_html__( 'Header Menu', 'brofist' ) ) );
+		register_nav_menus( array( 'footer-menu' => esc_html__( 'Footer Menu', 'brofist' ) ) );
 	}
 	
 	// include 'include/post-types.php';
