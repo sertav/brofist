@@ -32,27 +32,19 @@
 					</li>
 				</ul>
 			</div>
+
 			<div class="menu">
-				<div class="item-menu">
-					<ul>
-						<li><a href="">Data Protection Policy</a></li>
-						<li><a href="">Terms and Conditions</a></li>
-						<li><a href="">FAQ</a></li>
-					</ul>
-				</div>
-				<div class="item-menu">
-					<ul>
-						<li><a href="">СРА</a></li>
-						<li><a href="">Dynamic RevShare</a></li>
-						<li><a href="">Subpartner</a></li>
-					</ul>
-				</div>
-				<div class="item-menu">
-					<ul>
-						<li><a href="">Logo pack</a></li>
-						<li><a href="">Favicon pack</a></li>
-					</ul>
-				</div>
+                <?php
+                wp_nav_menu( [
+                    'theme_location'  => 'footer-menu',
+                    'menu'            => '',
+                    'container'       => 'div',
+                    'container_class' => 'item-menu',
+                    'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+                    'depth'           => 0,
+                    'walker'          => '',
+                ] );
+                ?>
 				
 				<div class="item-menu mobile">
 					<ul class="social">
