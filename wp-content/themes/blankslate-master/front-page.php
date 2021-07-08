@@ -1006,133 +1006,19 @@
 		</div>
 	</section>
 
-	<section class="our-partners">
-		<div class="innerWrap">
-			<div class="main-title">OUR <span>PARTNERS</span></div>
 
-			<div class="slider owl-carousel">
-				<div class="item">
-					<img src="<?php bloginfo('template_url'); ?>/assets/images/img7.png" alt="">
-				</div>
-				<div class="item">
-					<img src="<?php bloginfo('template_url'); ?>/assets/images/img8.png" alt="">
-				</div>
-				<div class="item">
-					<img src="<?php bloginfo('template_url'); ?>/assets/images/img9.png" alt="">
-				</div>
-				<div class="item">
-					<img src="<?php bloginfo('template_url'); ?>/assets/images/img10.png" alt="">
-				</div>
-				<div class="item">
-					<img src="<?php bloginfo('template_url'); ?>/assets/images/img7.png" alt="">
-				</div>
-				<div class="item">
-					<img src="<?php bloginfo('template_url'); ?>/assets/images/img8.png" alt="">
-				</div>
-				<div class="item">
-					<img src="<?php bloginfo('template_url'); ?>/assets/images/img9.png" alt="">
-				</div>
-				<div class="item">
-					<img src="<?php bloginfo('template_url'); ?>/assets/images/img10.png" alt="">
-				</div>
-				<div class="item">
-					<img src="<?php bloginfo('template_url'); ?>/assets/images/img7.png" alt="">
-				</div>
-				<div class="item">
-					<img src="<?php bloginfo('template_url'); ?>/assets/images/img8.png" alt="">
-				</div>
-			</div>
 
-			<div class="slider mobile owl-carousel">
-				<div class="innerItem">
-					<div class="item">
-						<img src="<?php bloginfo('template_url'); ?>/assets/images/img7.png" alt="">
-					</div>
-					<div class="item">
-						<img src="<?php bloginfo('template_url'); ?>/assets/images/img8.png" alt="">
-					</div>
-					<div class="item">
-						<img src="<?php bloginfo('template_url'); ?>/assets/images/img9.png" alt="">
-					</div>
-					<div class="item">
-						<img src="<?php bloginfo('template_url'); ?>/assets/images/img7.png" alt="">
-					</div>
-					<div class="item">
-						<img src="<?php bloginfo('template_url'); ?>/assets/images/img8.png" alt="">
-					</div>
-					<div class="item">
-						<img src="<?php bloginfo('template_url'); ?>/assets/images/img9.png" alt="">
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="form-wrap">
-		<div class="innerWrap">
-			<div class="main-title">
-				<span> Become a Bro</span>
-				and earn up to 50% commission with RevShare
-			</div>
-
-			<div class="form-innerWrap">
-				<div class="left">
-					<div class="form">
-						<form action="">
-							<div class="input-wrap">
-								<label for="">Name</label>
-								<input class="error" type="text" placeholder="Your Name">
-							</div>
-							<div class="input-wrap">
-								<label for="">Email</label>
-								<input class="error" type="text" placeholder="Your Email">
-							</div>
-							<div class="input-wrap">
-								<label for="">Password</label>
-								<input type="text" placeholder="Password">
-							</div>
-							<div class="input-wrap">
-								<label for="">Your website, social media account, or advertising platform</label>
-								<input type="text" placeholder="www...">
-							</div>
-
-							<div class="check-wrap">
-								<div class="check">
-									<label>
-										<input type="checkbox" checked="">
-										<span></span>
-										<p>By checking the box, you accept the <a href="">Terms and Conditions</a></p>
-									</label>
-								</div>
-								<div class="check">
-									<label>
-										<input type="checkbox">
-										<span></span>
-										<p>I agree to receive personalized offers from BROFIST</p>
-									</label>
-								</div>
-							</div>
-
-							<div class="send-btn">
-								<button class="btn">Send</button>
-								<div class="error-message">
-									Bro, check all inputs...
-								</div>
-							</div>
-						</form>
-					</div>
-				</div>
-				<div class="right">
-					<div class="img1 work__item">
-						<div class="work__item-img-outer"
-						style="transform-origin: center center 0px; transform: matrix3d(0.985715, 0, 0.16842, 0, 0.00918134, 0.998513, -0.0537358, 0, -0.16817, 0.0545145, 0.98425, 0, -50.4509, 16.3544, -4.72514, 1);">
-						<img src="<?php bloginfo('template_url'); ?>/assets/images/img1.png" alt=""></div>
-					</div>
-					<div class="img2"><img src="<?php bloginfo('template_url'); ?>/assets/images/img2.png" alt=""></div>
-				</div>
-			</div>
-		</div>
-	</section>
+    <?php
+        include 'blocks/benefits.php';
+        include 'blocks/brands.php';
+        include 'blocks/commissions.php';
+        include 'blocks/reviews.php';
+        include 'blocks/news.php';
+        include 'blocks/events.php';
+        include 'blocks/partners.php';
+        include 'blocks/contacts.php';
+        include 'blocks/jobs.php';
+    ?>
 </main>
 
 <?php get_footer(); ?>

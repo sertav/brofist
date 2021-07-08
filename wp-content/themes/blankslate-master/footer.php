@@ -61,6 +61,8 @@
 							<?php
                                 if ($soc['value'] == 'skype') {
                                     echo 'skype:'. $soc['value'] .'?chat';
+                                } elseif ($soc['value'] == 'telegram') {
+                                    echo 'https://telegram.me/'. $soc['value'];
                                 } else {
                                     echo $link;
                                 }
@@ -69,8 +71,7 @@
 					</ul>
 				</div>
 			</div>
-			
-			
+
 			<div class="item-menu logo-item">
 				<div class="logo"><a href=""><img src="<?= esc_url($f_logo['url']); ?>" alt="<?= esc_attr($f_logo['alt']); ?>"></a></div>
 			</div>
@@ -81,7 +82,7 @@
 			<div class="icons">
                 <?php
                 $f_rating = get_field('f_rating', 'option');
-                $size = 'medium'; // (thumbnail, medium, large, full or custom size)
+                $size = 'medium';
                 if( $f_rating ):
                     foreach( $f_rating as $image ): ?>
                         <div class="icon"><img src="<?php echo esc_url($image['sizes']['thumbnail']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" /></div>
@@ -95,5 +96,15 @@
 <?php include 'templates/popup.php'; ?>
 
 <?php wp_footer(); ?>
+<script>
+    document.addEventListener( 'wpcf7invalid', function( event ) {
+        $('.wpcf7-response-output').addClass('hidden');
+        $('.error-message').addClass('show');
+        $('.wpcf7-validates-as-required.wpcf7-not-valid').addClass('error');
+    }, false );
+    document.addEventListener( 'wpcf7mailfailed', function( event ) {
+        $('.wpcf7-validates-as-required.wpcf7-not-valid').addClass('error');
+    }, false );
+</script>
 </body>
 </html>
