@@ -35,7 +35,7 @@
 		} elseif(is_singular()) {
 			wp_enqueue_style('main');
 			wp_enqueue_style('fonts');
-		} elseif(is_post_type_archive('post')) {
+		} else {
 			wp_enqueue_style('owl-carousel');
 			wp_enqueue_style('owl-theme');
 			wp_enqueue_style('main');
@@ -137,6 +137,14 @@
 add_action( 'wp_footer', 'mycustom_wp_footer' );
 
 
+//function remove_category( $string, $type ) {
+//    if ( $type != 'single' && $type == 'category' && ( strpos( $string, 'category' ) !== false ) ) {
+//        $url_without_category = str_replace( "/category/", "/", $string );
+//        return trailingslashit( $url_without_category );
+//    }
+//    return $string;
+//}
+//add_filter( 'user_trailingslashit', 'remove_category', 100, 2);
 
 
 //function pll_custom_flag( $flag, $code ) {

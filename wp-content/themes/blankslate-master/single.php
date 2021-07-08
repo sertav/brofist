@@ -8,9 +8,9 @@
                     <div class="date"><?php the_date(); ?></div>
                     <div class="breadcrumb">
                         <ul>
-                            <li><a href="">Main</a></li>
-                            <li><a href="">News</a></li>
-                            <li><a href="">New one</a></li>
+                            <li><a href="<?= get_home_url(); ?>">Main</a></li>
+                            <li><a href="<?= get_post_type_archive_link('news'); ?>">News</a></li>
+                            <li><a><?php the_title(); ?></a></li>
                         </ul>
                     </div>
 
