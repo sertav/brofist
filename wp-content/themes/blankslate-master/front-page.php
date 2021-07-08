@@ -1,10 +1,7 @@
 <?php get_header(); ?>
 
 <main>
-
-
     <?php
-    include 'blocks/benefits.php';
     include 'blocks/brands.php';
     include 'blocks/jobs.php';
     include 'blocks/commissions.php';

@@ -4,7 +4,7 @@ $fp_com_heading = get_field('fp_com_heading');
 $fp_com_text = get_field('fp_com_text');
 $fp_com_add_text = get_field('fp_com_add_text');
 ?>
-<section class="chart-wrap" id="<?= $fp_n_id; ?>">
+<section class="chart-wrap" id="<?= $fp_com_id; ?>">
     <div class="innerWrap">
         <div class="main-title"><?= $fp_com_heading; ?></div>
         <div class="description"><?= $fp_com_text; ?></div>

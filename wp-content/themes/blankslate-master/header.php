@@ -101,42 +101,6 @@
 					</div>
 				</div>
 			</header>
-			
-			<section class="welcome-text">
-				<div class="innerWrap">
-					<div class="left">
-						<div class="title"><span>Your bros</span> in affiliate marketing</div>
-						<div class="description">
-							We’re used to keeping it real. No “Mr. Dear Client” and other such talk. We
-							believe it’s best to do business with someone you consider your true bro. Like Batman and Robin,
-							Cheech and Chong, Buzz and Woody... this is how we do it.
-						</div>
-						
-						<div class="description mobile">
-							<span>Only between bros is everything safe, open, honest, and even.</span> That's why we're
-							BROFIST – your
-							affiliate program with up to 50% RevShare payments, MGA and Curacao game licenses, and millions
-							of players from 30+ countries.
-						</div>
-						<button class="btn">Become a Bro</button>
-						<div class="arrow"><img src="<?php bloginfo('template_url'); ?>/assets/images/img4.png" alt=""></div>
-					</div>
-					
-					<div class="right">
-						<div class="img1 work__item">
-							<div class="work__item-img-outer"><img src="<?php bloginfo('template_url'); ?>/assets/images/img1.png" alt=""></div>
-						</div>
-						<div class="img2"><img src="<?php bloginfo('template_url'); ?>/assets/images/img2.png" alt=""></div>
-						<div class="description">
-							<span>Only between bros is everything safe, open, honest, and even.</span> That's why we're
-							BROFIST – your
-							affiliate program with up to 50% RevShare payments, MGA and Curacao game licenses, and millions
-							of players from 30+ countries.
-						</div>
-					</div>
-					<div class="scroll-img">
-						<img src="<?php bloginfo('template_url'); ?>/assets/images/img6.png" alt="">
-					</div>
-				</div>
-			</section>
+
+            <?php include 'blocks/benefits.php'; ?>
 		</div>		
