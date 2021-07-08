@@ -1,3 +1,18 @@
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .welcome-wrap{
     min-height: 100vh;
@@ -5,8 +20,9 @@
     flex-direction: column;
     background-image: url(../../images/img3.png);
     background-size: 100% 100%;
-    header{
-        background: transparent;
+    
+    &.pt{
+        padding-top: 80px;
     }
 }
 
@@ -19,6 +35,7 @@ section {
     background: transparent;
     display: flex;
     flex: 1;
+    padding: 32px 0;
     .innerWrap{
         display: flex;
         align-items: center;
@@ -478,7 +495,8 @@ section {
                 }
             }
             .img{
-                width: 220px;
+                width: 100%;
+                max-width: 220px;
                 margin: auto;
                 img{
                     width: 100%;
@@ -1194,7 +1212,8 @@ section {
         display: flex;
         flex-wrap: wrap;
         .item{
-            flex: 0 0 33.3%;
+            flex: 0 0 calc(33.3% - 12px);
+            margin: 6px;
         }
     }
 }
@@ -1262,7 +1281,7 @@ section {
 
                             span{
                                 display: block;
-                                width: 20px;
+                                flex: 0 0 20px;
                                 height: 20px;
                                 cursor: pointer;
                                 border-radius: 50px;
@@ -1518,3 +1537,6 @@ section {
     }
 }
  
+.mobile{
+    display: none !important;
+}

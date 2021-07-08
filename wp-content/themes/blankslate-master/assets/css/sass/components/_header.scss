@@ -1,12 +1,27 @@
 header{
+    position: static;
+    top: -52px;
+    left: 0;
     width: 100%;
     height: 80px; 
-    background: #00041A;
+    background: transparent;
+    z-index: 2;
+    transition: 0.3s;
+
+    &.bg-shap{
+        top: 0;
+        background: #00041A;
+        position: fixed;
+        border-bottom: 1px solid transparent;
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.8);
+    }
+
     *{
         color: #ffffff;
     }
 
     .innerWrap{
+        position: static;
         display: flex;
         align-items: center;
         height: 100%;
@@ -37,7 +52,7 @@ header{
                 display: flex;
                 align-items: center;
                 li{
-                    margin-right: 30px;
+                    margin-right: 28px;
                     &:last-child{
                         margin: 0;
                     }
@@ -46,11 +61,15 @@ header{
                         display: block;
                         padding: 4px;
                         transition: all 0.3s ease;
+                        font-weight: normal;
+                        font-size: 15px;
+                        line-height: 15px;
                     }
                 }
             }
 
             .menu{
+                margin-right: 16px;
                 li{
                     position: relative;
                     &:hover ,&.active{
@@ -136,6 +155,11 @@ header{
                 }
             }
 
+            a{
+                display: flex;
+                align-items: center;
+            }
+
             .active-lang-wrap{
                 display: flex;
                 align-items: center;
@@ -218,11 +242,8 @@ header{
 
 
 .m-lines {
-    font-size: 18px;
-    float: right;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    margin-top: 2px;
-
+    cursor: pointer;
+    padding: 6px;
     .one,
     .two,
     .three {
@@ -242,28 +263,20 @@ header{
         -ms-transform: rotate(45deg) translate(3px, 3px);
         -webkit-transform: rotate(45deg) translate(3px, 3px);
         transform: rotate(45deg) translate(3px, 3px);
-        width: 22px;
-        height: 3;
+
     }
 
     &.on .three {
-        -moz-transform: rotate(-45deg) translate(4px, -4px);
-        -ms-transform: rotate(-45deg) translate(4px, -4px);
-        -webkit-transform: rotate(-45deg) translate(4px, -4px);
-        transform: rotate(-45deg) translate(4px, -4px);
-        width: 22px;
-        height: 3;
+        -moz-transform: rotate(-45deg) translate(6px, -6px);
+        -ms-transform: rotate(-45deg) translate(6px, -6px);
+        -webkit-transform: rotate(-45deg) translate(6px, -6px);
+        transform: rotate(-45deg) translate(6px, -6px);
+
     }
 
     &.on .two {
         opacity: 0;
     }
-}
-
-// media
-
-@media screen and (max-width: 1366px) {
-
 }
 
  

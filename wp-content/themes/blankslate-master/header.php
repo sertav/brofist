@@ -18,14 +18,14 @@
 					<nav>
 						<div class="menu">
 							<ul>
-								<li><a href="">Benefits</a></li>
-								<li><a href="">Brands</a></li>
-								<li class="active"><a href="">Commissions</a></li>
-								<li><a href="">Reviews</a></li>
-								<li><a href="">News</a></li>
-								<li><a href="">Events</a></li>
-								<li><a href="">Contacts</a></li>
-								<li><a href="">Jobs</a></li>
+                                <li><a href="#benefits">Benefits</a></li>
+                                <li><a href="#brands">Brands</a></li>
+                                <li class="active"><a href="#commissions">Commissions</a></li>
+                                <li><a href="#reviews">Reviews</a></li>
+                                <li><a href="#news">News</a></li>
+                                <li><a href="#events">Events</a></li>
+                                <li><a href="#contacts">Contacts</a></li>
+                                <li><a href="#jobs">Jobs</a></li>
 							</ul>
 						</div>
 						
