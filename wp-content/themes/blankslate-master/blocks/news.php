@@ -4,7 +4,7 @@ $fp_n_heading = get_field('fp_n_heading');
 ?>
 <section class="whats-new-wrap" id="<?= $fp_n_id; ?>">
     <div class="innerWrap">
-        <div class="main-title"><?= $fp_r_heading; ?></div>
+        <div class="main-title"><?= $fp_n_heading; ?></div>
     </div>
     <div class="slider owl-carousel">
 
