@@ -78,7 +78,7 @@
 		if ( is_singular() && pings_open() ) {
 			printf( '<link rel="pingback" href="%s" />' . "\n", esc_url( get_bloginfo( 'pingback_url' ) ) );
 		}
-		echo '<style>.logged-in.admin-bar .header, .logged-in.admin-bar .menu-container .menu-header { margin-top: 32px; } .logged-in.admin-bar .menu-container .menu-body-container { margin-top: 102px; }</style>';
+		echo '<style>.logged-in.admin-bar header.bg-shap { top: 32px; }</style>';
 	}
 	
 	
