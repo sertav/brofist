@@ -23,8 +23,12 @@
 							<?php
                                 if ($soc['value'] == 'skype') {
                                     echo 'skype:'. $soc['value'] .'?chat';
-                                } else {
+                                } elseif ($soc['value'] == 'telegram') {
+                                    echo 'https://telegram.me/'. $soc['value'];
+                                } elseif ($link) {
                                     echo $link;
+                                } else {
+                                    echo '#';
                                 }
                                 ?>"><img src="<?php bloginfo('template_url'); ?>/assets/images/<?= $soc['value']; ?>.svg" alt="<?= $soc['label']; ?>"></a></li>
                             <?php endwhile; ?>
@@ -51,12 +55,14 @@
                         <?php while(has_sub_field('f_socials', 'option')) : $soc = get_sub_field('soc'); $link = get_sub_field('link'); ?>
                             <li><a rel="nofollow" target="_blank" href="
 							<?php
-                                if ($soc['value'] == 'skype') {
+                                if ($soc['value'] == 'skype' && !empty($link)) {
                                     echo 'skype:'. $soc['value'] .'?chat';
-                                } elseif ($soc['value'] == 'telegram') {
+                                } elseif ($soc['value'] == 'telegram' && !empty($link)) {
                                     echo 'https://telegram.me/'. $soc['value'];
-                                } else {
+                                } elseif ($link) {
                                     echo $link;
+                                } else {
+                                    echo '#';
                                 }
                                 ?>"><img src="<?php bloginfo('template_url'); ?>/assets/images/<?= $soc['value']; ?>.svg" alt="<?= $soc['label']; ?>"></a></li>
                         <?php endwhile; ?>
@@ -88,15 +94,5 @@
 <?php include 'templates/popup.php'; ?>
 
 <?php wp_footer(); ?>
-<script>
-    document.addEventListener( 'wpcf7invalid', function( event ) {
-        $('.wpcf7-response-output').addClass('hidden');
-        $('.error-message').addClass('show');
-        $('.wpcf7-validates-as-required.wpcf7-not-valid').addClass('error');
-    }, false );
-    document.addEventListener( 'wpcf7mailfailed', function( event ) {
-        $('.wpcf7-validates-as-required.wpcf7-not-valid').addClass('error');
-    }, false );
-</script>
 </body>
 </html>

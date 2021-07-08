@@ -83,7 +83,6 @@
 	
 	
 	if( function_exists('acf_add_options_page') ) {
-	
 		acf_add_options_page(array(
 			'page_title' 	=> 'Theme General Settings',
 			'menu_title'	=> 'Theme Settings',
@@ -103,55 +102,30 @@
 			'menu_title'	=> 'Footer',
 			'parent_slug'	=> 'theme-general-settings',
 		));
-		
-		acf_add_options_sub_page(array(
-			'page_title' 	=> 'Theme Blocks Settings',
-			'menu_title'	=> 'Blocks',
-			'parent_slug'	=> 'theme-general-settings',
-		));
 	}
-	
 	
 
 	function mycustom_wp_footer() {
 ?>
 	<script type="text/javascript">
 		document.addEventListener( 'wpcf7invalid', function( event ) {
-				$("form.wpcf7-form.invalid").prepend($('.wpcf7-response-output'));
-				// $("form.wpcf7-form.invalid .two-field span:before").css("color", "#FF6E00!important");
+            $('.wpcf7-response-output').addClass('hidden');
+            $('.error-message').addClass('show');
+            $('.wpcf7-validates-as-required').addClass('error');
+
 		}, false );
 		
-		document.addEventListener( 'wpcf7mailsent', function( event ) {
-			if ( '239' == event.detail.contactFormId ) { 
-				jQuery('#myModal2').modal(); 
-			}
-		}, false );
+		// document.addEventListener( 'wpcf7mailsent', function( event ) {
+		// 	if ( '239' == event.detail.contactFormId ) {
+		// 		jQuery('#myModal2').modal();
+		// 	}
+		// }, false );
 		
-		document.addEventListener( 'wpcf7mailsent', function( event ) {
-			$('#myModal').modal();
-			$('.wpcf7-response-output').css("display", "none");
-		}, false );
+		// document.addEventListener( 'wpcf7mailsent', function( event ) {
+		// 	$('#myModal').modal();
+		// 	$('.wpcf7-response-output').css("display", "none");
+		// }, false );
 	</script>
 <?php 
 	} 
 add_action( 'wp_footer', 'mycustom_wp_footer' );
-
-
-//function remove_category( $string, $type ) {
-//    if ( $type != 'single' && $type == 'category' && ( strpos( $string, 'category' ) !== false ) ) {
-//        $url_without_category = str_replace( "/category/", "/", $string );
-//        return trailingslashit( $url_without_category );
-//    }
-//    return $string;
-//}
-//add_filter( 'user_trailingslashit', 'remove_category', 100, 2);
-
-
-//function pll_custom_flag( $flag, $code ) {
-//    $flag['url']    = "/wp-content/polylang/{$code}.png";
-//    $flag['width']  = 14;
-//    $flag['height'] = 14;
-//    return $flag;
-//}
-//add_filter( 'pll_custom_flag', 'pll_custom_flag', 10, 2 );
-
