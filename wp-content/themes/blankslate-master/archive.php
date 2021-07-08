@@ -1,13 +1,26 @@
 <?php get_header(); ?>
-<main id="content">
-<header class="header">
-<h1 class="entry-title"><?php single_term_title(); ?></h1>
-<div class="archive-meta"><?php if ( '' != the_archive_description() ) { echo esc_html( the_archive_description() ); } ?></div>
-</header>
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-<?php get_template_part( 'entry' ); ?>
-<?php endwhile; endif; ?>
-<?php get_template_part( 'nav', 'below' ); ?>
+<main>
+    <section class="news-wrap">
+        <div class="innerWrap">
+            <div class="main-title">What’s <span>new</span>?</div>
+        </div>
+
+        <div class="item-wrap">
+            <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+            <div class="item">
+                <div class="img">
+                    <?php if ( has_post_thumbnail() ) { the_post_thumbnail(); } ?>
+                </div>
+
+                <div class="text">
+                    <div class="title"><?php the_title(); ?></div>
+                    <div class="description"><?php the_excerpt(); ?></div>
+                    <div class="date"><?php the_date(); ?></div>
+                </div>
+            </div>
+            <?php endwhile; endif; ?>
+        </div>
+
+    </section>
 </main>
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

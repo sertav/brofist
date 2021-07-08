@@ -1,12 +1,31 @@
 <?php get_header(); ?>
-<main id="content">
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-<?php get_template_part( 'entry' ); ?>
-<?php if ( comments_open() && ! post_password_required() ) { comments_template( '', true ); } ?>
-<?php endwhile; endif; ?>
-<footer class="footer">
-<?php get_template_part( 'nav', 'below-single' ); ?>
-</footer>
-</main>
-<?php get_sidebar(); ?>
+    <main>
+        <section class="new-wrap">
+            <div class="innerWrap">
+                <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+                <div class="new-inner">
+                    <div class="title"><?php the_title(); ?></div>
+                    <div class="date"><?php the_date(); ?></div>
+                    <div class="breadcrumb">
+                        <ul>
+                            <li><a href="">Main</a></li>
+                            <li><a href="">News</a></li>
+                            <li><a href="">New one</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="info">
+                        <div class="img">
+                            <?php if ( has_post_thumbnail() ) { the_post_thumbnail(); } ?>
+                        </div>
+
+                        <div class="description">
+                            <?php the_content(); ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <?php endwhile; endif; ?>
+        </section>
+    </main>
 <?php get_footer(); ?>
