@@ -69,14 +69,6 @@
 	function wpse_setup_theme() {
 		 add_theme_support( 'post-thumbnails' );
 		 add_image_size( 'reviews', 190 );
-		// add_image_size( 'Home-service', 296, 310, true );
-		// add_image_size( 'Home-product', 360, 300, true );
-		// add_image_size( 'Home-project', 450, 510, true );
-		// add_image_size( 'Archive-project', 565, 290, true );
-		// add_image_size( 'Archive-product', 380, 316, true );
-		// add_image_size( 'Archive-service', 970, 495, true );
-		// add_image_size( 'Single-product-gallery', 920, 430, true );
-		// add_image_size( 'Brand', 220, 80 );
 	}
 	add_action( 'after_setup_theme', 'wpse_setup_theme' );
 	
