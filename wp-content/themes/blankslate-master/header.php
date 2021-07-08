@@ -1,3 +1,7 @@
+<?php
+    $h_logo = get_field('h_logo', 'option');
+?>
+
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 	<head>
@@ -13,22 +17,20 @@
 			<header class="navigation-wrap">
 				<div class="innerWrap">
 					<div class="logo">
-						<a href=""><img src="<?php bloginfo('template_url'); ?>/assets/images/logo.png" alt=""></a>
+						<a href=""><img src="<?= esc_url($h_logo['url']); ?>" alt="<?= esc_attr($h_logo['alt']); ?>"></a>
 					</div>
 					<nav>
-						<div class="menu">
-							<ul>
-                                <li><a href="#benefits">Benefits</a></li>
-                                <li><a href="#brands">Brands</a></li>
-                                <li class="active"><a href="#commissions">Commissions</a></li>
-                                <li><a href="#reviews">Reviews</a></li>
-                                <li><a href="#news">News</a></li>
-                                <li><a href="#events">Events</a></li>
-                                <li><a href="#contacts">Contacts</a></li>
-                                <li><a href="#jobs">Jobs</a></li>
-							</ul>
-						</div>
-						
+                        <?php
+                        wp_nav_menu( [
+                            'theme_location'  => 'header-menu',
+                            'menu'            => '',
+                            'container'       => 'div',
+                            'container_class' => 'menu',
+                            'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+                            'depth'           => 0,
+                            'walker'          => '',
+                        ] );
+                        ?>
 						<div class="signInWrap">
 							<ul>
 								<li class="language">

@@ -2,7 +2,7 @@
 
 <main>
 
-    <section class="brands-wrap">
+    <section class="brands-wrap" id="brands">
 		<div class="innerWrap">
 			<div class="main-title"><span>This is what our 5000+ </span> Bros are already profiting from. Meet our
 			brands:</div>
