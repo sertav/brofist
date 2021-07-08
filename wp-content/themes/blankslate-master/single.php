@@ -9,7 +9,7 @@
                     <div class="breadcrumb">
                         <ul>
                             <li><a href="<?= get_home_url(); ?>">Main</a></li>
-                            <li><a href="<?= get_post_type_archive_link('news'); ?>">News</a></li>
+                            <li><a href="<?= get_category_link(1); ?>">News</a></li>
                             <li><a><?php the_title(); ?></a></li>
                         </ul>
                     </div>
