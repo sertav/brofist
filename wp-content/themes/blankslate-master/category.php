@@ -9,7 +9,7 @@
                 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                     <div class="item">
                         <div class="img">
-                            <?php if ( has_post_thumbnail() ) { the_post_thumbnail(); } ?>
+                            <?php if ( has_post_thumbnail() ) { the_post_thumbnail('medium'); } ?>
                         </div>
 
                         <div class="text">
