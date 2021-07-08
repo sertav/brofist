@@ -17,7 +17,7 @@
 			<header class="navigation-wrap">
 				<div class="innerWrap">
 					<div class="logo">
-						<a href=""><img src="<?= esc_url($h_logo['url']); ?>" alt="<?= esc_attr($h_logo['alt']); ?>"></a>
+						<a href="<?= get_home_url(); ?>"><img src="<?= esc_url($h_logo['url']); ?>" alt="<?= esc_attr($h_logo['alt']); ?>"></a>
 					</div>
 					<nav>
                         <?php
