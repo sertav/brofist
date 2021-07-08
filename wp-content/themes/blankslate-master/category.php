@@ -13,7 +13,7 @@
                         </div>
 
                         <div class="text">
-                            <div class="title"><?php the_title(); ?></div>
+                            <div class="title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
                             <div class="description"><?php the_excerpt(); ?></div>
                             <div class="date"><?= get_the_date(); ?></div>
                         </div>
