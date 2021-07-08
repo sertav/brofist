@@ -150,110 +150,6 @@
 	</section>
 
 
-	<section class="offer-wrap">
-		<div class="innerWrap">
-			<div class="main-title">
-				<span>We’re gonna be friends.</span> Here’s why:
-			</div>
-
-			<div class="item-wrap owl-carousel">
-				<div class="item wow bounceInUp">
-					<div class="img"><img src="<?php bloginfo('template_url'); ?>/assets/images/img11.png" alt=""></div>
-					<div class="title">In-demand brands</div>
-					<div class="description">
-						<p>Our quality software and modern, user-friendly interfaces create the kind of gaming
-							experience that makes players crave more. That's why we already have over a million
-						loyal players in 30+ countries.</p>
-					</div>
-				</div>
-				<div class="item wow bounceInUp">
-					<div class="img"><img src="<?php bloginfo('template_url'); ?>/assets/images/img12.png" alt=""></div>
-					<div class="title">Bonuses that work</div>
-					<div class="description">
-						<p>We have great sign-up bonuses: free spins, deposits, and more. This is exactly the kind
-							of thing that brings in the most new players. Take them and use them to make your promos
-						really pop. </p>
-					</div>
-				</div>
-				<div class="item wow bounceInUp">
-					<div class="img"><img src="<?php bloginfo('template_url'); ?>/assets/images/img13.png" alt=""></div>
-					<div class="title">High commissions</div>
-					<div class="description">
-						<p>We divide our profits equally. RevShare commission reaches up to 50% depending on the
-							traffic. CPA and Hybrid models are also available. Just send a message to our Support
-						and let's talk it over.</p>
-					</div>
-					<button class="btn">Become a Bro</button>
-				</div>
-
-				<div class="item wow bounceInUp">
-					<div class="img"><img src="<?php bloginfo('template_url'); ?>/assets/images/img14.png" alt=""></div>
-					<div class="title">Automated monthly payments</div>
-					<div class="description">
-						<p>We never let a bro down. We pay everything by the 10th of each month via Skrill,
-							Neteller, Webmoney, Visa, Mastercard, Zimpler, Qiwi, Yandex, Paysafecard, Instadebit,
-							WebMoney, Neosurf, ecoPaid, Rapid, Zotopay Cards, Iwallet, Astropay, crypto coins,
-						Jeton, Interac, or bank transfer.</p>
-					</div>
-				</div>
-				<div class="item wow bounceInUp">
-					<div class="img"><img src="<?php bloginfo('template_url'); ?>/assets/images/img15.png" alt=""></div>
-					<div class="title">Widespread availability</div>
-					<div class="description">
-						<p>We work in Australia, Slovakia, Slovenia, the Czech Republic, Estonia, Japan, the
-							Netherlands, Germany, Austria, Canada, Switzerland, Finland, Denmark, Hungary, Cyprus,
-							Poland, New Zealand, Greece, Malta, Ireland, Romania, and Bulgaria, among other
-						countries.</p>
-						<p>Ask our <a href="">Support</a> for the complete list.</p>
-					</div>
-				</div>
-				<div class="item wow bounceInUp">
-					<div class="img"><img src="<?php bloginfo('template_url'); ?>/assets/images/img16.png" alt=""></div>
-					<div class="title">Trendy promo materials</div>
-					<div class="description">
-						<p>We take your activities and the latest trends into account to create and share with you
-							material such as landing pages, marketing emails, social media content, reviews and
-							articles, branding materials and ad banners, contextual and targeting advertising
-						materials, videos for streamers and YouTube bloggers… you name it! </p>
-					</div>
-				</div>
-				<div class="item wow bounceInUp">
-					<div class="img"><img src="<?php bloginfo('template_url'); ?>/assets/images/img17.png" alt=""></div>
-					<div class="title">No negative carryover</div>
-					<div class="description">
-						<p>We don't carry negative profits over to the next month, because we want to keep your
-							spirits up. That’s why, in case of a loss, on the first day of each month, you will have
-						0 on your account. Keep making that cash!</p>
-					</div>
-					<button class="btn">Become a Bro</button>
-				</div>
-				<div class="item wow bounceInUp">
-					<div class="img"><img src="<?php bloginfo('template_url'); ?>/assets/images/img18.png" alt=""></div>
-					<div class="title">5% sub-affiliate commission</div>
-					<div class="description">
-						<p>Refer your bros to us at BROFIST and get 5% of their NGR. The more referrals there are,
-						the higher the percentage of their income you’ll get.</p>
-					</div>
-				</div>
-				<div class="item wow bounceInUp">
-					<div class="img"><img src="<?php bloginfo('template_url'); ?>/assets/images/img19.png" alt=""></div>
-					<div class="title">Always in touch</div>
-					<div class="description">
-						<p>We’re there for our Bros whenever needed thanks to our 24/7 professional support. Get in
-							touch to ask questions or share news of a bomb profit. Let's celebrate together!
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-
-
-
-
-
-
 
 
 
@@ -262,6 +158,7 @@
     <?php
     include 'blocks/benefits.php';
     include 'blocks/brands.php';
+    include 'blocks/jobs.php';
     include 'blocks/commissions.php';
     include 'blocks/news.php';
     include 'blocks/reviews.php';
@@ -269,7 +166,6 @@
     include 'blocks/questions.php';
     include 'blocks/partners.php';
     include 'blocks/contacts.php';
-    include 'blocks/jobs.php';
     ?>
 </main>
 
