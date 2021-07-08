@@ -9,7 +9,7 @@
 		register_nav_menus( array( 'footer-menu' => esc_html__( 'Footer Menu', 'brofist' ) ) );
 	}
 	
-	// include 'include/post-types.php';
+	include 'include/post-types.php';
 	
 	function brofist_load_scripts() {
 		wp_register_style('owl-carousel', get_stylesheet_directory_uri() . '/assets/css/css/owl.carousel.min.css', array(), null, false);
@@ -67,8 +67,8 @@
 	
 	
 	function wpse_setup_theme() {
-		// add_theme_support( 'post-thumbnails' );
-		// add_image_size( 'Breadcrumbs', 740, 275, true );
+		 add_theme_support( 'post-thumbnails' );
+		 add_image_size( 'reviews', 190 );
 		// add_image_size( 'Home-service', 296, 310, true );
 		// add_image_size( 'Home-product', 360, 300, true );
 		// add_image_size( 'Home-project', 450, 510, true );
@@ -154,3 +154,4 @@ add_action( 'wp_footer', 'mycustom_wp_footer' );
 //    return $flag;
 //}
 //add_filter( 'pll_custom_flag', 'pll_custom_flag', 10, 2 );
+

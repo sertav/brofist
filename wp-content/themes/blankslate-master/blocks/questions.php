@@ -22,7 +22,7 @@
                                     <p><?= $answer; ?></p>
                                 </div>
                             </div>
-                            <?php endwhile; ?>
+                            <?php endwhile; wp_reset_query(); ?>
                         </div>
                     </li>
                     <?php endwhile; ?>

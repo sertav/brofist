@@ -495,136 +495,22 @@
 	</section>
 
 
-	<section class="reviews-wrap">
-		<div class="innerWrap">
-			<div class="main-title">
-				<span>Our biggest pride?</span>These reviews.
-			</div>
 
-			<div class="slider owl-carousel">
-				<div class="item">
-					<div class="top">
-						<div class="img"><img src="<?php bloginfo('template_url'); ?>/assets/images/img7.png" alt=""></div>
-						<div class="description">
-							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id dolore laborum illo non nesciunt voluptas itaque, doloribus eligendi sapiente saepe.
-						</div>
-					</div>
-					<div class="date-reting">
-						<div class="date">25.05.20</div>
-						<div class="reting">
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="top">
-						<div class="img"><img src="<?php bloginfo('template_url'); ?>/assets/images/img8.png" alt=""></div>
-						<div class="description">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-							eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-							aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-							pariatur.
-						</div>
-					</div>
-					<div class="date-reting">
-						<div class="date">25.05.20</div>
-						<div class="reting">
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="top">
-						<div class="img"><img src="<?php bloginfo('template_url'); ?>/assets/images/img9.png" alt=""></div>
-						<div class="description">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-							eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-							aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-							pariatur.
-						</div>
-					</div>
-					<div class="date-reting">
-						<div class="date">25.05.20</div>
-						<div class="reting">
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="top">
-						<div class="img"><img src="<?php bloginfo('template_url'); ?>/assets/images/img10.png" alt=""></div>
-						<div class="description">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-							eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-							aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-							pariatur.
-						</div>
-					</div>
-					<div class="date-reting">
-						<div class="date">25.05.20</div>
-						<div class="reting">
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="top">
-						<div class="img"><img src="<?php bloginfo('template_url'); ?>/assets/images/img8.png" alt=""></div>
-						<div class="description">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-							eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-							aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-							pariatur.
-						</div>
-					</div>
-					<div class="date-reting">
-						<div class="date">25.05.20</div>
-						<div class="reting">
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
 
 
 
 
     <?php
-        include 'blocks/benefits.php';
-        include 'blocks/brands.php';
-        include 'blocks/commissions.php';
-        include 'blocks/reviews.php';
-        include 'blocks/news.php';
-        include 'blocks/events.php';
-        include 'blocks/questions.php';
-        include 'blocks/partners.php';
-        include 'blocks/contacts.php';
-        include 'blocks/jobs.php';
+    include 'blocks/benefits.php';
+    include 'blocks/brands.php';
+    include 'blocks/commissions.php';
+    include 'blocks/news.php';
+    include 'blocks/reviews.php';
+    include 'blocks/events.php';
+    include 'blocks/questions.php';
+    include 'blocks/partners.php';
+    include 'blocks/contacts.php';
+    include 'blocks/jobs.php';
     ?>
 </main>
 
