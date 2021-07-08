@@ -13,7 +13,7 @@
 	</head>
 	
 	<body <?php body_class(); ?>>
-		<div class="welcome-wrap">
+		<?php if (is_front_page()) { echo '<div class="welcome-wrap">'; } ?>
 			<header class="navigation-wrap">
 				<div class="innerWrap">
 					<div class="logo">
@@ -102,5 +102,5 @@
 				</div>
 			</header>
 
-            <?php include 'blocks/benefits.php'; ?>
-		</div>		
+            <?php if (is_front_page()) include 'blocks/benefits.php'; ?>
+        <?php if (is_front_page()) { echo '</div>'; } ?>
