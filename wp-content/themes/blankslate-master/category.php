@@ -15,7 +15,7 @@
                         <div class="text">
                             <div class="title"><?php the_title(); ?></div>
                             <div class="description"><?php the_excerpt(); ?></div>
-                            <div class="date"><?php the_date(); ?></div>
+                            <div class="date"><?= get_the_date(); ?></div>
                         </div>
                     </div>
                 <?php endwhile; endif; ?>
