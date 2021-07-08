@@ -9,20 +9,25 @@
 		<div class="footer-menu">
 			<div class="icons-wrap">
 				<ul>
+                    <?php while(has_sub_field('f_mail', 'option')) : $title = get_sub_field('title'); $mail = get_sub_field('mail'); ?>
 					<li>
-						<span>Support:</span>
-						<a class="orange" href="">support@dazard.com</a>
+						<span><?= $title; ?></span>
+						<a class="orange" href="mailto:<?= $mail; ?>"><?= $mail; ?></a>
 					</li>
+                    <?php endwhile; ?>
 					
 					<li>
 						<ul class="social">
-							<li><a href=""><img src="<?php bloginfo('template_url'); ?>/assets/images/icon1.svg" alt=""></a></li>
-							<li><a href=""><img src="<?php bloginfo('template_url'); ?>/assets/images/icon2.svg" alt=""></a></li>
-							<li><a href=""><img src="<?php bloginfo('template_url'); ?>/assets/images/icon3.svg" alt=""></a></li>
-							<li><a href=""><img src="<?php bloginfo('template_url'); ?>/assets/images/icon4.svg" alt=""></a></li>
-							<li><a href=""><img src="<?php bloginfo('template_url'); ?>/assets/images/icon5.svg" alt=""></a></li>
-							<li><a href=""><img src="<?php bloginfo('template_url'); ?>/assets/images/icon6.svg" alt=""></a></li>
-							<li><a href=""><img src="<?php bloginfo('template_url'); ?>/assets/images/icon7.svg" alt=""></a></li>
+                            <?php while(has_sub_field('f_socials', 'option')) : $soc = get_sub_field('soc'); $link = get_sub_field('link'); ?>
+							<li><a rel="nofollow" target="_blank" href="
+							<?php
+                                if ($soc['value'] == 'skype') {
+                                    echo 'skype:'. $soc['value'] .'?chat';
+                                } else {
+                                    echo $link;
+                                }
+                                ?>"><img src="<?php bloginfo('template_url'); ?>/assets/images/<?= $soc['value']; ?>.svg" alt="<?= $soc['label']; ?>"></a></li>
+                            <?php endwhile; ?>
 						</ul>
 					</li>
 				</ul>
@@ -51,13 +56,16 @@
 				
 				<div class="item-menu mobile">
 					<ul class="social">
-						<li><a href=""><img src="<?php bloginfo('template_url'); ?>/assets/images/icon1.svg" alt=""></a></li>
-						<li><a href=""><img src="<?php bloginfo('template_url'); ?>/assets/images/icon2.svg" alt=""></a></li>
-						<li><a href=""><img src="<?php bloginfo('template_url'); ?>/assets/images/icon3.svg" alt=""></a></li>
-						<li><a href=""><img src="<?php bloginfo('template_url'); ?>/assets/images/icon4.svg" alt=""></a></li>
-						<li><a href=""><img src="<?php bloginfo('template_url'); ?>/assets/images/icon5.svg" alt=""></a></li>
-						<li><a href=""><img src="<?php bloginfo('template_url'); ?>/assets/images/icon6.svg" alt=""></a></li>
-						<li><a href=""><img src="<?php bloginfo('template_url'); ?>/assets/images/icon7.svg" alt=""></a></li>
+                        <?php while(has_sub_field('f_socials', 'option')) : $soc = get_sub_field('soc'); $link = get_sub_field('link'); ?>
+                            <li><a rel="nofollow" target="_blank" href="
+							<?php
+                                if ($soc['value'] == 'skype') {
+                                    echo 'skype:'. $soc['value'] .'?chat';
+                                } else {
+                                    echo $link;
+                                }
+                                ?>"><img src="<?php bloginfo('template_url'); ?>/assets/images/<?= $soc['value']; ?>.svg" alt="<?= $soc['label']; ?>"></a></li>
+                        <?php endwhile; ?>
 					</ul>
 				</div>
 			</div>
@@ -71,9 +79,14 @@
 		<div class="footer-bottom">
 			<span>© 2021 BROFIST LTD.</span>
 			<div class="icons">
-				<div class="icon"><img src="<?php bloginfo('template_url'); ?>/assets/images/icon8.png" alt=""></div>
-				<div class="icon"><img src="<?php bloginfo('template_url'); ?>/assets/images/icon9.png" alt=""></div>
-				<div class="icon"><img src="<?php bloginfo('template_url'); ?>/assets/images/icon10.png" alt=""></div>
+                <?php
+                $f_rating = get_field('f_rating', 'option');
+                $size = 'medium'; // (thumbnail, medium, large, full or custom size)
+                if( $f_rating ):
+                    foreach( $f_rating as $image ): ?>
+                        <div class="icon"><img src="<?php echo esc_url($image['sizes']['thumbnail']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" /></div>
+                    <?php endforeach;
+                endif; ?>
 			</div>
 		</div>
 	</div>
