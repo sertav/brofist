@@ -11,7 +11,7 @@ $fp_b_items = get_field('fp_b_items');
             <div class="item">
                 <div class="back"></div><img src="<?= esc_url($fp_b_slider_logo['url']); ?>" alt="<?= esc_attr($fp_b_slider_logo['alt']); ?>">
             </div>
-            <?php endforeach; ?>
+            <?php endforeach; wp_reset_query(); ?>
         </div>
 
         <?php foreach($fp_b_items as $item) :
@@ -31,25 +31,26 @@ $fp_b_items = get_field('fp_b_items');
             <div class="item markets">
                 <span>Markets</span>
                 <div class="img-wrap">
-                    <img src="<?php bloginfo('template_url'); ?>/assets/images/image864.png" alt="">
-                    <img src="<?php bloginfo('template_url'); ?>/assets/images/image865.png" alt="">
-                    <img src="<?php bloginfo('template_url'); ?>/assets/images/image866.png" alt="">
-                    <img src="<?php bloginfo('template_url'); ?>/assets/images/image864.png" alt="">
-                    <img src="<?php bloginfo('template_url'); ?>/assets/images/image865.png" alt="">
-                    <img src="<?php bloginfo('template_url'); ?>/assets/images/image866.png" alt="">
-                    <img src="<?php bloginfo('template_url'); ?>/assets/images/image869.png" alt="">
-                    <img src="<?php bloginfo('template_url'); ?>/assets/images/image865.png" alt="">
+                    <?php
+                    $cities = get_the_terms( $item->ID, 'brands-city' );
+                    foreach($cities as $city) :
+                        $city_flag = get_field('city_flag', $city)
+                    ?>
+                    <img src="<?= esc_url($city_flag['url']); ?>" alt="<?= esc_attr($city_flag['alt']); ?>">
+                    <?php endforeach; wp_reset_query(); ?>
                 </div>
             </div>
 
             <div class="item text-center">
                 <span>Payment Options</span>
-                <p>19</p>
+                <?php $payments = get_the_terms( $item->ID, 'brands-payments' ); ?>
+                <p><?= count($payments); ?></p>
             </div>
 
             <div class="item text-center">
                 <span>License</span>
-                <p>Malta</p>
+                <?php $license = get_the_terms( $item->ID, 'brands-license' ); ?>
+                <p><?= $license[0]->name; ?></p>
             </div>
         </div>
 
@@ -57,14 +58,12 @@ $fp_b_items = get_field('fp_b_items');
             <div class="item markets">
                 <span>Markets</span>
                 <div class="img-wrap">
-                    <img src="<?php bloginfo('template_url'); ?>/assets/images/image864.png" alt="">
-                    <img src="<?php bloginfo('template_url'); ?>/assets/images/image865.png" alt="">
-                    <img src="<?php bloginfo('template_url'); ?>/assets/images/image866.png" alt="">
-                    <img src="<?php bloginfo('template_url'); ?>/assets/images/image864.png" alt="">
-                    <img src="<?php bloginfo('template_url'); ?>/assets/images/image865.png" alt="">
-                    <img src="<?php bloginfo('template_url'); ?>/assets/images/image866.png" alt="">
-                    <img src="<?php bloginfo('template_url'); ?>/assets/images/image869.png" alt="">
-                    <img src="<?php bloginfo('template_url'); ?>/assets/images/image865.png" alt="">
+                    <?php
+                    foreach($cities as $city) :
+                        $city_flag = get_field('city_flag', $city)
+                    ?>
+                        <img src="<?= esc_url($city_flag['url']); ?>" alt="<?= esc_attr($city_flag['alt']); ?>">
+                    <?php endforeach; wp_reset_query(); ?>
                 </div>
             </div>
         </div>
@@ -76,53 +75,55 @@ $fp_b_items = get_field('fp_b_items');
 
                     <div class="mac">
                         <img class="main-img" src="<?php bloginfo('template_url'); ?>/assets/images/mac.png" alt="">
-                        <div class="mac-background" style="background: #ffffff;">
-                            <div class="logo"><img src="<?php bloginfo('template_url'); ?>/assets/images/img7.png" alt=""></div>
+                        <div class="mac-background" style="background: <?= $fp_b_pc_bg; ?>;">
+                            <div class="logo"><img src="<?= esc_url($fp_b_pc_logo['url']); ?>" alt="<?= esc_attr($fp_b_pc_logo['alt']); ?>"></div>
                         </div>
                     </div>
 
                     <div class="iphone">
                         <img class="main-img" src="<?php bloginfo('template_url'); ?>/assets/images/iphone.png" alt="">
-                        <div class="iphone-background" style="background: #ffffff;">
-                            <div class="logo"><img src="<?php bloginfo('template_url'); ?>/assets/images/img7.png" alt=""></div>
+                        <div class="iphone-background" style="background: <?= $fp_b_iphone_bg; ?>;">
+                            <div class="logo"><img src="<?= esc_url($fp_b_iphone_logo['url']); ?>" alt="<?= esc_attr($fp_b_iphone_logo['alt']); ?>"></div>
                         </div>
                     </div>
                 </div>
-                <button class="btn">Start Promoting Evospin</button>
+                <button class="btn">Start Promoting <?= $item->post_title; ?></button>
             </div>
 
             <div class="text">
-                <h2>Evospin Casino</h2>
+                <h2><?= $item->post_title; ?> Casino</h2>
 
                 <div class="title-1">Revenue share</div>
 
                 <div class="description">
-                    <p>Your percentage depends on last mont's FTD</p>
-                    <p>FTD 0 = 25% from NGR</p>
-                    <p>FTD 1-5 = 30% from NGR</p>
-                    <p>FTD 6-10 = 35% from NGR</p>
-                    <p>FTD 11-20 = 40% from NGR</p>
-                    <p>Your percentage depends on last mont's FTD</p>
-                    <p>FTD 0 = 25% from NGR</p>
-                    <p>FTD 1-5 = 30% from NGR</p>
-                    <p>FTD 6-10 = 35% from NGR</p>
-                    <p>FTD 11-20 = 40% from NGR</p>
+                    <p><?= $fp_b_revenue; ?></p>
                 </div>
                 <a class="show_more">More</a>
 
                 <div class="text-info">
                     <div class="info">
                         <div class="title-2">Payments</div>
-                        <p>Skrill, Neteller, Visa, Mastercard, Trustly, Zimpler, Klarna, Paysafecard, iDebit,
-                            Instadebit,
-                            Neosurf, EcoPayz, Rapid, Zotopay Cards, Iwallet, Astropay, iDEAL, Interac,Bank
-                            Transfer</p>
+                        <p>
+                            <?php
+                            $last_payment = array_pop($payments);
+                            foreach($payments as $payment) :
+                                echo $payment->name .', ';
+                            endforeach;
+                            echo $last_payment->name;
+                            ?>
+                        </p>
                     </div>
                     <div class="info">
                         <div class="title-2">Languages</div>
-                        <p>English, Russian, German, Finnish, French, Norwegian, Polish, Filipino, Hindi,
-                            Spanish, Italian,
-                            Japanese, Portuguese, Bulgarian, Greek, Hungarian, Croatian, Arabic, Korean, Chinese
+                        <p>
+                            <?php
+                            $languages = get_the_terms($item->ID, 'brands-languages');
+                            $last_language = array_pop($languages);
+                            foreach($languages as $language) :
+                                echo $language->name .', ';
+                            endforeach;
+                            echo $last_language->name;
+                            ?>
                         </p>
                     </div>
                 </div>
