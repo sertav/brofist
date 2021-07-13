@@ -26,7 +26,7 @@ define( 'DB_NAME', 'admin_brofist' );
 define( 'DB_USER', 'admin_brofist' );
 
 /** MySQL database password */
-define( 'DB_PASSWORD', 'XOJCcTGNLB' );
+define( 'DB_PASSWORD', '9TQN4twEXz' );
 
 /** MySQL hostname */
 define( 'DB_HOST', '178.62.28.49' );
