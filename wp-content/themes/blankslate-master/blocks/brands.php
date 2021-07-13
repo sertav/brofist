@@ -5,8 +5,9 @@ $fp_b_items = get_field('fp_b_items');
 ?>
 <section class="brands-wrap" id="<?= $fp_b_id; ?>">
     <div class="innerWrap">
-        <?php if (count($fp_b_items) < 1) : ?>
+
         <div class="main-title"><?= $fp_b_heading; ?></div>
+        <?php if (count($fp_b_items) < 1) : ?>
         <div class="slider owl-carousel">
             <?php foreach($fp_b_items as $item) : $fp_b_slider_logo = get_field('fp_b_slider_logo', $item); ?>
             <div class="item">
