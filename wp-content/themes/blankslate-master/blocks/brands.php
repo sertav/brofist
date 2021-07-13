@@ -1,44 +1,31 @@
-<section class="brands-wrap" id="brands">
+<?php
+$fp_b_id = get_field('fp_b_id');
+$fp_b_heading = get_field('fp_b_heading');
+$fp_b_items = get_field('fp_b_items');
+?>
+<section class="brands-wrap" id="<?= $fp_b_id; ?>">
     <div class="innerWrap">
-        <div class="main-title"><span>This is what our 5000+ </span> Bros are already profiting from. Meet our
-            brands:</div>
+        <div class="main-title"><?= $fp_b_heading; ?></div>
         <div class="slider owl-carousel">
+            <?php foreach($fp_b_items as $item) : $fp_b_slider_logo = get_field('fp_b_slider_logo', $item); ?>
             <div class="item">
-                <div class="back"></div><img src="<?= get_bloginfo('template_url'); ?>/assets/images/img7.png" alt="">
+                <div class="back"></div><img src="<?= esc_url($fp_b_slider_logo['url']); ?>" alt="<?= esc_attr($fp_b_slider_logo['alt']); ?>">
             </div>
-            <div class="item">
-                <div class="back"></div><img src="<?php bloginfo('template_url'); ?>/assets/images/img8.png" alt="">
-            </div>
-            <div class="item">
-                <div class="back"></div><img src="<?php bloginfo('template_url'); ?>/assets/images/img9.png" alt="">
-            </div>
-            <div class="item">
-                <div class="back"></div><img src="<?php bloginfo('template_url'); ?>/assets/images/img10.png" alt="">
-            </div>
-            <div class="item">
-                <div class="back"></div><img src="<?php bloginfo('template_url'); ?>/assets/images/img7.png" alt="">
-            </div>
-            <div class="item">
-                <div class="back"></div><img src="<?php bloginfo('template_url'); ?>/assets/images/img8.png" alt="">
-            </div>
-            <div class="item">
-                <div class="back"></div><img src="<?php bloginfo('template_url'); ?>/assets/images/img9.png" alt="">
-            </div>
-            <div class="item">
-                <div class="back"></div><img src="<?php bloginfo('template_url'); ?>/assets/images/img10.png" alt="">
-            </div>
-            <div class="item">
-                <div class="back"></div><img src="<?php bloginfo('template_url'); ?>/assets/images/img7.png" alt="">
-            </div>
-            <div class="item">
-                <div class="back"></div><img src="<?php bloginfo('template_url'); ?>/assets/images/img8.png" alt="">
-            </div>
+            <?php endforeach; ?>
         </div>
 
+        <?php foreach($fp_b_items as $item) :
+        $fp_b_site = get_field('fp_b_site', $item);
+        $fp_b_revenue = get_field('fp_b_revenue', $item);
+        $fp_b_pc_logo = get_field('fp_b_pc_logo', $item);
+        $fp_b_pc_bg = get_field('fp_b_pc_bg', $item);
+        $fp_b_iphone_logo = get_field('fp_b_iphone_logo', $item);
+        $fp_b_iphone_bg = get_field('fp_b_iphone_bg', $item);
+        ?>
         <div class="brand-info">
             <div class="item">
                 <span>Website link</span>
-                <a class="website-link" href="">www.evospin1.com</a>
+                <a class="website-link" href=""><?= $fp_b_site; ?></a>
             </div>
 
             <div class="item markets">
@@ -65,7 +52,6 @@
                 <p>Malta</p>
             </div>
         </div>
-
 
         <div class="brand-info mobile">
             <div class="item markets">
@@ -142,5 +128,6 @@
                 </div>
             </div>
         </div>
+        <?php endforeach; ?>
     </div>
 </section>
