@@ -16,6 +16,10 @@ header{
         box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.8);
     }
 
+    &.black{
+        background: #00041A;
+    }
+
     *{
         color: #ffffff;
     }
@@ -175,7 +179,7 @@ header{
                 margin-top: 8px;
                 position: absolute;
                 top: 32px;
-                left: -12px;
+                right: -7px;
                 background: #FFFFFF;
                 border-radius: 5px;
                 padding: 12px 24px 12px 12px;

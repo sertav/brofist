@@ -18,9 +18,39 @@ footer{
             justify-content: space-between;
 
             .menu{
-                display: flex;
-                flex-wrap: wrap;
-                gap: 80px;
+                ul{
+                    column-count: 3;
+                    li{
+                        margin-bottom: 24px;
+                        margin-right: 16px;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 110%;
+                        color: #FFFFFF;
+                        &:last-child{
+                            margin: 0;
+                        }
+                        span{
+                            display: block;
+                            color: #FFFFFF;
+                            margin-bottom: 8px;
+                        }
+
+                        a{
+                            color: #FFFFFF;
+                            transition: all 0.3s ease;
+                            &:hover{
+                                color: #F2CD55;
+                                text-decoration: underline;
+                            }
+
+                            &.orange{
+                                color: #EA5B0C;
+                            }
+                        }
+                    }
+                }
             }
 
             .item-menu,
@@ -32,8 +62,9 @@ footer{
                         width: 100%;
                     }
                 }
-                ul{
-                    li{
+                
+                .ul{
+                    .li{
                         margin-bottom: 24px;
                         font-style: normal;
                         font-weight: 500;

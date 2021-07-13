@@ -8,15 +8,15 @@
 		<div class="title"><?= $f_title; ?></div>
 		<div class="footer-menu">
 			<div class="icons-wrap">
-				<ul>
+                <div class="ul">
+                    <div class="li">
                     <?php while(has_sub_field('f_mail', 'option')) : $title = get_sub_field('title'); $mail = get_sub_field('mail'); ?>
-					<li>
 						<span><?= $title; ?></span>
 						<a class="orange" href="mailto:<?= $mail; ?>"><?= $mail; ?></a>
-					</li>
+                    </div>
                     <?php endwhile; ?>
-					
-					<li>
+
+                    <div class="li">
 						<ul class="social">
                             <?php while(has_sub_field('f_socials', 'option')) : $soc = get_sub_field('soc'); $link = get_sub_field('link'); ?>
 							<li><a rel="nofollow" target="_blank" href="
@@ -33,8 +33,8 @@
                                 ?>"><img src="<?php bloginfo('template_url'); ?>/assets/images/<?= $soc['value']; ?>.svg" alt="<?= $soc['label']; ?>"></a></li>
                             <?php endwhile; ?>
 						</ul>
-					</li>
-				</ul>
+					</div>
+				</div>
 			</div>
 
 			<div class="menu">
