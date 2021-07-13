@@ -1,6 +1,12 @@
 <?php
 $fp_n_id = get_field('fp_n_id');
 $fp_n_heading = get_field('fp_n_heading');
+
+$args = array(
+    'post_type' => 'post',
+);
+$posts = new WP_Query( $args );
+
 ?>
 <section class="whats-new-wrap" id="<?= $fp_n_id; ?>">
     <div class="innerWrap">
@@ -9,93 +15,41 @@ $fp_n_heading = get_field('fp_n_heading');
     <div class="slider owl-carousel">
 
         <div class="item">
+            <?php if ( $posts->have_posts() ) : while ( $posts->have_posts() ) : $posts->the_post(); ?>
             <div class="option">
                 <div class="img">
-                    <img src="<?php bloginfo('template_url'); ?>/assets/images/img22.png" alt="">
+                    <?php if ( has_post_thumbnail() ) { the_post_thumbnail('medium'); } ?>
                 </div>
 
                 <div class="text">
-                    <div class="title">New One</div>
-                    <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                    <div class="date">25.05.20</div>
+                    <div class="title"><?php the_title(); ?></div>
+                    <div class="description"><?php the_excerpt(); ?></div>
+                    <div class="date"><?php the_date(); ?></div>
                 </div>
             </div>
-
-            <div class="option">
-                <div class="img">
-                    <img src="<?php bloginfo('template_url'); ?>/assets/images/img21.png" alt="">
-                </div>
-
-                <div class="text">
-                    <div class="title">New One</div>
-                    <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                    <div class="date">25.05.20</div>
-                </div>
-            </div>
-
-            <div class="option">
-                <div class="img">
-                    <img src="<?php bloginfo('template_url'); ?>/assets/images/img20.png" alt="">
-                </div>
-
-                <div class="text">
-                    <div class="title">New One</div>
-                    <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                    <div class="date">25.05.20</div>
-                </div>
-            </div>
+            <?php endwhile; endif; wp_reset_query(); ?>
         </div>
 
     </div>
 
 
     <div class="slider mobile owl-carousel">
+
         <div class="item">
+            <?php if ( $posts->have_posts() ) : while ( $posts->have_posts() ) : $posts->the_post(); ?>
             <div class="option">
                 <div class="img">
-                    <img src="<?php bloginfo('template_url'); ?>/assets/images/img22.png" alt="">
+                    <?php if ( has_post_thumbnail() ) { the_post_thumbnail('medium'); } ?>
                 </div>
 
                 <div class="text">
-                    <div class="title">New One</div>
-                    <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                    <div class="date">25.05.20</div>
+                    <div class="title"><?php the_title(); ?></div>
+                    <div class="description"><?php the_excerpt(); ?></div>
+                    <div class="date"><?php the_date(); ?></div>
                 </div>
             </div>
+            <?php endwhile; endif; wp_reset_query(); ?>
         </div>
 
-        <div class="item">
-            <div class="option">
-                <div class="img">
-                    <img src="<?php bloginfo('template_url'); ?>/assets/images/img22.png" alt="">
-                </div>
-
-                <div class="text">
-                    <div class="title">New One</div>
-                    <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                    <div class="date">25.05.20</div>
-                </div>
-            </div>
-        </div>
-
-        <div class="item">
-            <div class="option">
-                <div class="img">
-                    <img src="<?php bloginfo('template_url'); ?>/assets/images/img22.png" alt="">
-                </div>
-
-                <div class="text">
-                    <div class="title">New One</div>
-                    <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                    <div class="date">25.05.20</div>
-                </div>
-            </div>
-        </div>
     </div>
 </section>
