@@ -105,40 +105,7 @@
 	}
 	
 
-//	function mycustom_wp_footer() {
-//?>
-<!--	<script>-->
-<!--        $( document ).ready(function() {-->
-<!--            document.addEventListener( 'wpcf7invalid', function( event ) {-->
-<!--                $('.wpcf7-response-output').addClass('hidden');-->
-<!--                $('.error-message').addClass('show');-->
-<!--                $('.wpcf7-validates-as-required').addClass('error');-->
-<!---->
-<!--            }, false );-->
-<!---->
-<!--            document.addEventListener( 'wpcf7mailsent', function( event ) {-->
-<!--                if ( '16' == event.detail.contactFormId ) {-->
-<!--                    jQuery('.popup.info_signin_popup').css("display", "block");-->
-<!--                    jQuery('.wpcf7-response-output').css("display", "none");-->
-<!--                    jQuery('.popup.info_signin_popup').fadeIn();-->
-<!--                }-->
-<!--            }, false );-->
-<!---->
-<!--            $('.wpcf7-validates-as-required').on('keyup',function(){-->
-<!--                var $this = $(this),-->
-<!--                    val = $this.val();-->
-<!---->
-<!--                if(val.length >= 1){-->
-<!--                    $('.wpcf7-validates-as-required').removeClass('error');-->
-<!--                }else {-->
-<!--                    $('.wpcf7-validates-as-required').addClass('error');-->
-<!--                }-->
-<!--            });-->
-<!--        });-->
-<!--	</script>-->
-<?php //
-//	}
-//add_action( 'wp_footer', 'mycustom_wp_footer' );
+
 
 
 add_filter('wpcf7_form_elements', function($content) {

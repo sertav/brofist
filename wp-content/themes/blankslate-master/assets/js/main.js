@@ -589,28 +589,43 @@ $(".menu-toggle").on("click", function () {
   $("header .innerWrap nav").toggleClass("open");
 });
 
+
+
+function isEmail(email) {
+  var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+  return regex.test(email);
+}
+
 document.addEventListener( 'wpcf7invalid', function( event ) {
   $('.wpcf7-response-output').addClass('hidden');
   $('.error-message').addClass('show');
-  $('.wpcf7-validates-as-required').addClass('error');
 
+
+  var input=$('.wpcf7-validates-as-required');
+  var re = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+  var is_email=re.test(input.val());
+
+  if ($('.wpcf7-validates-as-required').val() < 1 || !is_email) {
+    $('.wpcf7-validates-as-required').addClass('error');
+  } else {
+    $('.wpcf7-validates-as-required').removeClass('error');
+  }
 }, false );
 
 document.addEventListener( 'wpcf7mailsent', function( event ) {
-  if ( '16' == event.detail.contactFormId ) {
-    jQuery('.popup.info_signin_popup').css("display", "block");
-    jQuery('.wpcf7-response-output').css("display", "none");
-    jQuery('.popup.info_signin_popup').fadeIn();
-  }
+  $('.popup.info_signin_popup').css("display", "block");
+  $('.wpcf7-response-output').addClass('hidden');
+  $('.popup.info_signin_popup').fadeIn();
 }, false );
 
 $('.wpcf7-validates-as-required').on('keyup',function(){
   var $this = $(this),
-      val = $this.val();
+  val = $this.val();
+  var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
 
   if(val.length >= 1){
-    $('.wpcf7-validates-as-required').removeClass('error');
-  }else {
-    $('.wpcf7-validates-as-required').addClass('error');
+    $this.removeClass('error');
+  } else {
+    $this.addClass('error');
   }
 });
