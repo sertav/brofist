@@ -1,13 +1,7 @@
 <?php
 
-
-function test()
+function signUp()
 {
-//    var_dump($_POST);
-//    die();
-//    {"partner_user":{"company_name":"Eugene Ratke","email":"velda@simonis.org","password":"topsecret","password_confirmation":"topsecret","terms_accepted":true,"skype":"trully_my_skype"}}
-
-
     $data['partner_user'] = $_POST;
     $json = json_encode($data);
 
@@ -19,17 +13,17 @@ function test()
         curl_setopt($ch, CURLOPT_POSTFIELDS, $json);
         curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
         $data = curl_exec($ch);
-        $result = json_decode($data,true);
-        if(isset($result['errors'])){
-           return [324];
+        $result = json_decode($data, true);
+        if (isset($result['errors'])) {
+            echo json_encode($result);
+            die();
         }
-
-//        header('Location: https://admin.brofist.partners/partner/dashboard');
-//        print_r($result);
+        echo json_encode(['status'=>'201']);
+        die();
     } catch (Exception $exception) {
 
     }
 
 }
 
-test();
+signUp();

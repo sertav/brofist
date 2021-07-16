@@ -50,7 +50,17 @@
 
                         <div class="input-wrap">
                             <label for="" class="required">Email:</label>
-                            <input type="text" class="error" placeholder="example@mail.com" name="email">
+                            <input type="text" placeholder="example@mail.com" name="email">
+                        </div>
+
+                        <div class="input-wrap">
+                            <label for="" class="required">Phone:</label>
+                            <input type="text" placeholder="Your phone" name="phone">
+                        </div>
+
+                        <div class="input-wrap">
+                            <label for="" class="required">Address:</label>
+                            <input type="text" placeholder="Your address" name="address">
                         </div>
 
                         <div class="input-wrap">
@@ -79,7 +89,7 @@
                         <div class="check-wrap">
                             <div class="check">
                                 <label>
-                                    <input type="checkbox" checked="" name="terms_accepted">
+                                    <input type="checkbox" checked="" name="terms_accepted" readonly>
                                     <span></span>
                                     <p>By checking the box, you accept the <a href="">Terms and Conditions</a></p>
                                 </label>
