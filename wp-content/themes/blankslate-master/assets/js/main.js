@@ -584,6 +584,11 @@ $(document).on("click", ".close-popup , .info_signin_popup .btn", function () {
   $("body").removeClass("hidden-b");
 });
 
+$(document).on("click", ".close-popup , .info_reset_popup .btn", function () {
+  $(".popup").fadeOut();
+  $("body").removeClass("hidden-b");
+});
+
 $(".menu-toggle").on("click", function () {
   $(".menu-toggle .m-lines").toggleClass("on");
   $("header .innerWrap nav").toggleClass("open");
@@ -631,43 +636,61 @@ $('.wpcf7-validates-as-required').on('keyup',function(){
 });
 
 
+$(document).on("click", ".reset-password", function () {
+  $(".signIn_popup").fadeOut();
+  $(".resetPassword_popup").fadeIn();
+  $("body").addClass("hidden-b");
+});
 
 
 
-
-  $(function () {
-
-    $('#signUp').on('submit', function (e) {
-        $(this).find('input').removeClass('error');
-      e.preventDefault();
-
-      $.ajax({
-        type: 'post',
-        url: 'https://brofist.partners/wp-content/themes/blankslate-master/api/sign_up.php',
-        data: $('#signUp').serialize(),
-        success: function (response) {
-         var data = JSON.parse(response)
-          if(data.errors){
-            $.each( data.errors, function( key, value ) {
-              $( "*[name*='" + key + "']" ).addClass('error');
-              // alert( key + ": " + value );
-            });
-          }
-          if(data.status ==  201){
-            // window.location.href = 'https://admin.brofist.partners/partner/dashboard';
-            $('.popup.info_signin_popup').css("display", "block");
-            $('.popup.signUp_popup').css("display", "none");
-            $('.popup.signUp_popup').fadeOut;
-          }
-          // alert(1);
-          // var jsonData = JSON.parse(data);
-          // console.log(data)
+$(function () {
+  $('#signUp').on('submit', function (e) {
+      $(this).find('input').removeClass('error');
+    e.preventDefault();
+    $.ajax({
+      type: 'post',
+      url: 'https://brofist.partners/wp-content/themes/blankslate-master/api/sign_up.php',
+      data: $('#signUp').serialize(),
+      success: function (response) {
+       var data = JSON.parse(response)
+        if(data.errors){
+          $.each( data.errors, function( key, value ) {
+            $( "*[name*='" + key + "']" ).addClass('error');
+          });
         }
-      });
-
+        if(data.status ==  201){
+          $('.popup.info_signin_popup').fadeIn();
+          $('.popup.signUp_popup').fadeOut();
+        }
+      }
     });
-
   });
+});
+
+$(function () {
+  $('#resetPassword').on('submit', function (e) {
+    $(this).find('input').removeClass('error');
+    e.preventDefault();
+    $.ajax({
+      type: 'post',
+      url: 'https://brofist.partners/wp-content/themes/blankslate-master/api/reset_password.php',
+      data: $('#resetPassword').serialize(),
+      success: function (response) {
+        var data = JSON.parse(response)
+        if(data.errors){
+          $.each( data.errors, function( key, value ) {
+            $( "*[name*='" + key + "']" ).addClass('error');
+          });
+        }
+        if(data.status == 200){
+          $('.popup.resetPassword_popup').fadeOut();
+          $('.popup.info_reset_popup').fadeIn();
+        }
+      }
+    });
+  });
+});
 
 
 

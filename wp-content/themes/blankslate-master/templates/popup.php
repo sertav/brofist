@@ -5,7 +5,6 @@
                 <div class="close-popup"><i class="eff03 fas fa-times"></i></div>
                 <div class="form-box-wrap login_form">
                     <h3>Login</h3>
-                    <?  var_dump($_SESSION["api_errors"]);  ?>
                     <form action="<?= get_bloginfo('template_directory'); ?>/api/sign_in.php" method="post">
                         <div class="input-wrap">
                             <label for="" class="required">Email:</label>
@@ -28,6 +27,28 @@
                         Bro, check all inputs...
                     </div>
                     <a class="reset-password">Reset Password</a>
+                </div>
+            </div>
+            <div class="close-popup"></div>
+        </div>
+    </div>
+
+    <div class="popup resetPassword_popup">
+        <div class="dialog">
+            <div class="form-box">
+                <div class="close-popup"><i class="eff03 fas fa-times"></i></div>
+                <div class="form-box-wrap login_form">
+                    <h3>Reset password</h3>
+                    <form id="resetPassword" method="post">
+                        <div class="input-wrap">
+                            <label for="">Please input your mail:</label>
+                            <input type="text" placeholder="example@mail.com" name="email">
+                        </div>
+                        <button class="btn">Reset</button>
+                    </form>
+                    <div class="error-message">
+                        Bro, check all inputs...
+                    </div>
                 </div>
             </div>
             <div class="close-popup"></div>
@@ -123,6 +144,20 @@
                 <div class="form-box-wrap">
                     <img src="<?php bloginfo('template_url'); ?>/assets/images/img1.png" alt="">
                     <h3><span>Thanks for signing up, bro!</span> We'll get back to you soon</h3>
+                    <button class="btn">GOT IT</button>
+                </div>
+            </div>
+            <div class="close-popup"></div>
+        </div>
+    </div>
+
+    <div class="popup info_signin_popup info_reset_popup">
+        <div class="dialog">
+            <div class="form-box">
+                <div class="close-popup"><i class="eff03 fas fa-times"></i></div>
+                <div class="form-box-wrap">
+                    <img src="<?php bloginfo('template_url'); ?>/assets/images/img1.png" alt="">
+                    <h3><span>You password , bro!</span> We'll get back to you soon</h3>
                     <button class="btn">GOT IT</button>
                 </div>
             </div>
