@@ -5,20 +5,20 @@
                 <div class="close-popup"><i class="eff03 fas fa-times"></i></div>
                 <div class="form-box-wrap login_form">
                     <h3>Login</h3>
-                    <form action="<?= get_bloginfo('template_directory'); ?>/api/sign_in.php" method="post">
+                    <form id="signIn" method="post">
                         <div class="input-wrap">
                             <label for="" class="required">Email:</label>
-                            <input type="text" class="error" placeholder="example@mail.com">
+                            <input type="text" placeholder="example@mail.com" name="email">
                         </div>
 
                         <div class="input-wrap">
                             <label for="" class="required">Password:</label>
-                            <input type="password" placeholder="password">
+                            <input type="password" placeholder="password" name="password">
                         </div>
 
                         <div class="input-wrap">
                             <label for="">2FA Code</label>
-                            <input type="text" placeholder="2FA Code">
+                            <input type="text" placeholder="2FA Code" id="otp_attempt" name="otp_attempt">
                         </div>
                         <button class="btn">Login</button>
                     </form>
