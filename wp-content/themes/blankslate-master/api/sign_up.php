@@ -3,8 +3,8 @@
 
 function test()
 {
-    var_dump($_POST);
-    die();
+//    var_dump($_POST);
+//    die();
 //    {"partner_user":{"company_name":"Eugene Ratke","email":"velda@simonis.org","password":"topsecret","password_confirmation":"topsecret","terms_accepted":true,"skype":"trully_my_skype"}}
 
 
@@ -21,7 +21,7 @@ function test()
         $data = curl_exec($ch);
         $result = json_decode($data,true);
         if(isset($result['errors'])){
-           return $result;
+           return [324];
         }
 
 //        header('Location: https://admin.brofist.partners/partner/dashboard');

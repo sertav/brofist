@@ -646,7 +646,8 @@ $('.wpcf7-validates-as-required').on('keyup',function(){
         url: 'http://brofist/wp-content/themes/blankslate-master/api/sign_up.php',
         data: $('#signUp').serialize(),
         success: function (data) {
-          console.log(data)
+          alert(1);
+          alert(data)
         }
       });
 
