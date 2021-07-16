@@ -629,3 +629,31 @@ $('.wpcf7-validates-as-required').on('keyup',function(){
     $this.addClass('error');
   }
 });
+
+
+
+
+
+
+  $(function () {
+
+    $('#signUp').on('submit', function (e) {
+
+      e.preventDefault();
+
+      $.ajax({
+        type: 'post',
+        url: 'http://brofist/wp-content/themes/blankslate-master/api/sign_up.php',
+        data: $('#signUp').serialize(),
+        success: function (data) {
+          console.log(data)
+        }
+      });
+
+    });
+
+  });
+
+
+
+
