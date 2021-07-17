@@ -34,9 +34,9 @@ $posts = new WP_Query( $args );
 
 
     <div class="slider mobile owl-carousel">
-
+        <?php if ( $posts->have_posts() ) : while ( $posts->have_posts() ) : $posts->the_post(); ?>
         <div class="item">
-            <?php if ( $posts->have_posts() ) : while ( $posts->have_posts() ) : $posts->the_post(); ?>
+
             <div class="option">
                 <div class="img">
                     <?php if ( has_post_thumbnail() ) { the_post_thumbnail('medium'); } ?>
@@ -48,8 +48,8 @@ $posts = new WP_Query( $args );
                     <div class="date"><?php the_date(); ?></div>
                 </div>
             </div>
-            <?php endwhile; endif; wp_reset_query(); ?>
-        </div>
 
+        </div>
+        <?php endwhile; endif; wp_reset_query(); ?>
     </div>
 </section>
