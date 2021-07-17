@@ -46,17 +46,19 @@ $posts = new WP_Query( $args );
         <div class="item">
 
                 <div class="option">
-                    <a href="<?= get_permalink($posts); ?>">
                     <div class="img">
-                        <?php if ( has_post_thumbnail() ) { the_post_thumbnail('medium'); } ?>
+                        <a href="<?= get_permalink($posts->ID); ?>">
+                            <?php if ( has_post_thumbnail() ) { the_post_thumbnail('medium'); } ?>
+                        </a>
                     </div>
 
                     <div class="text">
-                        <div class="title"><?php the_title(); ?></div>
-                        <div class="description"><?php the_excerpt(); ?></div>
-                        <div class="date"><?php the_date(); ?></div>
+                        <a href="<?= get_permalink($posts->ID); ?>">
+                            <div class="title"><?php the_title(); ?></div>
+                            <div class="description"><?php the_excerpt(); ?></div>
+                            <div class="date"><?php the_date(); ?></div>
+                        </a>
                     </div>
-                    </a>
                 </div>
 
         </div>
