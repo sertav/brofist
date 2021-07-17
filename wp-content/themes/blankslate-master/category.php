@@ -9,13 +9,17 @@
                 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                     <div class="item">
                         <div class="img">
-                            <?php if ( has_post_thumbnail() ) { the_post_thumbnail('medium'); } ?>
+                            <a href="<?= get_permalink($posts->ID); ?>">
+                                <?php if ( has_post_thumbnail() ) { the_post_thumbnail('medium'); } ?>
+                            </a>
                         </div>
 
                         <div class="text">
-                            <div class="title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
-                            <div class="description"><?php the_excerpt(); ?></div>
-                            <div class="date"><?= get_the_date(); ?></div>
+                            <a href="<?= get_permalink($posts->ID); ?>">
+                                <div class="title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
+                                <div class="description"><?php the_excerpt(); ?></div>
+                                <div class="date"><?= get_the_date(); ?></div>
+                            </a>
                         </div>
                     </div>
                 <?php endwhile; endif; ?>
