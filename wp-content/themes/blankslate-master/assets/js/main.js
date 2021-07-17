@@ -457,7 +457,7 @@ function isEmail(email) {
     return regex.test(email);
 }
 
-$("input[name='acceptance-1']").attr("readonly");
+$("input[name*='acceptance-1']").attr("readonly");
 // $("*[name*='" + key + "']").addClass('error');
 
 document.addEventListener('wpcf7invalid', function (event) {
