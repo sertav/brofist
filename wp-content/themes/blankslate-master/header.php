@@ -14,7 +14,7 @@
 	
 	<body <?php body_class(); ?>>
 		<?php if (is_front_page()) { echo '<div class="welcome-wrap">'; } ?>
-			<header class="navigation-wrap">
+			<header class="navigation-wrap <?php if (!is_front_page()) { echo 'black'; } ?>">
 				<div class="innerWrap">
 					<div class="logo">
 						<a href="<?= get_home_url(); ?>"><img src="<?= esc_url($h_logo['url']); ?>" alt="<?= esc_attr($h_logo['alt']); ?>"></a>
