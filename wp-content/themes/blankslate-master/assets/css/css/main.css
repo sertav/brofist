@@ -195,7 +195,7 @@ header {
             content: "";
             position: absolute;
             left: -6px;
-            top: 50%;
+            top: 49%;
             transform: translateY(-50%);
             background: #EA5B0C;
             border-radius: 50%;
@@ -337,9 +337,10 @@ section {
   background: transparent;
   display: flex;
   flex: 1;
-  padding: 32px 0; }
+  padding: 32px 0 24px; }
   .welcome-text .innerWrap {
     display: flex;
+    flex-wrap: wrap;
     align-items: center; }
     .welcome-text .innerWrap .left {
       position: relative;
@@ -380,14 +381,11 @@ section {
       .welcome-text .innerWrap .right .description {
         margin-top: 98px; }
     .welcome-text .innerWrap .scroll-img {
-      position: absolute;
-      bottom: 100px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 28px;
-      cursor: pointer; }
+      flex: 0 0 100%;
+      text-align: center; }
       .welcome-text .innerWrap .scroll-img img {
-        width: 100%; }
+        width: 28px;
+        cursor: pointer; }
     .welcome-text .innerWrap .description {
       position: relative;
       max-width: 580px;
@@ -799,6 +797,9 @@ section {
           .whats-new-wrap .slider .item .option:nth-child(1n) .text .title,
           .whats-new-wrap .slider .item .option:nth-child(1n) .text .description {
             color: #ffffff; }
+            .whats-new-wrap .slider .item .option:nth-child(1n) .text .title p,
+            .whats-new-wrap .slider .item .option:nth-child(1n) .text .description p {
+              color: #ffffff; }
         .whats-new-wrap .slider .item .option:nth-child(2n) {
           background: #ffffff;
           border-radius: 200px 0px 0px 200px;
@@ -2059,7 +2060,8 @@ footer {
   .news-wrap .item-wrap .item .text {
     margin-left: 16px; }
 
-  .news-wrap .item-wrap .item:nth-child(2n + 2) .text {
+  .news-wrap .item-wrap .item:nth-child(2n + 2) .text,
+  .whats-new-wrap .slider .item .option:nth-child(2n) .text {
     margin-right: 16px; }
 
   .news-wrap .item-wrap .item {
@@ -2123,7 +2125,7 @@ footer {
     margin: 0; }
 
   .footer-menu .menu {
-    margin: 40px 0; }
+    margin: 40px auto; }
 
   footer .innerWrap .footer-menu .menu ul {
     column-count: 2; }

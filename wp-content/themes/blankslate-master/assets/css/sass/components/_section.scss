@@ -22,9 +22,10 @@ section {
     background: transparent;
     display: flex;
     flex: 1;
-    padding: 32px 0;
+    padding: 32px 0 24px;
     .innerWrap{
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         .left{
             position: relative;
@@ -83,14 +84,11 @@ section {
         }
 
         .scroll-img{
-            position: absolute;
-            bottom: 100px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 28px;
-            cursor: pointer;
+            flex: 0 0 100%;
+            text-align: center;
             img{
-                width: 100%;
+                width: 28px;
+                cursor: pointer;
             }
         }
 
@@ -679,6 +677,9 @@ section {
                         .title,
                         .description {
                             color: #ffffff;
+                            p{
+                                color: #ffffff;
+                            }
                         }
                     }
                 }

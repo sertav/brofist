@@ -530,10 +530,12 @@
         margin-left: 16px;
     }
 
-    .news-wrap .item-wrap .item:nth-child(2n + 2) .text{
+    .news-wrap .item-wrap .item:nth-child(2n + 2) .text,
+    .whats-new-wrap .slider .item .option:nth-child(2n) .text {
         margin-right: 16px;
     }
 
+ 
     .news-wrap .item-wrap .item{
         max-width: 95%;
     }
@@ -630,7 +632,7 @@
     }
 
     .footer-menu .menu{
-        margin: 40px 0;
+        margin: 40px auto;
     }
 
     footer .innerWrap .footer-menu .menu ul {
