@@ -16,8 +16,9 @@ $posts = new WP_Query( $args );
 
         <div class="item">
             <?php if ( $posts->have_posts() ) : while ( $posts->have_posts() ) : $posts->the_post(); ?>
-            <a href="<?= get_permalink($posts); ?>">
+
                 <div class="option">
+                    <a href="<?= get_permalink($posts); ?>">
                     <div class="img">
                         <?php if ( has_post_thumbnail() ) { the_post_thumbnail('medium'); } ?>
                     </div>
@@ -27,8 +28,9 @@ $posts = new WP_Query( $args );
                         <div class="description"><?php the_excerpt(); ?></div>
                         <div class="date"><?php the_date(); ?></div>
                     </div>
+                    </a>
                 </div>
-            </a>
+
             <?php endwhile; endif; wp_reset_query(); ?>
         </div>
 
@@ -38,8 +40,9 @@ $posts = new WP_Query( $args );
     <div class="slider mobile owl-carousel">
         <?php if ( $posts->have_posts() ) : while ( $posts->have_posts() ) : $posts->the_post(); ?>
         <div class="item">
-            <a href="<?= get_permalink($posts); ?>">
+
                 <div class="option">
+                    <a href="<?= get_permalink($posts); ?>">
                     <div class="img">
                         <?php if ( has_post_thumbnail() ) { the_post_thumbnail('medium'); } ?>
                     </div>
@@ -49,8 +52,9 @@ $posts = new WP_Query( $args );
                         <div class="description"><?php the_excerpt(); ?></div>
                         <div class="date"><?php the_date(); ?></div>
                     </div>
+                    </a>
                 </div>
-            </a>
+
         </div>
         <?php endwhile; endif; wp_reset_query(); ?>
     </div>
