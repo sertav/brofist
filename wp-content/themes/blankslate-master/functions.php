@@ -102,6 +102,12 @@
 			'menu_title'	=> 'Footer',
 			'parent_slug'	=> 'theme-general-settings',
 		));
+
+        acf_add_options_sub_page(array(
+            'page_title' 	=> 'Theme Blocks and Popup Settings',
+            'menu_title'	=> 'Blocks',
+            'parent_slug'	=> 'theme-general-settings',
+        ));
 	}
 	
 
