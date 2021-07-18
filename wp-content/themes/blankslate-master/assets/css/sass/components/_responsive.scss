@@ -1,30 +1,30 @@
 @media screen and (max-width: 1440px){
-    .hangOut-wrap .slider {
-        width: calc(100% + 48px);
-        margin-left: -24px;
-        padding: 0;
-    }
+    // .hangOut-wrap .slider {
+    //     width: calc(100% + 48px);
+    //     margin-left: -24px;
+    //     padding: 0;
+    // }
 
-    .hangOut-wrap .slider .owl-stage-outer {
-        padding-left: 20%;
-        width: calc(100% - 48px);
-        margin-left: 24px;
-    }
+    // .hangOut-wrap .slider .owl-stage-outer {
+    //     padding-left: 20%;
+    //     width: calc(100% - 48px);
+    //     margin-left: 24px;
+    // }
 
-    .hangOut-wrap .slider .owl-item.last {
-        transform: scale(0.6);
-    }
-    .hangOut-wrap .slider .owl-item.next {
-        transform: scale(0.7);
-        margin: 0 -0.9%;
-    }
+    // .hangOut-wrap .slider .owl-item.last {
+    //     transform: scale(0.6);
+    // }
+    // .hangOut-wrap .slider .owl-item.next {
+    //     transform: scale(0.7);
+    //     margin: 0 -0.9%;
+    // }
 
-    .hangOut-wrap .slider .owl-item.near {
-        transform: scale(0.8);
-        position: relative;
-        z-index: 1;
-        margin: 0 -0.9%;
-    }
+    // .hangOut-wrap .slider .owl-item.near {
+    //     transform: scale(0.8);
+    //     position: relative;
+    //     z-index: 1;
+    //     margin: 0 -0.9%;
+    // }
 }
 
 @media screen and (max-width: 1400px) {
@@ -336,7 +336,8 @@
 
     .brands-wrap .mac_iphone-text .text .text-info .info p,
     .help_center-wrap .faq-fixImg .faq .faq_list li .title-desc,
-    .help_center-wrap .faq-fixImg .faq .faq_list li .desc-desc p {
+    .help_center-wrap .faq-fixImg .faq .faq_list li .desc-desc p ,
+    .hangOut-wrap .slider .item .text .description-item {
         font-size: 14px;
     }
 
@@ -359,6 +360,10 @@
     .brands-wrap .brand-info {
         margin-top: 16px;
         padding: 16px;
+    }
+
+    .hangOut-wrap .slider .item .text {
+        padding: 22px;
     }
 
     .brands-wrap .brand-info .item span,
@@ -649,46 +654,46 @@
 
 
 @media screen and (max-width: 860px){
-    .hangOut-wrap .slider {
-        width: calc(100% + 100px);
-        margin-left: -50px;
-        padding: 0;
-    }
+    // .hangOut-wrap .slider {
+    //     width: calc(100% + 100px);
+    //     margin-left: -50px;
+    //     padding: 0;
+    // }
 
-    .hangOut-wrap .slider .owl-stage-outer {
-        padding-left: 90%;
-        width: calc(100% - 100px);
-        margin-left: 50px;
-    }
+    // .hangOut-wrap .slider .owl-stage-outer {
+    //     padding-left: 90%;
+    //     width: calc(100% - 100px);
+    //     margin-left: 50px;
+    // }
 
 
-    .hangOut-wrap .slider .owl-item.last {
-        transform: scale(1);
-    }
+    // .hangOut-wrap .slider .owl-item.last {
+    //     transform: scale(1);
+    // }
 
-    .hangOut-wrap .slider .owl-item.next {
-        transform: scale(1);
-        margin: 0;
-    }
+    // .hangOut-wrap .slider .owl-item.next {
+    //     transform: scale(1);
+    //     margin: 0;
+    // }
 
-    .hangOut-wrap .slider .owl-item.near {
-        transform: scale(0.5);
-        position: relative;
-        z-index: 1;
-        margin: 0 -2.5%;
-    }
+    // .hangOut-wrap .slider .owl-item.near {
+    //     transform: scale(0.5);
+    //     position: relative;
+    //     z-index: 1;
+    //     margin: 0 -2.5%;
+    // }
 
-    .hangOut-wrap .slider .owl-item.active.center{
-        transform: scale(0.6);
-    }
+    // .hangOut-wrap .slider .owl-item.active.center{
+    //     transform: scale(0.6);
+    // }
 
-    .hangOut-wrap .slider{
-        margin-top: -56px;
-    }
+    // .hangOut-wrap .slider{
+    //     margin-top: -56px;
+    // }
 
-    .hangOut-wrap .slider .owl-dots{
-        margin-top: -72px;
-    }
+    // .hangOut-wrap .slider .owl-dots{
+    //     margin-top: -72px;
+    // }
 
 
 
@@ -713,8 +718,8 @@
 }
 
 @media screen and (max-width: 600px) {
-    .hangOut-wrap .slider .owl-stage-outer{
-        padding-left: 86%;
-    }
+    // .hangOut-wrap .slider .owl-stage-outer{
+    //     padding-left: 86%;
+    // }
 
 }
