@@ -183,6 +183,7 @@ pll_register_string('Casino', 'Casino');
 pll_register_string('Got it', 'Got it');
 
 
+add_action('wp_footer', 'more_less');
 function more_less()
 { ?>
     <script>
@@ -200,4 +201,3 @@ function more_less()
     </script>
     <?php
 }
-add_action('wp_footer', 'more_less');
