@@ -98,12 +98,14 @@ $fp_b_items = get_field('fp_b_items');
             <div class="text">
                 <h2><?= $item->post_title; ?> <?php pll_e('Casino'); ?></h2>
 
+                <?php if ($fp_b_revenue) : ?>
                 <div class="title-1"><?php pll_e('Revenue share'); ?></div>
 
                 <div class="description">
                     <p><?= $fp_b_revenue; ?></p>
                 </div>
                 <a class="show_more"><?php pll_e('More'); ?></a>
+                <?php endif; ?>
 
                 <div class="text-info">
                     <div class="info">
