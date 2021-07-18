@@ -137,16 +137,23 @@ add_filter('wpcf7_form_elements', function ($content) {
     return $content;
 });
 
+add_filter('acf/fields/post_object/result', 'my_post_object_result', 10, 4);
+function my_post_object_result( $result, $object, $field, $post ) {
+    global $polylang;
+    $language = $polylang->model->get_post_language($object->ID);
+    $result .= ' (' . $language->slug . ')';
+    return $result;
+}
+
+add_filter('acf/fields/post_object/result/name=field_name', 'my_post_object_result', 10, 4);
 
 pll_register_string('Sign In', 'Sign In');
 pll_register_string('Login', 'Login');
 pll_register_string('Password', 'Password');
 pll_register_string('2FA Code', '2FA Code');
 pll_register_string('Reset Password', 'Reset Password');
-
 pll_register_string('Please input your mail', 'Please input your mail');
 pll_register_string('Reset', 'Reset');
-
 pll_register_string('Sign Up', 'Sign Up');
 pll_register_string('Registration', 'Registration');
 pll_register_string('Name', 'Name');
@@ -160,9 +167,7 @@ pll_register_string('Company', 'Company');
 pll_register_string('Company name', 'Company name');
 pll_register_string('By checking the box, you accept the', 'By checking the box, you accept the');
 pll_register_string('Terms and Conditions', 'Terms and Conditions');
-pll_register_string('I agree to receive personalized offers from BROFIST',
-    'I agree to receive personalized offers from BROFIST');
-
+pll_register_string('I agree to receive personalized offers from BROFIST', 'I agree to receive personalized offers from BROFIST');
 pll_register_string('Become a Bro', 'Become a Bro');
 pll_register_string('Website link', 'Website link');
 pll_register_string('Markets', 'Markets');
