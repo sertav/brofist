@@ -8,11 +8,10 @@
         <div class="main-title">
             <?= $fp_c_title; ?>
         </div>
-
         <div class="form-innerWrap">
             <div class="left">
                 <div class="form">
-                    <?= do_shortcode('[contact-form-7 id="'. $fp_c_cf->ID .'" title="'. $fp_c_cf->post_title .'"]'); ?>
+                    <?= do_shortcode('[cf7form cf7key="'. $fp_c_cf->post_name .'"]'); ?>
                 </div>
             </div>
             <div class="right">
