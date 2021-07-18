@@ -54,7 +54,7 @@ $fp_b_items = get_field('fp_b_items');
             <div class="item text-center">
                 <span><?php pll_e('License'); ?></span>
                 <?php $license = get_the_terms( $item->ID, 'brands-license' ); ?>
-                <p><?php if($license) $license[0]->name; ?></p>
+                <p><?php if($license) echo $license[0]->name; ?></p>
             </div>
         </div>
 
