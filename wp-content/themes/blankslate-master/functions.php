@@ -148,6 +148,7 @@ pll_register_string('Address', 'Address');
 pll_register_string('Your address', 'Your address');
 pll_register_string('Confirm password', 'Confirm password');
 pll_register_string('Company', 'Company');
+pll_register_string('Company name', 'Company name');
 pll_register_string('By checking the box, you accept the', 'By checking the box, you accept the');
 pll_register_string('Terms and Conditions', 'Terms and Conditions');
 pll_register_string('I agree to receive personalized offers from BROFIST', 'I agree to receive personalized offers from BROFIST');
