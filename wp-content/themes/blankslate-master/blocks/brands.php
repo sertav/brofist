@@ -48,7 +48,7 @@ $fp_b_items = get_field('fp_b_items');
             <div class="item text-center">
                 <span><?php pll_e('Payment Options'); ?></span>
                 <?php $payments = get_the_terms( $item->ID, 'brands-payments' ); ?>
-                <p><?php if($payments) count($payments); ?></p>
+                <p><?php if($payments) echo count($payments); ?></p>
             </div>
 
             <div class="item text-center">
