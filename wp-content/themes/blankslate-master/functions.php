@@ -70,6 +70,7 @@
 	function wpse_setup_theme() {
 		 add_theme_support( 'post-thumbnails' );
 		 add_image_size( 'reviews', 190 );
+		 add_image_size( 'logo-iphone', 133, 238, array( 'center', 'top' ) );
 	}
 	add_action( 'after_setup_theme', 'wpse_setup_theme' );
 	
