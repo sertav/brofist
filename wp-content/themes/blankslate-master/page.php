@@ -8,7 +8,7 @@
                     <div class="date"><?php the_date(); ?></div>
                     <div class="breadcrumb">
                         <ul>
-                            <li><a href="<?= get_home_url(); ?>">Main</a></li>
+                            <li><a href="<?= get_home_url(); ?>"><?php pll_e('Main'); ?></a></li>
                             <li><a><?php the_title(); ?></a></li>
                         </ul>
                     </div>
