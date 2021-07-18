@@ -128,4 +128,36 @@ add_filter('wpcf7_form_elements', function($content) {
 
 
 
+pll_register_string('Sign In', 'Sign In');
 pll_register_string('Login', 'Login');
+pll_register_string('Password', 'Password');
+pll_register_string('2FA Code', '2FA Code');
+pll_register_string('Reset Password', 'Reset Password');
+
+pll_register_string('Please input your mail', 'Please input your mail');
+pll_register_string('Reset', 'Reset');
+
+pll_register_string('Sign Up', 'Sign Up');
+pll_register_string('Registration', 'Registration');
+pll_register_string('Name', 'Name');
+pll_register_string('Phone', 'Phone');
+pll_register_string('Address', 'Address');
+pll_register_string('Confirm password', 'Confirm password');
+pll_register_string('Company', 'Company');
+pll_register_string('By checking the box, you accept the', 'By checking the box, you accept the');
+pll_register_string('Terms and Conditions', 'Terms and Conditions');
+pll_register_string('I agree to receive personalized offers from BROFIST', 'I agree to receive personalized offers from BROFIST');
+
+pll_register_string('Become a Bro', 'Become a Bro');
+pll_register_string('Website link', 'Website link');
+pll_register_string('Markets', 'Markets');
+pll_register_string('Payment Options', 'Payment Options');
+pll_register_string('License', 'License');
+pll_register_string('Revenue share', 'Revenue share');
+pll_register_string('Payments', 'Payments');
+pll_register_string('Languages', 'Languages');
+pll_register_string('Start Promoting', 'Start Promoting');
+pll_register_string('Bro, check all inputs...', 'Bro, check all inputs...');
+pll_register_string("What's new?", "What's new?");
+pll_register_string('Main', 'Main');
+pll_register_string('News', 'News');

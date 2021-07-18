@@ -59,8 +59,8 @@
                                     ?>
 									</div>
 								</li>
-								<li class="signUp"><a><img src="<?php bloginfo('template_url'); ?>/assets/images/icon11.png" alt=""> Sign Up</a></li>
-								<li class="signIn"><a>Sign In</a></li>
+								<li class="signUp"><a><img src="<?php bloginfo('template_url'); ?>/assets/images/icon11.png" alt=""> <?php pll_e('Sign Up'); ?></a></li>
+								<li class="signIn"><a><?php pll_e('Sign In'); ?></a></li>
 							</ul>
 						</div>
 						

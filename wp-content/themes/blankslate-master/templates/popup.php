@@ -20,21 +20,21 @@ $popup_form_text = get_field('popup_form_text', 'option');
                         </div>
 
                         <div class="input-wrap">
-                            <label for="" class="required">Password:</label>
+                            <label for="" class="required"><?php pll_e('Password'); ?>:</label>
                             <input type="password" placeholder="password" name="password">
                         </div>
 
                         <div class="input-wrap">
-                            <label for="">2FA Code</label>
+                            <label for=""><?php pll_e('2FA Code'); ?></label>
                             <input type="text" placeholder="2FA Code" id="otp_attempt" name="otp_attempt">
                         </div>
-                        <button class="btn">Login</button>
+                        <button class="btn"><?php pll_e('Login'); ?></button>
                     </form>
 
                     <div class="error-message">
-                        Bro, check all inputs...
+                        <?php pll_e('Bro, check all inputs...'); ?>
                     </div>
-                    <a class="reset-password">Reset Password</a>
+                    <a class="reset-password"><?php pll_e('Reset Password'); ?></a>
                 </div>
             </div>
             <div class="close-popup"></div>
@@ -46,16 +46,16 @@ $popup_form_text = get_field('popup_form_text', 'option');
             <div class="form-box">
                 <div class="close-popup"><i class="eff03 fas fa-times"></i></div>
                 <div class="form-box-wrap login_form">
-                    <h3>Reset password</h3>
+                    <h3><?php pll_e('Reset Password'); ?></h3>
                     <form id="resetPassword" method="post">
                         <div class="input-wrap">
-                            <label for="">Please input your mail:</label>
+                            <label for=""><?php pll_e('Please input your mail'); ?>:</label>
                             <input type="text" placeholder="example@mail.com" name="email">
                         </div>
-                        <button class="btn">Reset</button>
+                        <button class="btn"><?php pll_e('Reset'); ?></button>
                     </form>
                     <div class="error-message">
-                        Bro, check all inputs...
+                        <?php pll_e('Bro, check all inputs...'); ?>
                     </div>
                 </div>
             </div>
@@ -70,10 +70,10 @@ $popup_form_text = get_field('popup_form_text', 'option');
             <div class="form-box">
                 <div class="close-popup"><i class="eff03 fas fa-times"></i></div>
                 <div class="form-box-wrap login_form">
-                    <h3>REGISTRATION</h3>
+                    <h3><?php pll_e('Registration'); ?></h3>
                     <form id="signUp">
                         <div class="input-wrap">
-                            <label for="">Name</label>
+                            <label for=""><?php pll_e('Name'); ?></label>
                             <input type="text" placeholder="Your Name" name="full_name">
                         </div>
 
@@ -83,27 +83,27 @@ $popup_form_text = get_field('popup_form_text', 'option');
                         </div>
 
                         <div class="input-wrap">
-                            <label for="" class="required">Phone:</label>
+                            <label for="" class="required"><?php pll_e('Phone'); ?>:</label>
                             <input type="text" placeholder="Your phone" name="phone">
                         </div>
 
                         <div class="input-wrap">
-                            <label for="" class="required">Address:</label>
+                            <label for="" class="required"><?php pll_e('Address'); ?>:</label>
                             <input type="text" placeholder="Your address" name="address">
                         </div>
 
                         <div class="input-wrap">
-                            <label for="" class="required">Password:</label>
+                            <label for="" class="required"><?php pll_e('Password'); ?>:</label>
                             <input type="password" placeholder="password" name="password">
                         </div>
 
                         <div class="input-wrap">
-                            <label for="" class="required">Confirm password:</label>
+                            <label for="" class="required"><?php pll_e('Confirm password'); ?>:</label>
                             <input type="password" placeholder="Confirm password" name="password_confirmation">
                         </div>
 
                         <div class="input-wrap">
-                            <label for="" class="required">Company</label>
+                            <label for="" class="required"><?php pll_e('Company name'); ?></label>
                             <input type="text" placeholder="..." name="company_name">
                         </div>
                         <div class="input-wrap">
@@ -120,23 +120,23 @@ $popup_form_text = get_field('popup_form_text', 'option');
                                 <label>
                                     <input type="checkbox" checked="" name="terms_accepted" readonly>
                                     <span></span>
-                                    <p>By checking the box, you accept the <a href="">Terms and Conditions</a></p>
+                                    <p><?php pll_e('By checking the box, you accept the'); ?> <a href=""><?php pll_e('Terms and Conditions'); ?></a></p>
                                 </label>
                             </div>
                             <div class="check">
                                 <label>
                                     <input type="checkbox" name="receive_newsletter">
                                     <span></span>
-                                    <p>I agree to receive personalized offers from BROFIST</p>
+                                    <p><?php pll_e('I agree to receive personalized offers from BROFIST'); ?></p>
                                 </label>
                             </div>
                         </div>
 
-                        <button class="btn" type="submit">Sign Up</button>
+                        <button class="btn" type="submit"><?php pll_e('Sign Up'); ?></button>
                     </form>
 
                     <div class="error-message">
-                        Bro, check all inputs...
+                        <?php pll_e('Bro, check all inputs...'); ?>
                     </div>
 
                 </div>
