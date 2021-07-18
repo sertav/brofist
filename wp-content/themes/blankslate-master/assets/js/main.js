@@ -1,11 +1,39 @@
-// $(window).resize(function(){
-//     $('body').css('padding-bottom', $('footer').height() + 32);
-// });
+var swiper = new Swiper(".swiper-container.two", {
+    pagination: ".swiper-pagination",
+    nextButton: ".swiper-button-next",
+    prevButton: ".swiper-button-prev",
+    paginationClickable: true,
+    effect: "coverflow",
+    loop: true,
+    centeredSlides: true,
+    slidesPerView: 3.05,
 
-// $(document).on("click","",function() {
-
-// });
-
+    coverflow: {
+        rotate: 0,
+        stretch: 100,
+        depth: 150,
+        modifier: 1.2,
+        slideShadows: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        500: {
+            slidesPerView: 1.3,
+        },
+        768: {
+            slidesPerView: 1.5,
+        },
+        992: {
+            slidesPerView: 2,
+        },
+        1400: {
+            slidesPerView: 3.01,
+        },
+    },
+});
 
 var sections = $("section"),
     nav = $("nav"),
@@ -22,23 +50,6 @@ $(window).on("scroll", function () {
         $(".navigation-wrap").removeClass("bg-shap");
         $(".welcome-wrap").removeClass("pt");
     }
-    // var cur_pos = $(this).scrollTop();
-    //
-    // sections.each(function () {
-    //     var top = $(this).offset().top - nav_height,
-    //         bottom = top + $(this).outerHeight();
-    //
-    //     if (cur_pos >= top && cur_pos <= bottom) {
-    //         nav.find("a").parent().removeClass("active");
-    //         sections.removeClass("active");
-    //
-    //         $(this).parent().addClass("active");
-    //         nav
-    //             .find('a[href="#' + $(this).attr("id") + '"]')
-    //             .parent()
-    //             .addClass("active");
-    //     }
-    // });
 });
 
 nav.find("a").on("click", function () {
@@ -118,30 +129,6 @@ $(window).load(function () {
         $('.brands-wrap .brand-info .item .img-wrap').html(markets);
         $('.brands-wrap .brand-info .item .payment-text').html(payment);
         $('.brands-wrap .brand-info .item .license-text').html(license);
-    });
-
-
-    $(".hangOut-wrap .slider").owlCarousel({
-        center: true,
-        dots: true,
-        loop: true,
-        margin: 0,
-        nav: true,
-        mouseDrag: false,
-        smartSpeed: 600,
-        responsive: {
-            0: {
-                items: 1,
-                nav: false,
-            },
-            860: {
-                items: 3,
-                nav: false,
-            },
-            1440: {
-                items: 5,
-            },
-        },
     });
 
 
