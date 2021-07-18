@@ -17,7 +17,7 @@ $fp_j_heading = get_field('fp_j_heading');
                     <p><?= $text; ?></p>
                 </div>
                 <?php if ($button == true) : ?>
-                <button class="btn">Become a Bro</button>
+                <button class="btn"><?php pll_e('Become a Bro'); ?></button>
                 <?php endif; ?>
             </div>
             <?php endwhile; wp_reset_query(); ?>

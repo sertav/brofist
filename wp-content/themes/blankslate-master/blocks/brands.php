@@ -27,12 +27,12 @@ $fp_b_items = get_field('fp_b_items');
         ?>
         <div class="brand-info">
             <div class="item">
-                <span>Website link</span>
+                <span><?php pll_e('Website link'); ?></span>
                 <a class="website-link" href=""><?= $fp_b_site; ?></a>
             </div>
 
             <div class="item markets">
-                <span>Markets</span>
+                <span><?php pll_e('Markets'); ?></span>
                 <div class="img-wrap">
                     <?php
                     $cities = get_the_terms( $item->ID, 'brands-city' );
@@ -45,13 +45,13 @@ $fp_b_items = get_field('fp_b_items');
             </div>
 
             <div class="item text-center">
-                <span>Payment Options</span>
+                <span><?php pll_e('Payment Options'); ?></span>
                 <?php $payments = get_the_terms( $item->ID, 'brands-payments' ); ?>
                 <p><?= count($payments); ?></p>
             </div>
 
             <div class="item text-center">
-                <span>License</span>
+                <span><?php pll_e('License'); ?></span>
                 <?php $license = get_the_terms( $item->ID, 'brands-license' ); ?>
                 <p><?= $license[0]->name; ?></p>
             </div>
@@ -59,7 +59,7 @@ $fp_b_items = get_field('fp_b_items');
 
         <div class="brand-info mobile">
             <div class="item markets">
-                <span>Markets</span>
+                <span><?php pll_e('Markets'); ?></span>
                 <div class="img-wrap">
                     <?php
                     foreach($cities as $city) :
@@ -90,22 +90,22 @@ $fp_b_items = get_field('fp_b_items');
                         </div>
                     </div>
                 </div>
-                <button class="btn">Start Promoting <?= $item->post_title; ?></button>
+                <button class="btn"><?php pll_e('Start Promoting'); ?> <?= $item->post_title; ?></button>
             </div>
 
             <div class="text">
-                <h2><?= $item->post_title; ?> Casino</h2>
+                <h2><?= $item->post_title; ?> <?php pll_e('Casino'); ?></h2>
 
-                <div class="title-1">Revenue share</div>
+                <div class="title-1"><?php pll_e('Revenue share'); ?></div>
 
                 <div class="description">
                     <p><?= $fp_b_revenue; ?></p>
                 </div>
-                <a class="show_more">More</a>
+                <a class="show_more"><?php pll_e('More'); ?></a>
 
                 <div class="text-info">
                     <div class="info">
-                        <div class="title-2">Payments</div>
+                        <div class="title-2"><?php pll_e('Payments'); ?></div>
                         <p>
                             <?php
                             $last_payment = array_pop($payments);
@@ -117,7 +117,7 @@ $fp_b_items = get_field('fp_b_items');
                         </p>
                     </div>
                     <div class="info">
-                        <div class="title-2">Languages</div>
+                        <div class="title-2"><?php pll_e('Languages'); ?></div>
                         <p>
                             <?php
                             $languages = get_the_terms($item->ID, 'brands-languages');

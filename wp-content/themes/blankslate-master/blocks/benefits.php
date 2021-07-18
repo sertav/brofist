@@ -15,7 +15,7 @@ $fp_benefits_text_2 = get_field('fp_benefits_text_2');
             <div class="description mobile">
                 <?= $fp_benefits_text_2; ?>
             </div>
-            <button class="btn">Become a Bro</button>
+            <button class="btn"><?php pll_e('Become a Bro'); ?></button>
             <div class="arrow"><img src="<?php bloginfo('template_url'); ?>/assets/images/img4.png" alt=""></div>
         </div>
 

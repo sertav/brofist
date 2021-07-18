@@ -2,7 +2,7 @@
     <main>
         <section class="news-wrap">
             <div class="innerWrap">
-                <div class="main-title">What’s <span>new</span>?</div>
+                <div class="main-title"><?php pll_e("What’s"); ?><span><?php pll_e("new"); ?></span>?</div>
             </div>
 
             <div class="item-wrap">
