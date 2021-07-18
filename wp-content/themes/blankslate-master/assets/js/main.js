@@ -318,17 +318,17 @@ function init3D() {
 }
 
 
-$(".brands-wrap .show_more").on("click", function () {
-    $(this).parent().find(".description").toggleClass("open");
-
-    if ($(".brands-wrap .description").hasClass("open")) {
-        $(this).html("Less");
-        $(".brands-wrap .show_more").addClass("open");
-    } else {
-        $(this).html("More");
-        $(".brands-wrap .show_more").removeClass("open");
-    }
-});
+// $(".brands-wrap .show_more").on("click", function () {
+//     $(this).parent().find(".description").toggleClass("open");
+//
+//     if ($(".brands-wrap .description").hasClass("open")) {
+//         $(this).html("Less");
+//         $(".brands-wrap .show_more").addClass("open");
+//     } else {
+//         $(this).html("More");
+//         $(".brands-wrap .show_more").removeClass("open");
+//     }
+// });
 
 $(".scroll-img").on("click", function () {
     $("html, body").animate(
