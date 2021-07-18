@@ -28,7 +28,7 @@ $fp_b_items = get_field('fp_b_items');
         <div class="brand-info">
             <div class="item">
                 <span><?php pll_e('Website link'); ?></span>
-                <a class="website-link" href="<?= $fp_b_site; ?>"><?= $fp_b_site; ?></a>
+                <a class="website-link" href="http://<?= $fp_b_site; ?>" target="_blank" rel="nofollow"><?= $fp_b_site; ?></a>
             </div>
 
             <div class="item markets">
