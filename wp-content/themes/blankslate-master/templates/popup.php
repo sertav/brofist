@@ -21,12 +21,12 @@ $popup_form_text = get_field('popup_form_text', 'option');
 
                         <div class="input-wrap">
                             <label for="" class="required"><?php pll_e('Password'); ?>:</label>
-                            <input type="password" placeholder="password" name="password">
+                            <input type="password" placeholder="<?php pll_e('Password'); ?>" name="password">
                         </div>
 
                         <div class="input-wrap">
                             <label for=""><?php pll_e('2FA Code'); ?></label>
-                            <input type="text" placeholder="2FA Code" id="otp_attempt" name="otp_attempt">
+                            <input type="text" placeholder="<?php pll_e('2FA Code'); ?>" id="otp_attempt" name="otp_attempt">
                         </div>
                         <button class="btn"><?php pll_e('Login'); ?></button>
                     </form>
@@ -63,8 +63,6 @@ $popup_form_text = get_field('popup_form_text', 'option');
         </div>
     </div>
 
-
-
     <div class="popup signUp_popup">
         <div class="dialog">
             <div class="form-box">
@@ -74,7 +72,7 @@ $popup_form_text = get_field('popup_form_text', 'option');
                     <form id="signUp">
                         <div class="input-wrap">
                             <label for=""><?php pll_e('Name'); ?></label>
-                            <input type="text" placeholder="Your Name" name="full_name">
+                            <input type="text" placeholder="<?php pll_e('Your Name'); ?>" name="full_name">
                         </div>
 
                         <div class="input-wrap">
@@ -84,22 +82,22 @@ $popup_form_text = get_field('popup_form_text', 'option');
 
                         <div class="input-wrap">
                             <label for="" class="required"><?php pll_e('Phone'); ?>:</label>
-                            <input type="text" placeholder="Your phone" name="phone">
+                            <input type="text" placeholder="<?php pll_e('Your phone'); ?>" name="phone">
                         </div>
 
                         <div class="input-wrap">
                             <label for="" class="required"><?php pll_e('Address'); ?>:</label>
-                            <input type="text" placeholder="Your address" name="address">
+                            <input type="text" placeholder="<?php pll_e('Your address'); ?>" name="address">
                         </div>
 
                         <div class="input-wrap">
                             <label for="" class="required"><?php pll_e('Password'); ?>:</label>
-                            <input type="password" placeholder="password" name="password">
+                            <input type="password" placeholder="<?php pll_e('Password'); ?>" name="password">
                         </div>
 
                         <div class="input-wrap">
                             <label for="" class="required"><?php pll_e('Confirm password'); ?>:</label>
-                            <input type="password" placeholder="Confirm password" name="password_confirmation">
+                            <input type="password" placeholder="<?php pll_e('Confirm password'); ?>" name="password_confirmation">
                         </div>
 
                         <div class="input-wrap">
