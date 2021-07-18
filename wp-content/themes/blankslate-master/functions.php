@@ -164,3 +164,4 @@ pll_register_string('Main', 'Main');
 pll_register_string('News', 'News');
 pll_register_string('More', 'More');
 pll_register_string('Casino', 'Casino');
+pll_register_string('Got it', 'Got it');

@@ -120,7 +120,7 @@ $popup_form_text = get_field('popup_form_text', 'option');
                                 <label>
                                     <input type="checkbox" checked="" name="terms_accepted" readonly>
                                     <span></span>
-                                    <p><?php pll_e('By checking the box, you accept the'); ?> <a href=""><?php pll_e('Terms and Conditions'); ?></a></p>
+                                    <p><?php pll_e('By checking the box, you accept the'); ?> <a href="<?= get_bloginfo('url'); ?>/privacy-policy/"><?php pll_e('Terms and Conditions'); ?></a></p>
                                 </label>
                             </div>
                             <div class="check">
@@ -152,7 +152,7 @@ $popup_form_text = get_field('popup_form_text', 'option');
                 <div class="form-box-wrap">
                     <img src="<?php bloginfo('template_url'); ?>/assets/images/img1.png" alt="">
                     <h3><span><?= $popup_reg_heading; ?></span> <?= $popup_reg_text; ?></h3>
-                    <button class="btn">GOT IT</button>
+                    <button class="btn"><?php pll_e('Got it'); ?></button>
                 </div>
             </div>
             <div class="close-popup"></div>
@@ -166,13 +166,10 @@ $popup_form_text = get_field('popup_form_text', 'option');
                 <div class="form-box-wrap">
                     <img src="<?php bloginfo('template_url'); ?>/assets/images/img1.png" alt="">
                     <h3><span><?= $popup_form_heading; ?></span> <?= $popup_form_text; ?></h3>
-                    <button class="btn">GOT IT</button>
+                    <button class="btn"><?php pll_e('Got it'); ?></button>
                 </div>
             </div>
             <div class="close-popup"></div>
         </div>
     </div>
 </div>
-
-
-
