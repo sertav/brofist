@@ -137,15 +137,6 @@ add_filter('wpcf7_form_elements', function ($content) {
     return $content;
 });
 
-add_filter('acf/fields/post_object/result', 'my_post_object_result', 10, 4);
-function my_post_object_result( $result, $object, $field, $post ) {
-    global $polylang;
-    $language = $polylang->model->get_post_language($object->ID);
-    $result .= ' (' . $language->slug . ')';
-    return $result;
-}
-
-add_filter('acf/fields/post_object/result/name=field_name', 'my_post_object_result', 10, 4);
 
 pll_register_string('Sign In', 'Sign In');
 pll_register_string('Login', 'Login');
