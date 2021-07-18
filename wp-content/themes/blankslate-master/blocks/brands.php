@@ -65,7 +65,7 @@ $fp_b_items = get_field('fp_b_items');
                     <?php
                     foreach($cities as $city) :
                         $city_flag = get_field('city_flag', $city);
-                    if ($city) :
+                    if ($cities) :
                     ?>
                         <img src="<?= esc_url($city_flag['url']); ?>" alt="<?= esc_attr($city_flag['alt']); ?>">
                     <?php endif; endforeach; wp_reset_query(); ?>
