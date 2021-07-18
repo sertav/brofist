@@ -90,7 +90,7 @@ $fp_b_items = get_field('fp_b_items');
                     <div class="iphone">
                         <img class="main-img" src="<?php bloginfo('template_url'); ?>/assets/images/iphone.png" alt="">
                         <div class="iphone-background" style="background: <?= $fp_b_iphone_bg; ?>;">
-                            <div class="logo" style="<?php if ($fp_b_iphone_cover_bg == true) echo 'width: 100%'; ?>"><img src="<?= $fp_b_iphone_logo['url']['logo-iphone']; ?>" alt="<?= esc_attr($fp_b_iphone_logo['alt']); ?>"></div>
+                            <div class="logo" style="<?php if ($fp_b_iphone_cover_bg == true) echo 'width: 100%'; ?>"><img src="<?= $fp_b_iphone_logo['sizes']['logo-iphone']; ?>" alt="<?= esc_attr($fp_b_iphone_logo['alt']); ?>"></div>
                         </div>
                     </div>
                 </div>
