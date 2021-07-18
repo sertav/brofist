@@ -164,7 +164,7 @@ $popup_form_text = get_field('popup_form_text', 'option');
                 <div class="close-popup"><i class="eff03 fas fa-times"></i></div>
                 <div class="form-box-wrap">
                     <img src="<?php bloginfo('template_url'); ?>/assets/images/img1.png" alt="">
-                    <h3><span><span><?= $popup_form_heading; ?></span> <?= $popup_form_text; ?></h3>
+                    <h3><span><?= $popup_form_heading; ?></span> <?= $popup_form_text; ?></h3>
                     <button class="btn">GOT IT</button>
                 </div>
             </div>
