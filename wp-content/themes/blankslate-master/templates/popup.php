@@ -1,3 +1,10 @@
+<?php
+$popup_reg_heading = get_field('popup_reg_heading', 'option');
+$popup_reg_text = get_field('popup_reg_text', 'option');
+$popup_form_heading = get_field('popup_form_heading', 'option');
+$popup_form_text = get_field('popup_form_text', 'option');
+?>
+
 <div class="popup-wrap">
     <div class="popup signIn_popup">
         <div class="dialog">
@@ -143,7 +150,7 @@
                 <div class="close-popup"><i class="eff03 fas fa-times"></i></div>
                 <div class="form-box-wrap">
                     <img src="<?php bloginfo('template_url'); ?>/assets/images/img1.png" alt="">
-                    <h3><span>Thanks for signing up, bro!</span> We'll get back to you soon</h3>
+                    <h3><span><?= $popup_reg_heading; ?></span> <?= $popup_reg_text; ?></h3>
                     <button class="btn">GOT IT</button>
                 </div>
             </div>
@@ -157,7 +164,7 @@
                 <div class="close-popup"><i class="eff03 fas fa-times"></i></div>
                 <div class="form-box-wrap">
                     <img src="<?php bloginfo('template_url'); ?>/assets/images/img1.png" alt="">
-                    <h3><span>You password , bro!</span> We'll get back to you soon</h3>
+                    <h3><span><span><?= $popup_form_heading; ?></span> <?= $popup_form_text; ?></h3>
                     <button class="btn">GOT IT</button>
                 </div>
             </div>
