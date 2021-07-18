@@ -3,6 +3,8 @@ $popup_reg_heading = get_field('popup_reg_heading', 'option');
 $popup_reg_text = get_field('popup_reg_text', 'option');
 $popup_form_heading = get_field('popup_form_heading', 'option');
 $popup_form_text = get_field('popup_form_text', 'option');
+
+$login = pll_register_string('Login', 'Login');
 ?>
 
 <div class="popup-wrap">
@@ -11,7 +13,7 @@ $popup_form_text = get_field('popup_form_text', 'option');
             <div class="form-box">
                 <div class="close-popup"><i class="eff03 fas fa-times"></i></div>
                 <div class="form-box-wrap login_form">
-                    <h3>Login</h3>
+                    <h3><?php pll__($login); ?></h3>
                     <form id="signIn" method="post">
                         <div class="input-wrap">
                             <label for="" class="required">Email:</label>
