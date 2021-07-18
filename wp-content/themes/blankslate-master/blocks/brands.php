@@ -37,23 +37,24 @@ $fp_b_items = get_field('fp_b_items');
                     <?php
                     $cities = get_the_terms( $item->ID, 'brands-city' );
                     foreach($cities as $city) :
-                        $city_flag = get_field('city_flag', $city)
+                        $city_flag = get_field('city_flag', $city);
+                    if ($city) :
                     ?>
                     <img src="<?= esc_url($city_flag['url']); ?>" alt="<?= esc_attr($city_flag['alt']); ?>">
-                    <?php endforeach; wp_reset_query(); ?>
+                    <?php endif; endforeach; wp_reset_query(); ?>
                 </div>
             </div>
 
             <div class="item text-center">
                 <span><?php pll_e('Payment Options'); ?></span>
                 <?php $payments = get_the_terms( $item->ID, 'brands-payments' ); ?>
-                <p><?= count($payments); ?></p>
+                <p><?php if($payments) count($payments); ?></p>
             </div>
 
             <div class="item text-center">
                 <span><?php pll_e('License'); ?></span>
                 <?php $license = get_the_terms( $item->ID, 'brands-license' ); ?>
-                <p><?= $license[0]->name; ?></p>
+                <p><?php if($license) $license[0]->name; ?></p>
             </div>
         </div>
 
@@ -63,10 +64,11 @@ $fp_b_items = get_field('fp_b_items');
                 <div class="img-wrap">
                     <?php
                     foreach($cities as $city) :
-                        $city_flag = get_field('city_flag', $city)
+                        $city_flag = get_field('city_flag', $city);
+                    if ($city) :
                     ?>
                         <img src="<?= esc_url($city_flag['url']); ?>" alt="<?= esc_attr($city_flag['alt']); ?>">
-                    <?php endforeach; wp_reset_query(); ?>
+                    <?php endif; endforeach; wp_reset_query(); ?>
                 </div>
             </div>
         </div>
@@ -108,11 +110,13 @@ $fp_b_items = get_field('fp_b_items');
                         <div class="title-2"><?php pll_e('Payments'); ?></div>
                         <p>
                             <?php
-                            $last_payment = array_pop($payments);
-                            foreach($payments as $payment) :
-                                echo $payment->name .', ';
-                            endforeach;
-                            echo $last_payment->name;
+                            if ($payments) {
+                                $last_payment = array_pop($payments);
+                                foreach ($payments as $payment) :
+                                    echo $payment->name . ', ';
+                                endforeach;
+                                echo $last_payment->name;
+                            }
                             ?>
                         </p>
                     </div>
@@ -122,10 +126,12 @@ $fp_b_items = get_field('fp_b_items');
                             <?php
                             $languages = get_the_terms($item->ID, 'brands-languages');
                             $last_language = array_pop($languages);
-                            foreach($languages as $language) :
-                                echo $language->name .', ';
-                            endforeach;
-                            echo $last_language->name;
+                            if ($languages) {
+                                foreach ($languages as $language) :
+                                    echo $language->name . ', ';
+                                endforeach;
+                                echo $last_language->name;
+                            }
                             ?>
                         </p>
                     </div>
