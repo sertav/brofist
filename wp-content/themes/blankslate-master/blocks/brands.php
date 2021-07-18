@@ -83,14 +83,18 @@ $fp_b_items = get_field('fp_b_items');
                     <div class="mac">
                         <img class="main-img" src="<?php bloginfo('template_url'); ?>/assets/images/mac.png" alt="">
                         <div class="mac-background" style="background: <?= $fp_b_pc_bg; ?>;">
-                            <div class="logo" style="<?php if ($fp_b_pc_cover_bg == true) echo 'width: 100%; height: 100%'; ?>"><img style="<?php if ($fp_b_pc_cover_bg == true) echo 'height: 100%; object-fit: cover'; ?>" src="<?= $fp_b_pc_logo['url']; ?>" alt="<?= esc_attr($fp_b_pc_logo['alt']); ?>"></div>
+                            <div class="logo" style="<?php if ($fp_b_pc_cover_bg == true) echo 'width: 100%; height: 100%'; ?>">
+                                <img style="<?php if ($fp_b_pc_cover_bg == true) echo 'height: 100%; object-fit: cover'; ?>" src="<?= $fp_b_pc_logo['url']; ?>" alt="<?= esc_attr($fp_b_pc_logo['alt']); ?>">
+                            </div>
                         </div>
                     </div>
 
                     <div class="iphone">
                         <img class="main-img" src="<?php bloginfo('template_url'); ?>/assets/images/iphone.png" alt="">
                         <div class="iphone-background" style="background: <?= $fp_b_iphone_bg; ?>;">
-                            <div class="logo" style="<?php if ($fp_b_iphone_cover_bg == true) echo 'width: 100%'; ?>"><img src="<?= $fp_b_iphone_logo['sizes']['logo-iphone']; ?>" alt="<?= esc_attr($fp_b_iphone_logo['alt']); ?>"></div>
+                            <div class="logo" style="<?php if ($fp_b_iphone_cover_bg == true) echo 'width: 100%; height: 100%; margin-top: -1px'; ?>">
+                                <img style="<?php if ($fp_b_iphone_cover_bg == true) echo ' height: 100%'; ?>" src="<?= $fp_b_iphone_logo['sizes']['logo-iphone']; ?>" alt="<?= esc_attr($fp_b_iphone_logo['alt']); ?>">
+                            </div>
                         </div>
                     </div>
                 </div>
