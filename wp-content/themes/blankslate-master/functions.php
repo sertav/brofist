@@ -197,3 +197,8 @@ function more_less()
     <?php
 }
 add_action('wp_footer', 'more_less', 100);
+
+
+add_option('undeleteable_page_id', '427', '', 'no');
+add_action('deleted_post', 'prevent_undeleteable_page_deletion');
+add_action('trashed_post', 'prevent_undeleteable_page_trash');
