@@ -198,5 +198,16 @@ function more_less()
 }
 add_action('wp_footer', 'more_less', 100);
 
+$role = get_role('administrator');
+$role->add_cap('delete_pages');
+$role->add_cap('delete_others_pages');
+$role->add_cap('delete_published_pages');
 
-
+function prevent_default_theme_deletion($allcaps, $caps, $args) {
+    $post_id = 21;
+    if ( isset( $args[0] ) && isset( $args[2] ) && $args[2] == $post_id && $args[0] == 'delete_post' ) {
+        $allcaps[ $caps[0] ] = false;
+    }
+    return $allcaps;
+}
+add_filter ('user_has_cap', 'prevent_default_theme_deletion', 10, 3);
