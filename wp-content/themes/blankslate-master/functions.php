@@ -198,7 +198,14 @@ function more_less()
 }
 add_action('wp_footer', 'more_less', 100);
 
-
-add_option('undeleteable_page_id', '427', '', 'no');
-add_action('deleted_post', 'prevent_undeleteable_page_deletion');
-add_action('trashed_post', 'prevent_undeleteable_page_trash');
+function restrict_post_deletion($post_ID){
+    $user = get_current_user_id();
+    $restricted_users = array('admin');
+    $restricted_pages = array(427);
+    if(in_array($user, $restricted_users) && in_array($post_ID, $restricted_pages)){
+        echo "You are not authorized to delete this page.";
+        exit;
+    }
+}
+add_action('wp_trash_post', 'restrict_post_deletion', 10, 1);
+add_action('before_delete_post', 'restrict_post_deletion', 10, 1);
