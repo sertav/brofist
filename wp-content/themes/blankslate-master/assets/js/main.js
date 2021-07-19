@@ -471,6 +471,14 @@ $('.wpcf7-validates-as-required').on('keyup', function () {
     }
 });
 
+$(document).on("load", function () {
+    $("header .innerWrap .language img").css(
+        {
+            "width" : "14px",
+            "height" : "14px"
+        }
+    );
+});
 
 $(document).on("click", ".reset-password", function () {
     $(".signIn_popup").fadeOut();
