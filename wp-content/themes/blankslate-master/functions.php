@@ -199,16 +199,15 @@ function more_less()
 add_action('wp_footer', 'more_less', 100);
 
 
-function remove_pages()
-{
-    global $my_admin_page;
-    $screen = get_current_screen();
+function restrict_page_deletion($post_ID){
+    $user = get_current_user_id();
 
-    if ( is_admin() && ($screen->id == 427 )) {
-        $role = get_role('administrator');
-        $role->remove_cap('delete_pages');
-        $role->remove_cap('delete_others_pages');
-        $role->remove_cap('delete_published_pages');
+    $restricted_pageId = 427;
+
+    if($post_ID == $restricted_pageId)
+    {
+        echo "You are not authorized to delete this page.";
+        exit;
     }
 }
-add_action('admin_init', 'remove_pages');
+add_action('before_delete_post', 'restrict_page_deletion', 10, 1);
