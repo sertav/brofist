@@ -200,12 +200,12 @@ add_action('wp_footer', 'more_less', 100);
 
 
 function restrict_page_deletion($post_ID){
-    $user = get_current_user_id();
+    $screen = get_current_screen();
 
     $homeRus = 427;
     $homeEng = 21;
 
-    if($post_ID == $homeRus || $post_ID == $homeEng)
+    if($screen->id == $homeRus || $screen->id == $homeEng)
     {
         echo "You are not authorized to delete this page.";
         exit;
