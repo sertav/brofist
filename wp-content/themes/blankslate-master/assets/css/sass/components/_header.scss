@@ -89,7 +89,7 @@ header{
                         content: "";
                         position: absolute;
                         left: -6px;
-                        top: 49%;
+                        top: 50%;
                         transform: translateY(-50%);
                         background: #EA5B0C;
                         border-radius: 50%;
@@ -98,6 +98,7 @@ header{
                         opacity: 0;
                         visibility: hidden;
                         transition: all 0.3s ease;
+                        margin-top: -1.5px;
                     }
                 }
             }

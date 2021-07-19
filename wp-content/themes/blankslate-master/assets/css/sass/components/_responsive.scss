@@ -159,6 +159,10 @@
     .whats-new-wrap .slider .item .option:nth-child(2n) {
         padding-left: 60px;
     }
+
+    header .innerWrap nav .menu li::before{
+        margin-top: -0.5px;
+    }
 }
 
 
