@@ -50,6 +50,7 @@ function brofist_load_scripts()
         wp_enqueue_style('fonts');
 
         wp_enqueue_script('jquery-js');
+        wp_enqueue_script('swiper');
         wp_enqueue_script('owl-carousel');
         wp_enqueue_script('TweenMax');
         wp_enqueue_script('wow');
