@@ -199,7 +199,7 @@ function more_less()
 add_action('wp_footer', 'more_less', 100);
 
 
-function restrict_page_deletion($post_ID){
+function restrict_page_deletion(){
     $screen = get_current_screen();
 
     $homeRus = 427;
@@ -212,3 +212,5 @@ function restrict_page_deletion($post_ID){
     }
 }
 add_action('wp_trash_post', 'restrict_page_deletion', 10, 1);
+add_action('delete_post', 'restrict_page_deletion', 10, 1);
+add_action('before_delete_post', 'restrict_page_deletion', 10, 1);
