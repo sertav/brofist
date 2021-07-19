@@ -200,13 +200,3 @@ add_action('wp_footer', 'more_less', 100);
 
 
 
-function wpse_312694_restrict_page_deletion( $caps, $cap, $user_id, $args ) {
-    $post_id = $args[0];
-
-    if ( $cap === 'delete_post' && $post_id === 21 ) {
-        $caps[] = 'do_not_allow';
-    }
-
-    return $caps;
-}
-add_filter( 'map_meta_cap', 'wpse_312694_restrict_page_deletion', 10, 4 );
