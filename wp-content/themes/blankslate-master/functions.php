@@ -51,6 +51,7 @@ function brofist_load_scripts()
 
         wp_enqueue_script('jquery-js');
         wp_enqueue_script('main');
+        wp_enqueue_script('wow');
     }
 
 
