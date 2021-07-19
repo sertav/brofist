@@ -204,7 +204,7 @@ function remove_pages()
     global $my_admin_page;
     $screen = get_current_screen();
 
-    if ( is_admin() && ($screen->id == 427 ) {
+    if ( is_admin() && ($screen->id == 427 )) {
         $role = get_role('administrator');
         $role->remove_cap('delete_pages');
         $role->remove_cap('delete_others_pages');
