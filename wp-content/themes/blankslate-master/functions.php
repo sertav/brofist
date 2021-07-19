@@ -199,18 +199,14 @@ function more_less()
 add_action('wp_footer', 'more_less', 100);
 
 
-function restrict_page_deletion(){
-    $screen = get_current_screen();
 
-    $homeRus = 427;
-    $homeEng = 21;
+function wpse_312694_restrict_page_deletion( $caps, $cap, $user_id, $args ) {
+    $post_id = $args[0];
 
-    if($screen->id == $homeRus || $screen->id == $homeEng)
-    {
-        echo "You are not authorized to delete this page.";
-        exit;
+    if ( $cap === 'delete_post' && $post_id === 21 ) {
+        $caps[] = 'do_not_allow';
     }
+
+    return $caps;
 }
-add_action('wp_trash_post', 'restrict_page_deletion', 10, 1);
-add_action('delete_post', 'restrict_page_deletion', 10, 1);
-add_action('before_delete_post', 'restrict_page_deletion', 10, 1);
+add_filter( 'map_meta_cap', 'wpse_312694_restrict_page_deletion', 10, 4 );
