@@ -202,8 +202,11 @@ add_action('wp_footer', 'more_less', 100);
 function prevent_default_theme_deletion($allcaps, $caps, $args) {
     $post_id_eng = 21;
     $post_id_rus = 427;
-    $post_id = array(21, 427);
-    if ( isset( $args[0] ) && isset( $args[2] ) && $args[2] == $post_id && $args[0] == 'delete_post' ) {
+
+    if ( isset( $args[0] ) && isset( $args[2] ) && $args[2] == $post_id_eng && $args[0] == 'delete_post' ) {
+        $allcaps[ $caps[0] ] = false;
+    }
+    if ( isset( $args[0] ) && isset( $args[2] ) && $args[2] == $post_id_rus && $args[0] == 'delete_post' ) {
         $allcaps[ $caps[0] ] = false;
     }
     return $allcaps;
