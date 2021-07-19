@@ -199,26 +199,16 @@ function more_less()
 add_action('wp_footer', 'more_less', 100);
 
 
-//function restrict_page_deletion($post_ID){
-//    $user = get_current_user_id();
-//
-//    $homeRus = 427;
-//    $homeEng = 21;
-//
-//    if($post_ID == $homeRus || $post_ID == $homeEng)
-//    {
-//        echo "You are not authorized to delete this page.";
-//        exit;
-//    }
-//}
-//add_action('before_delete_post', 'restrict_page_deletion', 10, 1);
+function restrict_page_deletion($post_ID){
+    $user = get_current_user_id();
 
+    $homeRus = 427;
+    $homeEng = 21;
 
-
-add_action('wp_trash_post', 'prevent_post_deletion');
-function prevent_post_deletion($postid){
-    $protected_post_id = 21;
-    if ($postid == $protected_post_id) {
-        exit('The page you were trying to delete is protected.');
+    if($post_ID == $homeRus || $post_ID == $homeEng)
+    {
+        echo "You are not authorized to delete this page.";
+        exit;
     }
 }
+add_action('wp_trash_post', 'restrict_page_deletion', 10, 1);
