@@ -209,3 +209,9 @@ function restrict_post_deletion($post_ID){
 }
 add_action('wp_trash_post', 'restrict_post_deletion', 10, 1);
 add_action('before_delete_post', 'restrict_post_deletion', 10, 1);
+
+
+$role = get_role('administrator');
+$role->remove_cap('delete_pages');
+$role->remove_cap('delete_others_pages');
+$role->remove_cap('delete_published_pages');
