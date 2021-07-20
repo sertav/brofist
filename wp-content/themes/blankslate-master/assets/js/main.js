@@ -327,7 +327,7 @@ $(".scroll-img").on("click", function () {
     );
 });
 
-$(".welcome-text .btn, .offer-wrap .btn").on(
+$(".welcome-text .btn, .offer-wrap .btn, .brands-wrap .btn").on(
     "click",
     function () {
         $("html, body").animate(
