@@ -379,7 +379,7 @@ $(window).scroll(function () {
         if (scroll >= fixtop && scroll <= fixbottom) {
             $(".fixImg .img").css({
                 position: "fixed",
-                top: "80" + "px",
+                top: "150" + "px",
             });
         }
 
