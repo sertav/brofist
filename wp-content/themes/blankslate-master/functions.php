@@ -181,6 +181,7 @@ pll_register_string('More', 'More');
 pll_register_string('Less', 'Less');
 pll_register_string('Casino', 'Casino');
 pll_register_string('Got it', 'Got it');
+pll_register_string('Your website, social media account, or advertising platform', 'Your website, social media account, or advertising platform');
 
 
 function more_less()

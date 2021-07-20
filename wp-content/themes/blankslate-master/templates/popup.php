@@ -71,23 +71,8 @@ $popup_form_text = get_field('popup_form_text', 'option');
                     <h3><?php pll_e('Registration'); ?></h3>
                     <form id="signUp">
                         <div class="input-wrap">
-                            <label for=""><?php pll_e('Name'); ?></label>
-                            <input type="text" placeholder="<?php pll_e('Your Name'); ?>" name="full_name">
-                        </div>
-
-                        <div class="input-wrap">
                             <label for="" class="required">Email:</label>
                             <input type="text" placeholder="example@mail.com" name="email">
-                        </div>
-
-                        <div class="input-wrap">
-                            <label for="" class="required"><?php pll_e('Phone'); ?>:</label>
-                            <input type="text" placeholder="<?php pll_e('Your phone'); ?>" name="phone">
-                        </div>
-
-                        <div class="input-wrap">
-                            <label for="" class="required"><?php pll_e('Address'); ?>:</label>
-                            <input type="text" placeholder="<?php pll_e('Your address'); ?>" name="address">
                         </div>
 
                         <div class="input-wrap">
@@ -101,16 +86,8 @@ $popup_form_text = get_field('popup_form_text', 'option');
                         </div>
 
                         <div class="input-wrap">
-                            <label for="" class="required"><?php pll_e('Company name'); ?></label>
+                            <label for="" class="required"><?php pll_e('Your website, social media account, or advertising platform'); ?></label>
                             <input type="text" placeholder="..." name="company_name">
-                        </div>
-                        <div class="input-wrap">
-                            <label for="" >Skype</label>
-                            <input type="text" placeholder="@example" name="skype">
-                        </div>
-                        <div class="input-wrap">
-                            <label for="">Telegram</label>
-                            <input type="text" placeholder="@example" name="telegram">
                         </div>
 
                         <div class="check-wrap">
