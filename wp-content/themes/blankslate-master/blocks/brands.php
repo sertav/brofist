@@ -72,7 +72,10 @@ $fp_b_items = get_field('fp_b_items');
                         $city_flag = get_field('city_flag', $city);
                     if (isset($cities)) :
                     ?>
+                    <div>
+                        <span data-tooltip="<?= $city->name; ?>"></span>
                         <img src="<?= esc_url($city_flag['url']); ?>" alt="<?= esc_attr($city_flag['alt']); ?>">
+                    </div>
                     <?php endif; endforeach; wp_reset_query(); ?>
                 </div>
             </div>
