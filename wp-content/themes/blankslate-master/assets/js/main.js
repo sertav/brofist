@@ -54,7 +54,7 @@ $(window).on("scroll", function () {
     }
 });
 
-nav.find("a").on("click", function () {
+$("nav a , .footer-menu .menu a").on("click", function () {
     var $el = $(this),
         id = $el.attr("href");
 
