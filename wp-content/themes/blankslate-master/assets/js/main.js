@@ -370,8 +370,8 @@ $(".subNavigation .lang").on("click", function () {
 $(window).scroll(function () {
     if (!$(".faq-fixImg .faq").length) return;
 
-    var fixtop = $(".faq-fixImg .faq").offset().top - 80;
-    var fixbottom = $(".faq-fixImg").height() + ($(".faq-fixImg").offset().top - 80) - $(".fixImg .img").height();
+    var fixtop = $(".faq-fixImg .faq").offset().top - 150;
+    var fixbottom = $(".faq-fixImg").height() + ($(".faq-fixImg").offset().top - 150) - $(".fixImg .img").height();
     var fixbottomTop = $(".faq-fixImg").height() - $(".fixImg .img").height() + 160;
     var scroll = $(window).scrollTop();
 
