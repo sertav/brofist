@@ -95,7 +95,7 @@ $popup_form_text = get_field('popup_form_text', 'option');
                                 <label>
                                     <input type="checkbox" checked="" name="terms_accepted" readonly>
                                     <span></span>
-                                    <p><?php pll_e('By checking the box, you accept the'); ?> <a href="<?= get_bloginfo('url'); ?>/terms/"><?php pll_e('Terms and Conditions'); ?></a></p>
+                                    <p><?php pll_e('By checking the box, you accept the'); ?> <a href="<?= get_bloginfo('url'); ?>/terms/" target="_blank"><?php pll_e('Terms and Conditions'); ?></a></p>
                                 </label>
                             </div>
                             <div class="check">
