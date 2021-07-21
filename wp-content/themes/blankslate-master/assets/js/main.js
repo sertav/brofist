@@ -545,6 +545,10 @@ $(function () {
             type: 'post',
             url: 'https://brofist.partners/wp-content/themes/blankslate-master/api/sign_in.php',
             data: $('#signIn').serialize(),
+            beforeSend: function() {
+                // setting a timeout
+                window.location.href = 'https://admin.brofist.partners/partner/dashboard';
+            },
             success: function (response) {
                 var data = JSON.parse(response)
                 if (data.error) {
