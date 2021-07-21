@@ -24,7 +24,7 @@
                                 if ($soc['value'] == 'skype') {
                                     echo 'skype:'. $soc['value'] .'?chat';
                                 } elseif ($soc['value'] == 'telegram') {
-                                    echo 'https://telegram.me/'. $soc['value'];
+                                    echo 'https://telegram.me/'. $link;
                                 } elseif ($link) {
                                     echo $link;
                                 } else {
