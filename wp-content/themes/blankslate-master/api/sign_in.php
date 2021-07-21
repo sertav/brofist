@@ -17,6 +17,15 @@ function signIn()
             echo json_encode($result);
             die();
         }
+
+        preg_match_all('/^Set-Cookie:\s*([^;]*)/mi', $result, $matches);
+        $cookies = array();
+        foreach($matches[1] as $item) {
+            parse_str($item, $cookie);
+            $cookies = array_merge($cookies, $cookie);
+        }
+        var_dump($cookies);
+        die();
         echo json_encode(['status'=>'201']);
         die();
     } catch (Exception $exception) {
