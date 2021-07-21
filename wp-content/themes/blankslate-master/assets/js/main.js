@@ -504,7 +504,7 @@ $(function () {
                     });
                 }
                 if (data.status == 201) {
-                    $('.popup.info_signin_popup').fadeIn();
+                    $('.popup.signup_popup').fadeIn();
                     $('.popup.signUp_popup').fadeOut();
                 }
             }

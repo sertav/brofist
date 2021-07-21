@@ -120,7 +120,7 @@ $popup_form_text = get_field('popup_form_text', 'option');
         </div>
     </div>
 
-    <div class="popup info_signin_popup">
+    <div class="popup info_signin_popup signup_popup">
         <div class="dialog">
             <div class="form-box">
                 <div class="close-popup"><i class="eff03 fas fa-times"></i></div>
