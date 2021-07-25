@@ -1,4 +1,10 @@
 <?php
+    header('Content-Type: text/html; charset=UTF-8');
+    header('Access-Control-Allow-Origin: *');
+    header('Access-Control-Allow-Headers: *');
+    header('Access-Control-Expose-Headers: *');
+    header('Access-Control-Allow-Credentials: true');
+
     $h_logo = get_field('h_logo', 'option');
 ?>
 
