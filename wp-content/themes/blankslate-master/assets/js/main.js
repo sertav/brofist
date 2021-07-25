@@ -408,10 +408,10 @@ $(document).on("click", ".signUp", function () {
     $("body").addClass("hidden-b");
 });
 
-$(document).on("click", ".signIn", function () {
-    $(".signIn_popup").fadeIn();
-    $("body").addClass("hidden-b");
-});
+// $(document).on("click", ".signIn", function () {
+//     $(".signIn_popup").fadeIn();
+//     $("body").addClass("hidden-b");
+// });
 
 $(document).on("click", ".close-popup , .info_signin_popup .btn", function () {
     $(".popup").fadeOut();
@@ -480,6 +480,11 @@ $(document).ready(function () {
     );
 });
 
+function onSubmit(token) {
+    document.getElementById("resetPassword").submit();
+    document.getElementById("signUp").submit();
+}
+
 $(document).on("click", ".reset-password", function () {
     $(".signIn_popup").fadeOut();
     $(".resetPassword_popup").fadeIn();
@@ -504,8 +509,8 @@ $(function () {
                     });
                 }
                 if (data.status == 201) {
-                    $('.popup.signup_popup').fadeIn();
                     $('.popup.signUp_popup').fadeOut();
+                    $('.popup.signup_popup').fadeIn();
                 }
             }
         });
@@ -536,34 +541,50 @@ $(function () {
     });
 });
 
+$('.signIn').on('click', function () {
+    window.open('https://admin.brofist.partners/partner/login', '_blank');
+});
 
+/*
 $(function () {
     $('#signIn').on('submit', function (e) {
+        window.location.href = 'https://admin.brofist.partners/partner/login';
+
         $(this).find('input').removeClass('error');
         e.preventDefault();
         $.ajax({
             type: 'post',
             url: 'https://brofist.partners/wp-content/themes/blankslate-master/api/sign_in.php',
             data: $('#signIn').serialize(),
-            beforeSend: function() {
-                // setting a timeout
-                window.location.href = 'https://admin.brofist.partners/partner/dashboard';
-            },
+            crossDomain: true,
             success: function (response) {
-                var data = JSON.parse(response)
-                if (data.error) {
-                    $('#signIn').find('input').addClass('error');
-                    $('#signIn').find('#otp_attempt').removeClass('error');
-                    $('.signIn_popup .error-message').fadeIn();
-                }
-                if (data.status == 201) {
-                    window.location.href = 'https://admin.brofist.partners/partner/dashboard';
-                }
+
+                var xhr = new XMLHttpRequest();
+                xhr.open('GET', 'https://admin.brofist.partners/api/client/partner/sign_in', true);
+                xhr.withCredentials = true;
+                xhr.send();
+
+
+
+
+                // var data = JSON.parse(response);
+                // if (data.error) {
+                //     $('#signIn').find('input').addClass('error');
+                //     $('#signIn').find('#otp_attempt').removeClass('error');
+                //     $('.signIn_popup .error-message').fadeIn();
+                // }
+
+
+                // window.location.href = 'https://admin.brofist.partners/partner/dashboard';
+                //
+                // if (data.status == 201) {
+                //     window.open('https://admin.brofist.partners/partner/login', '_blank');
+                // }
             }
         });
     });
 });
-
+*/
 
 
 

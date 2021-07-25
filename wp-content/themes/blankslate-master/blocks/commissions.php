@@ -17,11 +17,18 @@ $fp_com_add_text = get_field('fp_com_add_text');
                     <div class="title"><?= $title; ?></div>
                     <div class="info"><?= $text; ?></div>
                 </div>
+            </div>
+            <?php elseif ($i == 2) : ?>
+            <div class="item wow fadeInDown" data-wow-delay="0.1s">
+                <div class="text">
+                    <div class="title"><?= $title; ?></div>
+                    <div class="info"><?= $text; ?></div>
+                </div>
                 <div class="ul">
                     <div class="li yellow"></div>
                 </div>
             </div>
-            <?php elseif ($i == 2) : ?>
+            <?php elseif ($i == 3) : ?>
             <div class="item wow fadeInDown" data-wow-delay="0.3s">
                 <div class="text">
                     <div class="title"><?= $title; ?></div>
@@ -32,7 +39,7 @@ $fp_com_add_text = get_field('fp_com_add_text');
                     <div class="li orange"></div>
                 </div>
             </div>
-            <?php elseif ($i == 3) : ?>
+            <?php elseif ($i == 4) : ?>
             <div class="item wow fadeInDown" data-wow-delay="0.5s">
                 <div class="text">
                     <div class="title"><?= $title; ?></div>
@@ -44,7 +51,7 @@ $fp_com_add_text = get_field('fp_com_add_text');
                     <div class="li yellow"></div>
                 </div>
             </div>
-            <?php elseif ($i == 4) : ?>
+            <?php elseif ($i == 5) : ?>
             <div class="item wow fadeInDown" data-wow-delay="0.7s">
                 <div class="text">
                     <div class="title"><?= $title; ?></div>
@@ -57,7 +64,7 @@ $fp_com_add_text = get_field('fp_com_add_text');
                     <div class="li yellow"></div>
                 </div>
             </div>
-            <?php elseif ($i == 5) : ?>
+            <?php elseif ($i == 6) : ?>
             <div class="item wow fadeInDown" data-wow-delay="0.9s">
                 <div class="text">
                     <div class="title"><?= $title; ?></div>

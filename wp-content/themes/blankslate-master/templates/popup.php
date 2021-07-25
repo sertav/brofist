@@ -52,7 +52,7 @@ $popup_form_text = get_field('popup_form_text', 'option');
                             <label for=""><?php pll_e('Please input your mail'); ?>:</label>
                             <input type="text" placeholder="example@mail.com" name="email">
                         </div>
-                        <button class="btn"><?php pll_e('Reset'); ?></button>
+                        <button class="btn g-recaptcha" data-sitekey="6LeqXbcbAAAAAFqS4QuEagQSD8pNEWDG2Thw5Goc"data-callback='onSubmit'data-action='submit'><?php pll_e('Reset'); ?></button>
                     </form>
                     <div class="error-message">
                         <?php pll_e('Bro, check all inputs...'); ?>
@@ -107,7 +107,7 @@ $popup_form_text = get_field('popup_form_text', 'option');
                             </div>
                         </div>
 
-                        <button class="btn" type="submit"><?php pll_e('Sign Up'); ?></button>
+                        <button class="btn g-recaptcha" type="submit" data-sitekey="6LeqXbcbAAAAAFqS4QuEagQSD8pNEWDG2Thw5Goc"data-callback='onSubmit'data-action='submit'><?php pll_e('Sign Up'); ?></button>
                     </form>
 
                     <div class="error-message">
