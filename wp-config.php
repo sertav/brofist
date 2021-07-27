@@ -59,14 +59,14 @@ if ($_SERVER[ 'HTTP_HOST' ] !== 'brofist') {
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         'MbY0RI}^z5t.k8Z}hw/XW_Q5aNv(55WQSL0xC8O1q#YD2-^j,$I/ogw{>>[g;B7u' );
-define( 'SECURE_AUTH_KEY',  '/_G$.5&}S7 <X?:l9XY-9?u7j&m)TxMi+;J(yQumf{In7-~LS/-]u/Mq4D?IcVS1' );
-define( 'LOGGED_IN_KEY',    'Wp-g!OYzT!fT163=0IDJ8Et?|f._O>7$Z{fcug!3;aDLz>d,<&G:o4[pmS{`v,OE' );
-define( 'NONCE_KEY',        '~sLmf5Gu5<6}h[oZmXp%*Hr|]r*{fqoQjfvac(9JVsQbSP() Ts>m@L`&Z 3(1^O' );
-define( 'AUTH_SALT',        '{!e a:{|)3,m/(?e*&@@Q~:,V GDXO|HQqi;HFB Zb{,%3!beq><SCLWk?pB6l+>' );
-define( 'SECURE_AUTH_SALT', 'Eol@I+wA l!;szJ~!]~yVD4|_ltr!]6muD0H rpyI{ygO(G-j[a2>;Fi]f!B/0Fo' );
-define( 'LOGGED_IN_SALT',   '2_<DtUIQi:NyXM)6Fkc;tT1`O=${vLYxADT2cR-wjQ|Ls/1Ll(fy)Gw$]g-0__jA' );
-define( 'NONCE_SALT',       'P>I>ndLzjt!J3O*~AGqsJ_bFv8g&ydt0pq[UyO<tO.cac1MQ0w0_,B^N/~(n:g[3' );
+define('AUTH_KEY',         '.soq^&>2Q_-MGv^}v}-UVW%Z(rg$l&yb4A_?D_~/@[>]OsM/sIn~_d*L32]`]iir');
+define('SECURE_AUTH_KEY',  '-J$IKUkS38h0uG-cM^DQs1Z<?PF~s%,+7xUK^mrHu]ya|:=IyU+M-zuq,ig:oO#7');
+define('LOGGED_IN_KEY',    ')V:K?dp=!mdyQen4Ea1QAq/Rm<mM.s5&x*{ aQ[I6lQ^fpOymbpQxTMClY:^)3m}');
+define('NONCE_KEY',        '[MSI=4|]I4]m%|yo|((fz3q$Pw:Fp~x5+UZa)IYy6f!Q{W%SK}Z90ad/=bNmPW<6');
+define('AUTH_SALT',        '47J+-0^n-W]uMw/urO,!.RhWc0+Fz}r,rtu.m+4TbXR|R|Kbr)mQvHr89C@|+TC3');
+define('SECURE_AUTH_SALT', 'uHs!{Zc3f#,S#+da2r@!-Y XBAc|N6N;&88vIUo^.IRnFmq|/9h#83T+a-7tuv:m');
+define('LOGGED_IN_SALT',   'Hd+V`5IXViMh0?r1/u,j{2:JeOO3N)Rk!sbqjX^*4wRshSm>mUnj[u?E1_p+A*ec');
+define('NONCE_SALT',       '%FS.Wb-^:W)hoN]b-j:N!,#8Z2T#AE[Ml@RiRa%xm|GN[Q-@U[U1*(P<5R!Z4wgb');
 
 /**#@-*/
 
@@ -92,6 +92,8 @@ $table_prefix = 'wp_';
  */
 define( 'WP_DEBUG', true );
 define( 'WPCF7_AUTOP', false );
+//define( 'DISALLOW_FILE_MODS', true );
+define( 'DISALLOW_FILE_EDIT', true );
 
 /* That's all, stop editing! Happy publishing. */
 
