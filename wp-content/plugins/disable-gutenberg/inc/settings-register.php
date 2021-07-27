@@ -163,7 +163,7 @@ function disable_gutenberg_settings_section_6() {
 
 function disable_gutenberg_settings_section_7() {
 	
-	echo '<p class="g7g-display"><strong><a class="g7g-toggle" href="#more-tools" title="'. esc_attr__('Toggle More Tools', 'disable-gutenberg') .'">'. esc_html__('Click here', 'disable-gutenberg') .'</a></strong> '. esc_html__('to display more tools and options. Note: these options remain in effect even when hidden on this page.', 'disable-gutenberg') .'</p>';
+	echo '<p class="g7g-display"><span class="fa fa-pad-more fa-gear"></span><strong><a class="g7g-toggle" href="#more-tools" title="'. esc_attr__('Toggle More Tools', 'disable-gutenberg') .'">'. esc_html__('Click here', 'disable-gutenberg') .'</a></strong> '. esc_html__('to display more tools and options. Note: these options remain in effect even when hidden on this page.', 'disable-gutenberg') .'</p>';
 	
 }
 

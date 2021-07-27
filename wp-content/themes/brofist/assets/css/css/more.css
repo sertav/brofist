@@ -1,0 +1,144 @@
+.mobile{
+    display: none !important;
+}
+
+.form-wrap .form-innerWrap .left .form .input-wrap textarea {
+    border: 0;
+    width: 100%;
+    margin-top: 10px;
+    background: #FFFFFF;
+    border-radius: 26px;
+    padding: 20px 26px;
+    outline: none;
+    border: 1px solid transparent;
+}
+
+input.wpcf7-form-control.wpcf7-submit.btn {
+    border: 0;
+}
+
+.wpcf7 .ajax-loader {
+    display: none !important;
+}
+
+.error-message {
+    display: none;
+}
+
+.error-message.show {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+.wpcf7-not-valid-tip {
+    display: none;
+}
+
+.new-wrap .new-inner .info .img img {
+    width: auto;
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+.popup .form-box .form-box-wrap .btn {
+    text-transform: uppercase;
+}
+
+
+
+.brands-wrap .brand-info .item.markets .img-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.brands-wrap .brand-info .item.markets .img-wrap span {
+    display: flex;
+    height: 34px;
+    width: 34px;
+    position: absolute;
+    cursor: help;
+}
+
+.brands-wrap .brand-info .item.markets img {
+    margin-right: 8px;
+    border-radius: 4px;
+}
+
+[data-tooltip] {
+    position: relative;
+}
+
+[data-tooltip]::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    width: auto;
+    left: 0;
+    top: 0;
+    background: #444444;
+    color: #fff;
+    padding: 0.5em;
+    pointer-events: none;
+    opacity: 0;
+    transition: 0.5s;
+    white-space: nowrap;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+[data-tooltip]:hover::after {
+    opacity: 1;
+    top: -36px;
+}
+
+[data-tooltip]::before {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    left: 12px;
+    top: 0;
+    background: #444444;
+    pointer-events: none;
+    opacity: 0;
+    transition: 0.5s;
+    content: "";
+    z-index: 9999;
+    transform: rotate(45deg);
+}
+
+[data-tooltip]:hover::before {
+    opacity: 1;
+    top: -11px;
+}
+
+
+.grecaptcha-badge {
+    display: none!important;
+}
+
+.chart-wrap .bottom-text {
+    margin-top: 100px;
+}
+
+
+.chart-wrap .chat-innerWrap .item {
+    flex: 0 0 calc(16% - 48px);
+}
+
+.brands-wrap .brand-info .item span {
+    text-align: center;
+}
+
+.brands-wrap .brand-info .item {
+    text-align: center;
+}
+
+.brands-wrap .brand-info .item.markets .img-wrap {
+    max-width: 100%;
+    justify-content: center;
+}

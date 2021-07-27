@@ -10,8 +10,8 @@ Donate link: https://monzillamedia.com/donate.html
 Contributors: specialk
 Requires at least: 4.9
 Tested up to: 5.8
-Stable tag: 2.5
-Version: 2.5
+Stable tag: 2.5.1
+Version: 2.5.1
 Requires PHP: 5.6.20
 Text Domain: disable-gutenberg
 Domain Path: /languages
@@ -60,7 +60,7 @@ Just activate and done! The default plugin settings are configured to hide all t
 * NEW! Option to disables frontend Gutenberg stylesheet
 
 > Works same as Classic Editor plugin, but can do a LOT more!
-> Lightweight and super fast, built with the WP API :)
+> Lightweight and super fast, built with WP APIs :)
 
 Fully configurable, enable or disable Gutenberg and restore the Classic Editor wherever is necessary.
 
@@ -80,7 +80,9 @@ _Automatically replaces Gutenberg with the Classic Editor._
 * One-click restore plugin default options
 * Translation ready
 
-Disable Gutenberg is developed by [Jeff Starr](https://monzillamedia.com/), 13-year WordPress developer, book author, and support guru.
+> Works great with Google AMP and the WordPress [AMP plugin](https://wordpress.org/plugins/amp/).
+
+Disable Gutenberg is developed by [Jeff Starr](https://monzillamedia.com/), 15-year WordPress developer, book author, and support guru.
 
 _Super light & fast plugin, super easy on server resources!_
 
@@ -166,9 +168,10 @@ So if you hide the plugin's menu item, you always can access the settings direct
 
 The settings include a "More Tools" link. Clicking it toggles open some advanced options:
 
+* Classic Widgets - Restores Classic Widgets
 * Disable Nag - Disables "Try Gutenberg" nag
-* Enable Frontend - Enables the frontend Gutenberg stylesheet
-* Whitelist Options - Displays the Whitelist settings
+* Enable Frontend - Enables frontend block stylesheet
+* Whitelist Options - Displays the whitelist settings
 * Plugin Menu Item - Hides the Disable Gutenberg menu item
 * Gutenberg Menu Item - Hides the Gutenberg plugin menu item (for WP less than 5.0)
 * Display Edit Links - Displays "Add New (Classic)" menu links and Classic/Block edit links
@@ -297,6 +300,13 @@ Thank you to everyone for using Disable Gutenberg and for all the [awesome 5-sta
 
 If you have any feedback or suggestions to make this plugin the absolute best it can be, and/or would like to help with development, please reach me via my [contact form](https://perishablepress.com/contact/) at Perishable Press.
 
+
+**2.5.1 (2021/07/25)**
+
+* Fixes bug with not remembering editor
+* Tweaks details on plugin settings page
+* Improves readme.txt/documentation
+* Further tests on WordPress 5.8
 
 **2.5 (2021/07/13)**
 

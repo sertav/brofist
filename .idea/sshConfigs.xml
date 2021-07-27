@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="SshConfigs">
-    <configs>
-      <sshConfig host="178.62.28.49" id="16f1d2ed-d5f3-40ca-8287-5f228374f556" keyPath="C:\Users\ser-t\.ssh\private.ppk" port="22" nameFormat="DESCRIPTIVE" username="root" />
-    </configs>
-  </component>
-</project>

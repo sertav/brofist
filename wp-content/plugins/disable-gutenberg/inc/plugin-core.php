@@ -34,6 +34,8 @@ function disable_gutenberg($post_id = false) {
 	
 	if (isset($_GET['classic-editor'])) return true;
 	
+	if (isset($_POST['classic-editor'])) return true;
+	
 	if (disable_gutenberg_disable_all()) return true;
 	
 	if (disable_gutenberg_disable_user_role()) return true;
