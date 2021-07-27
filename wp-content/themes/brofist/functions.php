@@ -222,29 +222,3 @@ function prevent_default_theme_deletion($allcaps, $caps, $args) {
     return $allcaps;
 }
 add_filter ('user_has_cap', 'prevent_default_theme_deletion', 10, 3);
-
-
-/* Hide WP version strings from scripts and styles
-* @return {string} $src
-* @filter script_loader_src
-* @filter style_loader_src
-*/
-function fjarrett_remove_wp_version_strings( $src ) {
-    global $wp_version;
-    parse_str(parse_url($src, PHP_URL_QUERY), $query);
-    if ( !empty($query['ver']) && $query['ver'] === $wp_version ) {
-        $src = remove_query_arg('ver', $src);
-    }
-    return $src;
-}
-add_filter( 'script_loader_src', 'fjarrett_remove_wp_version_strings');
-add_filter( 'style_loader_src', 'fjarrett_remove_wp_version_strings');
-
-/* Hide WP version strings from generator meta tag */
-function wpmudev_remove_version() {
-    return "";
-}
-add_filter('the_generator', 'wpmudev_remove_version');
-
-
-
