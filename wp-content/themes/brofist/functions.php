@@ -85,7 +85,7 @@ function brofist_image_insert_override($sizes)
 function wpse_setup_theme()
 {
     add_theme_support('post-thumbnails');
-    add_image_size('reviews', 190);
+    add_image_size('reviews', 0, 64);
     add_image_size('logo-iphone', 133, 238, array('center', 'top'));
 }
 

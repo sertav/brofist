@@ -2,6 +2,30 @@
     display: none !important;
 }
 
+.reviews-wrap .slider .item .top .description a {
+    color: #ea5b0c;
+}
+
+.reviews-wrap .slider .item .top .description a:hover {
+    text-decoration: underline;
+}
+
+.reviews-wrap .slider .item .top .img {
+    min-height: 64px;
+}
+
+.reviews-wrap .slider .item .top .img img {
+    max-height: 64px;
+    width: auto;
+    margin: 0 auto;
+    max-width: 190px;
+    transition: .3s;
+}
+
+.reviews-wrap .slider .item .top .img a img:hover {
+    transform: scale(1.1);
+}
+
 .form-wrap .form-innerWrap .left .form .input-wrap textarea {
     width: 100%;
     margin-top: 10px;

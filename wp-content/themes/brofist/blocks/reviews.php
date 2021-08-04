@@ -19,11 +19,27 @@ $fp_r_reviews = get_field('fp_r_reviews');
             $fp_r_rate = get_field('fp_r_rate', $review->ID);
             $fp_r_date = get_field('fp_r_date', $review->ID);
 
+            $fp_r_true = get_field('fp_r_true', $review->ID);
+            $fp_r_link = get_field('fp_r_link', $review->ID);
+            $fp_r_target = get_field('fp_r_target', $review->ID);
+            $fp_r_nofollow = get_field('fp_r_nofollow', $review->ID);
+
             $image = wp_get_attachment_image_src( get_post_thumbnail_id( $review->ID ), 'reviews' );
             ?>
             <div class="item">
                 <div class="top">
-                    <div class="img"><img src="<?= $image[0]; ?>" alt=""></div>
+                    <div class="img">
+                        <?php if ($fp_r_true == true) : ?>
+                            <a href="<?= $fp_r_link; ?>" style="cursor: pointer"
+                                <?php if ($fp_r_target == true) echo 'target="_blank"'; ?>
+                                <?php if ($fp_r_nofollow == true) echo 'rel="nofollow"'; ?>
+                            >
+                        <?php endif; ?>
+                            <img src="<?= $image[0]; ?>" alt="">
+                        <?php if ($fp_r_true == true) : ?>
+                            </a>
+                        <?php endif; ?>
+                    </div>
                     <div class="description">
                         <?= $description; ?>
                     </div>

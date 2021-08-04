@@ -7,15 +7,12 @@ $('.signUp').on('click', function () {
 });
 
 $(".scroll-img").on("click", function () {
-    window.open('https://admin.brofist.partners/partner/register', '_blank');
-    // $(".signUp_popup").fadeIn();
-    // $("body").addClass("hidden-b");
-    // $("html, body").animate(
-    //     {
-    //         scrollTop: $(".brands-wrap").offset().top,
-    //     },
-    //     1500
-    // );
+    $("html, body").animate(
+        {
+            scrollTop: $(".brands-wrap").offset().top,
+        },
+        1500
+    );
 });
 
 $(".welcome-text .btn, .offer-wrap .btn, .brands-wrap .btn").on(
@@ -619,3 +616,56 @@ $(function () {
 
 
 
+$(function () {
+    $('#signInLog').on('submit', function (e) {
+
+        $(this).find('input').removeClass('error');
+        e.preventDefault();
+
+        var type = $('#signInLog');
+
+        var email = $("#txt_email").val().trim();
+        var password = $("#txt_pwd").val().trim();
+        var otp_attempt = $("#otp_attempt").val().trim();
+
+        $.ajax({
+            type: 'POST',
+            url: 'https://brofist.partners/wp-content/themes/brofist/api/sign_in.php',
+            headers: new Headers({
+                "Content-Type": "application/json; charset=utf-8",
+                Accept: "application/json"
+            }),
+            data: $('#signInLog').serialize(),
+            xhrFields: {
+                    withCredentials: true,
+            },
+            cache: false,
+            crossDomain: true,
+            beforeSend: function(){
+                var http = new XMLHttpRequest();
+
+                http.getResponseHeader('Set-Cookie');
+                http.withCredentials = true;
+
+                var url = 'https://brofist.partners/wp-content/themes/brofist/api/sign_in.php';
+                var params = 'email=' + email + '&password=' + password + '&otp_attempt=' + otp_attempt;
+                http.open('POST', url, true);
+
+                http.setRequestHeader('Content-type', 'application/json');
+
+                http.send(params);
+            },
+            success: function (response, textStatus, jqXHR) {
+                var data = JSON.parse(response);
+
+                if (data.error) {
+                    $('#signIn').find('input').addClass('error');
+                    $('#signIn').find('#otp_attempt').removeClass('error');
+                    $('.signIn_popup .error-message').fadeIn();
+                } else {
+                    window.location.href = "https://admin.brofist.partners/partner/dashboard";
+                }
+            }
+        });
+    });
+});
